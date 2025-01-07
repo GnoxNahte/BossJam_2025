@@ -243,7 +243,13 @@ public class PlayerMovement : MonoBehaviour
             (isInAir || _input.MoveDir.x != 0f))
         {
             Jump();
-            velocity.x = (isLeftWallColliding ? -1f : 1f) * stats.WallJumpHorizontalVelocity;
+            
+            // Add some horizontal input depending on the horizontal input direction and which side the wall is on.
+            bool isInputTowardsWall = _input.MoveDir.x != 0 &&
+                                      _input.MoveDir.x < 0 ? isLeftWallColliding : !isLeftWallColliding;
+            print("Input towards wall: " + isInputTowardsWall);
+            velocity.x = (isLeftWallColliding ? 1f : -1f) * 
+                         (isInputTowardsWall ? stats.WallJumpHorizontalVelocityTowardsWall : stats.WallJumpHorizontalVelocity);
         }
         // Normal wall jump. 
         // Also checks if player isGrounded and coyoteTime

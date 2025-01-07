@@ -78,8 +78,11 @@ public class PlayerMovementStats : ScriptableObject
     [Tooltip("Let the player queue the next jump if the player jumped in mid air.")]
     public float JumpBuffer;
 
-    [Tooltip("Horizontal jump velocity when wall jumping")]
+    [Tooltip("Horizontal jump velocity when wall jumping (When horizontal input NOT towards wall)")]
     public float WallJumpHorizontalVelocity;
+
+    [Tooltip("Horizontal jump velocity when wall jumping (When horizontal input towards wall)")]
+    public float WallJumpHorizontalVelocityTowardsWall;
 
     [Header("Others")]
 
