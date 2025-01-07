@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3378e33b11a1a4642b6599e453100ef1, type: 3}
+  m_Name: BaseMovement
+  m_EditorClassIdentifier: 
+  MaxSpeed: 2.5
+  AirStrafeMaxSpeed: 2
+  MaxSpeedTime: 0.2
+  StopTime: 0.15
+  TurnTime: 0.05
+  InAirTurnTime: 0.2
+  MoveAcceleration: 12.5
+  StopAcceleration: -16.666666
+  TurnAcceleration: -100
+  InAirTurnAcceleration: -25
+  MaxFallVelocity: -5
+  Gravity: -13.333333
+  FallingGravity: -15.867768
+  WallSlideMaxSpeedTime: 0.5
+  WallSlideMaxSpeed: -1.25
+  WallSlideAcceleration: -2.5
+  MaxJumpHeight: 0.6
+  MinJumpHeight: 0.01
+  MinJumpTime: 0.005
+  TimeToMaxHeight: 0.3
+  TimeToGround: 0.275
+  JumpVelocity: 4
+  GravityMultiplierWhenRelease: 3
+  CoyoteTime: 0.1
+  JumpBuffer: 0.15
+  WallJumpHorizontalVelocity: 3
+  ImpulseCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
