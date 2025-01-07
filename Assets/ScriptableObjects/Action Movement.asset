@@ -17,17 +17,17 @@ MonoBehaviour:
   MaxSpeedTime: 0.1
   StopTime: 0.15
   TurnTime: 0.05
-  InAirTurnTime: 0.2
+  InAirTurnTime: 0.1
   MoveAcceleration: 50
   StopAcceleration: -33.333332
   TurnAcceleration: -200
-  InAirTurnAcceleration: -50
+  InAirTurnAcceleration: -100
   MaxFallVelocity: -10
   Gravity: -16.666666
   FallingGravity: -24
   WallSlideMaxSpeedTime: 0.5
-  WallSlideMaxSpeed: -1
-  WallSlideAcceleration: -2
+  WallSlideMaxSpeed: -2
+  WallSlideAcceleration: -4
   MaxJumpHeight: 0.75
   MinJumpHeight: 0.01
   MinJumpTime: 0.0039999997
@@ -38,7 +38,7 @@ MonoBehaviour:
   CoyoteTime: 0.1
   JumpBuffer: 0.15
   WallJumpHorizontalVelocity: 5
-  WallJumpHorizontalVelocityTowardsWall: 3
+  WallJumpHorizontalVelocityTowardsWall: 5
   ImpulseCurve:
     serializedVersion: 2
     m_Curve: []
