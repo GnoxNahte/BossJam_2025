@@ -464,7 +464,8 @@ namespace VInspector
 
                         void invokeCallbacks() => methodInfos.ForEach(r => targets.ForEach(rr => r.Invoke(rr, null)));
 
-                        invokeCallbacks();
+                        // invokeCallbacks();
+                        AbstractEditor.toCallAfterModifyingSO += invokeCallbacks;
 
                         valueChangedCallbacks_byUndoPosition[EditorUtils.GetCurrendUndoGroupIndex()] = invokeCallbacks;
 
@@ -1652,7 +1653,8 @@ namespace VInspector
 
         }
 
-        bool useUITK => HasUITKOnlyDrawers(serializedObject);
+        // bool useUITK => HasUITKOnlyDrawers(serializedObject);
+        bool useUITK => !HasVInspectorAttribtues(target.GetType());
 
 
 
