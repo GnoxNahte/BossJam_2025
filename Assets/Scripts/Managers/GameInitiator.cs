@@ -32,7 +32,8 @@ public class GameInitiator : MonoBehaviour
     {
         await InstantiatePrefabs();
         
-        await SceneManager.LoadSceneAsync("Boss 1", LoadSceneMode.Additive);
+        // await SceneManager.LoadSceneAsync("Boss 1", LoadSceneMode.Additive);
+        await SceneManager.LoadSceneAsync("TestLevel", LoadSceneMode.Additive);
     }
 
     private async Awaitable InstantiatePrefabs()
