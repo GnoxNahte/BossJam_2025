@@ -1,6 +1,6 @@
 using System;
 using UnityEngine;
-using VInspector.Libs;
+using VInspector;
 
 public class PlatformBase : MonoBehaviour
 {
@@ -19,7 +19,7 @@ public class PlatformBase : MonoBehaviour
     public Type PlatformType => platformType;
 
     [SerializeField] protected Type platformType;
-    [SerializeField] protected VUtils.SerializableDictionary<Type, PlatformModifierBase> modifiers;
+    [SerializeField] protected SerializedDictionary<Type, PlatformModifierBase> modifiers;
 
     public bool HasPlatformTypeFlag(Type type)
     {
@@ -44,7 +44,7 @@ public class PlatformBase : MonoBehaviour
     {
         // Reset
         platformType = Type.None;
-        modifiers = new VUtils.SerializableDictionary<Type, PlatformModifierBase>();
+        modifiers = new SerializedDictionary<Type, PlatformModifierBase>();
         
         PlatformModifierBase[] modifiersArray = GetComponents<PlatformModifierBase>();
         
