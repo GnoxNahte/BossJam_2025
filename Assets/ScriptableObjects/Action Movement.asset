@@ -22,6 +22,31 @@ MonoBehaviour:
   StopAcceleration: -33.333332
   TurnAcceleration: -200
   InAirTurnAcceleration: -100
+  DashTime: 0.05
+  DashCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 10
+      inSlope: -0.25556242
+      outSlope: -0.25556242
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.73829204
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -33.611107
+      outSlope: -33.611107
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.049586773
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   MaxFallVelocity: -10
   Gravity: -16.666666
   FallingGravity: -24
@@ -35,7 +60,7 @@ MonoBehaviour:
   TimeToGround: 0.25
   JumpVelocity: 5
   GravityMultiplierWhenRelease: 4
-  CoyoteTime: 0.1
+  CoyoteTime: 0.175
   JumpBuffer: 0.15
   WallJumpHorizontalVelocity: 5
   WallJumpHorizontalVelocityTowardsWall: 5

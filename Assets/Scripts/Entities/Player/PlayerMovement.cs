@@ -36,26 +36,9 @@ public class PlayerMovement : MonoBehaviour
     private bool isInAir;
 
     [SerializeField] [ReadOnly]
-    private float targetScale;
-
+    private float dashTimeLeft;
     [SerializeField] [ReadOnly]
-    private float startScaleAnimTime;
-    [SerializeField] [ReadOnly]
-    private float startScale;
-
-    [SerializeField] [ReadOnly]
-    private float lastScaleTime;
-
-    // Just for debug, can delete anytime
-    [Header("Debug Variables")]
-
-    [SerializeField] [ReadOnly]
-    private float timeSinceJumpPressed;
-    [SerializeField] [ReadOnly]
-    private float timeSinceLastOnPlatform;
-
-    [SerializeField] [ReadOnly]
-    private float timeSinceLastJump;
+    private bool isDashingDirectionRight;
     
     #endregion
     
@@ -89,6 +72,9 @@ public class PlayerMovement : MonoBehaviour
             lastJumpPressed = realtime;
         else
             ifReleaseJumpAfterJumping = true;
+
+        if (_input.IsDashing)
+            TryDash();
     }
 
     private void FixedUpdate()
@@ -111,6 +97,15 @@ public class PlayerMovement : MonoBehaviour
     // Updates horizontal velocity
     private void HorizontalMovement()
     {
+        if (dashTimeLeft > 0f)
+        {
+            dashTimeLeft -= Time.deltaTime;
+            velocity.x = stats.DashCurve.Evaluate(dashTimeLeft / stats.DashTime) *
+                         (isDashingDirectionRight ? 1 : -1);
+            velocity.y = 0f;
+            return;
+        }
+        
         float xInput = _input.MoveDir.x;
         bool isGrounded = !isInAir;
         
@@ -149,6 +144,10 @@ public class PlayerMovement : MonoBehaviour
     private void VerticalMovement()
     {
         HandleLanding();
+
+        if (dashTimeLeft > 0)
+            return;
+        
         HandleGravity();
         HandleJump();
     }
@@ -265,6 +264,18 @@ public class PlayerMovement : MonoBehaviour
         lastGroundedTime = float.MinValue;
         lastJumpTime = Time.realtimeSinceStartup;
         ifReleaseJumpAfterJumping = false;
+    }
+    
+    // Tries dashing. Returns if can dash
+    private bool TryDash()
+    {
+        // If still dashing
+        if (dashTimeLeft > 0)
+            return false;
+        
+        dashTimeLeft = stats.DashTime;
+        isDashingDirectionRight = _input.MoveDir.x != 0f ? _input.MoveDir.x > 0f : velocity.x > 0f;
+        return true;
     }
     
     private void ResetPlayer()
