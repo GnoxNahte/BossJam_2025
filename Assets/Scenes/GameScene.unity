@@ -632,6 +632,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputManagerPrefab: {fileID: 5534955471060410766, guid: e2f749ecbb312524ba99eb3c4898f6ee, type: 3}
   CameraManagerPrefab: {fileID: 1091069318387599924, guid: e88f0018454fb4a4daaf7bc04e324a45, type: 3}
+  Canvas: {fileID: 1078559899}
+  GameUIManagerPrefab: {fileID: 8710842009033278539, guid: 43b76f82acb8b37479d4a067fc630b2b, type: 3}
   Player: {fileID: 8045721543996125440, guid: b76352bfd347285499aa46d2165106d6, type: 3}
   playerStart: {fileID: 1790253437}
 --- !u!4 &1215868911

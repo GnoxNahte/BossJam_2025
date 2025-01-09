@@ -11,6 +11,9 @@ public class GameInitiator : MonoBehaviour
     [Header("Managers")]
     public GameObject InputManagerPrefab;
     public GameObject CameraManagerPrefab;
+    [Header("UI")] 
+    public Transform Canvas;
+    public GameObject GameUIManagerPrefab;
     
     [Header("Game Objects")]
     public GameObject Player;
@@ -33,7 +36,8 @@ public class GameInitiator : MonoBehaviour
         await InstantiatePrefabs();
         
         // await SceneManager.LoadSceneAsync("Boss 1", LoadSceneMode.Additive);
-        await SceneManager.LoadSceneAsync("TestLevel", LoadSceneMode.Additive);
+        if (!SceneManager.GetSceneByName("TestLevel").isLoaded)
+            await SceneManager.LoadSceneAsync("TestLevel", LoadSceneMode.Additive);
     }
 
     private async Awaitable InstantiatePrefabs()
@@ -43,16 +47,20 @@ public class GameInitiator : MonoBehaviour
         // GameObject inputManagerGO = (await InstantiateAsync(InputManagerPrefab, managerParent.transform))[0];
         GameObject inputManagerGO = Instantiate(InputManagerPrefab, managerParent.transform); 
         GameObject cameraManagerGO = Instantiate(CameraManagerPrefab, managerParent.transform); 
+        GameObject gameUIManagerGO = Instantiate(GameUIManagerPrefab, Canvas.transform); 
         GameObject playerGO = Instantiate(Player, playerStart.position, Quaternion.identity);
         
         // === Get relevant components ===
         InputManager inputManager = inputManagerGO.GetComponent<InputManager>();
         CameraManager cameraManager = cameraManagerGO.GetComponent<CameraManager>();
+        GameUIManager gameUIManager = gameUIManagerGO.GetComponent<GameUIManager>();
         Player player = playerGO.GetComponent<Player>();
         
         // === Init Objects ===
         player.Init(inputManager);
         cameraManager.Init(player);
+        gameUIManager.Init(player.PlayerAbilitySystem);
+        inputManager.Init(player.PlayerAbilitySystem);
     }
     #endregion
 }

@@ -1,21 +1,15 @@
-using System;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using VInspector;
 
 public class InputManager : MonoBehaviour
 {
     #region Public Variables
-    [field: SerializeField] public Vector2 MoveDir { get; private set; }
-    [field: SerializeField] public bool IsJumping { get; private set; }
-    [field: SerializeField] public bool JumpPressedThisFrame { get; private set; }
-    [field: SerializeField] public bool IsCharging { get; private set; }
-    [field: SerializeField] public bool IsDashing { get; private set; }
-    [field: SerializeField] public bool IsAttacking { get; private set; }
-
-    public event Action OnPausePressed;
-    #endregion
-    
-    #region Serialized Variables
+    [field: SerializeField, ReadOnly] public Vector2 MoveDir { get; private set; }
+    [field: SerializeField, ReadOnly] public bool IsJumping { get; private set; }
+    [field: SerializeField, ReadOnly] public bool JumpPressedThisFrame { get; private set; }
+    [field: SerializeField, ReadOnly] public bool IsCharging { get; private set; }
     #endregion
     
     #region Private Variables
@@ -27,6 +21,17 @@ public class InputManager : MonoBehaviour
     private InputAction _dash;
     private InputAction _attack;
     private InputAction _pause;
+    
+    private PlayerAbilitySystem _playerAbilitySystem;
+    #endregion
+
+    #region Public Methods
+
+    public void Init(PlayerAbilitySystem playerAbilitySystem)
+    {
+        _playerAbilitySystem = playerAbilitySystem;
+    }
+
     #endregion
     
     #region Unity Methods
@@ -68,8 +73,12 @@ public class InputManager : MonoBehaviour
         IsJumping = _jump.IsPressed();
         JumpPressedThisFrame = _jump.WasPressedThisFrame();
         IsCharging = _charge.IsPressed();
-        IsDashing = _dash.IsPressed();
-        IsAttacking = _attack.IsPressed();
+        
+        // === Abilities ===
+        if (_dash.IsPressed())
+            _playerAbilitySystem.TryActivateAbility(PlayerAbilitySystem.Type.Dash);
+        if (_attack.IsPressed())
+            _playerAbilitySystem.TryActivateAbility(PlayerAbilitySystem.Type.Attack);
     }
     #endregion
 }

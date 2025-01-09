@@ -37,8 +37,6 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] [ReadOnly]
     private float dashTimeLeft;
-    [SerializeField] [ReadOnly]
-    private bool isDashingDirectionRight;
     
     #endregion
     
@@ -46,15 +44,31 @@ public class PlayerMovement : MonoBehaviour
 
     private InputManager _input;
     private Rigidbody2D _rb;
+    private PlayerAbilitySystem _abilitySystem;
+    
+    private bool _isFacingRight;
     
     #endregion
     
     #region Public Methods
-    public void Init(InputManager input)
+    public void Init(PlayerAbilitySystem abilitySystem, InputManager input)
     {
         _input = input;
+        _abilitySystem = abilitySystem;
         
         ResetPlayer();
+    }
+    
+    public void Dash()
+    {
+        dashTimeLeft = stats.DashTime;
+    }
+    
+    public void CancelDash()
+    {
+        dashTimeLeft = -1f;
+        velocity.x = stats.DashCurve.Evaluate(1f) *
+                     (_isFacingRight ? 1 : -1);
     }
     #endregion
     
@@ -73,8 +87,8 @@ public class PlayerMovement : MonoBehaviour
         else
             ifReleaseJumpAfterJumping = true;
 
-        if (_input.IsDashing)
-            TryDash();
+        if (_input.MoveDir.x != 0)
+            _isFacingRight = _input.MoveDir.x > 0;
     }
 
     private void FixedUpdate()
@@ -100,9 +114,20 @@ public class PlayerMovement : MonoBehaviour
         if (dashTimeLeft > 0f)
         {
             dashTimeLeft -= Time.deltaTime;
-            velocity.x = stats.DashCurve.Evaluate(dashTimeLeft / stats.DashTime) *
-                         (isDashingDirectionRight ? 1 : -1);
+            
+            // On finish dash
+            if (dashTimeLeft < 0f)
+            {
+                _abilitySystem.OnAbilityEnd();
+                dashTimeLeft = -1f;
+                return;
+            }
+            
+            // Negate 1f - percentage so that the curve goes from left to right.
+            velocity.x = stats.DashCurve.Evaluate(1f - dashTimeLeft / stats.DashTime) *
+                         (_isFacingRight ? 1 : -1);
             velocity.y = 0f;
+            
             return;
         }
         
@@ -264,18 +289,6 @@ public class PlayerMovement : MonoBehaviour
         lastGroundedTime = float.MinValue;
         lastJumpTime = Time.realtimeSinceStartup;
         ifReleaseJumpAfterJumping = false;
-    }
-    
-    // Tries dashing. Returns if can dash
-    private bool TryDash()
-    {
-        // If still dashing
-        if (dashTimeLeft > 0)
-            return false;
-        
-        dashTimeLeft = stats.DashTime;
-        isDashingDirectionRight = _input.MoveDir.x != 0f ? _input.MoveDir.x > 0f : velocity.x > 0f;
-        return true;
     }
     
     private void ResetPlayer()

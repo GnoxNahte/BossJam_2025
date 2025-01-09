@@ -1,10 +1,11 @@
-using System;
-using UnityEngine;
-
 public class Player : EntityBase
 {
     #region Public Variables
     public const string PlayerTag = "Player";
+    
+    public PlayerMovement PlayerMovement => _playerMovement;
+    public PlayerAppearance PlayerAppearance => _playerAppearance;
+    public PlayerAbilitySystem PlayerAbilitySystem => _playerAbilitySystem;
     #endregion
     
     #region Serialized Variables
@@ -14,6 +15,8 @@ public class Player : EntityBase
     #region Private Variables
 
     private PlayerMovement _playerMovement;
+    private PlayerAppearance _playerAppearance;
+    private PlayerAbilitySystem _playerAbilitySystem;
     
     #endregion
     
@@ -21,7 +24,8 @@ public class Player : EntityBase
     
     public void Init(InputManager input)
     {
-        _playerMovement.Init(input);
+        _playerMovement.Init(_playerAbilitySystem, input);
+        _playerAbilitySystem.Init(this);
     }
     #endregion
     
@@ -30,6 +34,8 @@ public class Player : EntityBase
     private void Awake()
     {
         _playerMovement = GetComponent<PlayerMovement>();
+        _playerAppearance = GetComponent<PlayerAppearance>();
+        _playerAbilitySystem = GetComponent<PlayerAbilitySystem>();
     }
 
     #endregion
