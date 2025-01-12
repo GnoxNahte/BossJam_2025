@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 32a7eb3acb8af1942ade452dcac7cf28
+guid: f78f3540091cc414daeec62290b6cb92
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4986871819178931598
-    second: BossRushJamThumbnail_0
-  - first:
-      213: -4212504849424403875
-    second: BossRushJamThumbnail_1
+      213: -3148376711450498119
+    second: landscape_1_scene_2_fist_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,9 +46,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -116,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BossRushJamThumbnail_0
+      name: landscape_1_scene_2_fist_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 99
-        width: 944
-        height: 338
+        x: 0
+        y: 0
+        width: 300
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,30 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 27a0f6580821bcab0800000000000000
-      internalID: -4986871819178931598
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossRushJamThumbnail_1
-      rect:
-        serializedVersion: 2
-        x: 473
-        y: 29
-        width: 246
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d52b273882d2a85c0800000000000000
-      internalID: -4212504849424403875
+      spriteID: 9bb61eecf08be44d0800000000000000
+      internalID: -3148376711450498119
       vertices: []
       indices: 
       edges: []
@@ -163,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -173,8 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BossRushJamThumbnail_0: -4986871819178931598
-      BossRushJamThumbnail_1: -4212504849424403875
+      landscape_1_scene_2_fist_0: -3148376711450498119
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

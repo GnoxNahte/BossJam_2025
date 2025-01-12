@@ -19,18 +19,6 @@ public class AttackAbility : PlayerAbilityBase
     {
         _playerAppearance = player.PlayerAppearance;
     }
-    
-    public override void CancelAbility(PlayerAbilitySystem.Type nextAbility)
-    {
-        print("Canceled attack");
-    }
-
-    public override void OnEnd()
-    {
-        base.OnEnd();
-        
-        _playerAppearance.SetColor(Color.white);
-    }
 
     #endregion
     
@@ -45,14 +33,6 @@ public class AttackAbility : PlayerAbilityBase
     #endregion
     
     #region Private Methods
-    
-    // NOTE: canceledAbility can be null
-    protected override void Activate(AbilityBase<PlayerAbilitySystem.Type> canceledAbility)
-    {
-        base.Activate(canceledAbility);
-        if (canceledAbility)
-            _playerAppearance.SetColor(Color.red);
-    }
     
     #endregion
 }

@@ -1,5 +1,3 @@
-using System;
-using System.Collections.Generic;
 using UnityEngine;
 using VInspector;
 
@@ -9,6 +7,8 @@ public class PlayerAbilitySystem : AbilitySystem
     {
         Dash,
         Attack,
+        SpinCharge,
+        Spin,
     }
     
     [SerializeField] [ReadOnly]
@@ -27,6 +27,8 @@ public class PlayerAbilitySystem : AbilitySystem
 
     public bool TryActivateAbility(Type type)
     {
+        // print("Activate Ability: " + type);
+        
         PlayerAbilityBase nextAbility = Abilities[type]; 
         Debug.Assert(nextAbility, "nextAbility == null");
         
@@ -41,22 +43,43 @@ public class PlayerAbilitySystem : AbilitySystem
             return false;
 
         if (currAbility)
+        {
             currAbility.CancelAbility(nextAbility.Type);
+            OnAbilityEnd(currAbility.Type);
+        }
         
         currAbility = nextAbility;
         _playerAppearance.OnActivateAbility(type);
         return true;
     }
 
-    public void OnAbilityEnd()
+    // Pass the type to confirm it's referring to the correct ability
+    public void OnAbilityEnd(Type type)
     {
-        currAbility.OnEnd();
-        currAbility = null;
+        // print("OnAbilityEnd: " + type);
+
+        if (!currAbility)
+            return;
+        
+        currAbility.OnEnd(false);
+        
+        _playerAppearance.OnAbilityEnd(type);
+
+        if (currAbility.ChainAbility && currAbility.ChainAbility.TryActivate(null))
+        {
+            currAbility = currAbility.ChainAbility as PlayerAbilityBase;
+            _playerAppearance.OnActivateAbility(currAbility.Type);
+        }
+        else
+        {
+            currAbility = null;
+        }
     }
     
     [Button]
     public void GetAbilities()
     {
+        Abilities.Clear();
         PlayerAbilityBase[] abilities = GetComponentsInChildren<PlayerAbilityBase>();
         foreach (PlayerAbilityBase ability in abilities)
         {

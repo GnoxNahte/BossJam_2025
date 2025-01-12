@@ -26,6 +26,7 @@ public class Player : EntityBase
     {
         _playerMovement.Init(_playerAbilitySystem, input);
         _playerAbilitySystem.Init(this);
+        _playerAppearance.Init(_playerMovement);
     }
     #endregion
     

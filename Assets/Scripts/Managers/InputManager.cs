@@ -79,6 +79,10 @@ public class InputManager : MonoBehaviour
             _playerAbilitySystem.TryActivateAbility(PlayerAbilitySystem.Type.Dash);
         if (_attack.IsPressed())
             _playerAbilitySystem.TryActivateAbility(PlayerAbilitySystem.Type.Attack);
+        if (_charge.IsPressed())
+            _playerAbilitySystem.TryActivateAbility(PlayerAbilitySystem.Type.SpinCharge);
+        if (_charge.WasReleasedThisFrame())
+            _playerAbilitySystem.OnAbilityEnd(PlayerAbilitySystem.Type.SpinCharge);
     }
     #endregion
 }

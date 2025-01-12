@@ -11,6 +11,8 @@ public abstract class AbilityBase<T> : MonoBehaviour where T : System.Enum
     [field: SerializeField] public string Name { get; protected set; }
     [field: SerializeField] public Sprite Icon { get; protected set; }
     [field: SerializeField] public float Cooldown { get; protected set; }
+    [Tooltip("Activates chain ability when current ability ends")]
+    [field: SerializeField] public AbilityBase<T> ChainAbility { get; protected set; }
 
     // Only can cancel abilities from these types. 
     // Cancel ability from type -> activate this ability
@@ -41,7 +43,7 @@ public abstract class AbilityBase<T> : MonoBehaviour where T : System.Enum
     // NOTE: canceledAbility can be null
     public bool TryActivate(AbilityBase<T> canceledAbility)
     {
-        if (CooldownTimeLeft > 0f) 
+        if (CooldownTimeLeft > 0f || !CanUseAbility()) 
             return false;
         
         Debug.Assert(_cooldownCountdownCoroutine == null, "Ability Cooldown countdown coroutine != null");
@@ -53,7 +55,7 @@ public abstract class AbilityBase<T> : MonoBehaviour where T : System.Enum
     // Called when:
     // - Ability Ended (Without cancelling)
     // - Ability Cancelled
-    public virtual void OnEnd()
+    public virtual void OnEnd(bool wasCancelled)
     {
         IsActive = false;
     }
@@ -63,11 +65,14 @@ public abstract class AbilityBase<T> : MonoBehaviour where T : System.Enum
         return CancelFromTypes.Contains(previousAbility);
     }
 
-    public abstract void CancelAbility(PlayerAbilitySystem.Type nextAbility);
+    public virtual void CancelAbility(PlayerAbilitySystem.Type nextAbility) {}
 
     #endregion
 
-    #region Protected Variables
+    #region Protected Methods
+
+    // Additional optional check if can use ability
+    protected virtual bool CanUseAbility() => true;
 
     // NOTE: canceledAbility can be null
     protected virtual void Activate(AbilityBase<T> canceledAbility)

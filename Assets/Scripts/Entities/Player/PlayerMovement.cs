@@ -3,6 +3,12 @@ using VInspector;
 
 public class PlayerMovement : MonoBehaviour
 {
+    #region Public Variables
+    
+    public Vector2 Velocity => velocity; 
+    public Vector2 FacingDirection => _facingDirection; 
+    #endregion
+    
     #region Serialized Variables
 
     [SerializeField] private PlayerMovementStats stats;
@@ -37,6 +43,12 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] [ReadOnly]
     private float dashTimeLeft;
+
+    // Stops movement if using ability
+    [SerializeField] [ReadOnly]
+    private bool isCharging;
+    [SerializeField] [ReadOnly]
+    private bool isSpinning;
     
     #endregion
     
@@ -46,7 +58,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D _rb;
     private PlayerAbilitySystem _abilitySystem;
     
-    private bool _isFacingRight;
+    // Only change when there's input
+    private Vector2 _facingDirection;
     
     #endregion
     
@@ -58,6 +71,11 @@ public class PlayerMovement : MonoBehaviour
         
         ResetPlayer();
     }
+
+    public bool IsGrounded()
+    {
+        return !isInAir;
+    }
     
     public void Dash()
     {
@@ -67,8 +85,22 @@ public class PlayerMovement : MonoBehaviour
     public void CancelDash()
     {
         dashTimeLeft = -1f;
-        velocity.x = stats.DashCurve.Evaluate(1f) *
-                     (_isFacingRight ? 1 : -1);
+        velocity = stats.DashCurve.Evaluate(1f) * _facingDirection;
+    }
+    
+    // Returns if can start charging spin
+    public void ChargeSpin()
+    {
+        isCharging = true;
+        velocity = Vector2.zero;
+    }
+
+    public void Spin()
+    {
+        isCharging = false;
+        
+        isSpinning = true;
+        velocity = new Vector2(stats.SpinHorizontalSpeed * (FacingDirection.x > 0 ? 1 : -1), 0f);
     }
     #endregion
     
@@ -87,15 +119,22 @@ public class PlayerMovement : MonoBehaviour
         else
             ifReleaseJumpAfterJumping = true;
 
-        if (_input.MoveDir.x != 0)
-            _isFacingRight = _input.MoveDir.x > 0;
+        if (_input.MoveDir.x != 0 && !(isCharging || isSpinning))
+            _facingDirection = _input.MoveDir;
     }
 
     private void FixedUpdate()
     {
         // Updates the velocity for horizontal and vertical movement
-        HorizontalMovement();
-        VerticalMovement();
+        if (isSpinning)
+        {
+            SpinningMovement();
+        }
+        else
+        {
+            HorizontalMovement();
+            VerticalMovement();
+        }
 
         _rb.linearVelocity = Vector2.zero;
         
@@ -111,6 +150,9 @@ public class PlayerMovement : MonoBehaviour
     // Updates horizontal velocity
     private void HorizontalMovement()
     {
+        if (isCharging)
+            return;
+        
         if (dashTimeLeft > 0f)
         {
             dashTimeLeft -= Time.deltaTime;
@@ -118,15 +160,13 @@ public class PlayerMovement : MonoBehaviour
             // On finish dash
             if (dashTimeLeft < 0f)
             {
-                _abilitySystem.OnAbilityEnd();
+                _abilitySystem.OnAbilityEnd(PlayerAbilitySystem.Type.Dash);
                 dashTimeLeft = -1f;
                 return;
             }
             
             // Negate 1f - percentage so that the curve goes from left to right.
-            velocity.x = stats.DashCurve.Evaluate(1f - dashTimeLeft / stats.DashTime) *
-                         (_isFacingRight ? 1 : -1);
-            velocity.y = 0f;
+            velocity = stats.DashCurve.Evaluate(1f - dashTimeLeft / stats.DashTime) * _facingDirection;
             
             return;
         }
@@ -174,7 +214,35 @@ public class PlayerMovement : MonoBehaviour
             return;
         
         HandleGravity();
-        HandleJump();
+        
+        if (!isCharging)
+            HandleJump();
+    }
+
+    private void SpinningMovement()
+    {
+        if (HandleJump())
+        {
+            isSpinning = false;
+        }
+        // Stop and apply knockback if collided
+        if (leftWallChecker.IsColliding || rightWallChecker.IsColliding)
+        {
+            velocity = new Vector2(stats.WallJumpHorizontalVelocity, stats.JumpVelocity);
+            if (rightWallChecker.IsColliding)
+                velocity.x *= -1; // Flip horizontal velocity
+            
+            isSpinning = false;
+        }
+
+        if (!isSpinning)
+        {
+            _abilitySystem.OnAbilityEnd(PlayerAbilitySystem.Type.Spin);
+            return;
+        }
+        
+        HandleGravity();
+        HandleLanding();
     }
 
     private void HandleLanding()
@@ -245,7 +313,8 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void HandleJump()
+    // Returns if was able to jump
+    private bool HandleJump()
     {
         float realtime = Time.realtimeSinceStartup;
 
@@ -273,13 +342,19 @@ public class PlayerMovement : MonoBehaviour
                                       _input.MoveDir.x < 0 ? isLeftWallColliding : !isLeftWallColliding;
             velocity.x = (isLeftWallColliding ? 1f : -1f) * 
                          (isInputTowardsWall ? stats.WallJumpHorizontalVelocityTowardsWall : stats.WallJumpHorizontalVelocity);
+
+            return true;
         }
         // Normal wall jump. 
         // Also checks if player isGrounded and coyoteTime
         else if (ifJump && (realtime - lastGroundedTime < stats.CoyoteTime))
         {
             Jump();
+
+            return true;
         }
+
+        return false;
     }
 
     private void Jump()

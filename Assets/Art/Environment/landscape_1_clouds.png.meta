@@ -1,13 +1,22 @@
 fileFormatVersion: 2
-guid: 32a7eb3acb8af1942ade452dcac7cf28
+guid: 76b8241e32433df4e896d9ac4658f847
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4986871819178931598
-    second: BossRushJamThumbnail_0
+      213: 6882297028240468861
+    second: landscape_1_clouds_0
   - first:
-      213: -4212504849424403875
-    second: BossRushJamThumbnail_1
+      213: -4568523257972850671
+    second: landscape_1_clouds_1
+  - first:
+      213: 5843067426934719634
+    second: landscape_1_clouds_2
+  - first:
+      213: -7834862257613859224
+    second: landscape_1_clouds_3
+  - first:
+      213: -2847903124059008131
+    second: landscape_1_clouds_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,9 +58,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -116,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BossRushJamThumbnail_0
+      name: landscape_1_clouds_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 99
-        width: 944
-        height: 338
+        x: 25
+        y: 237
+        width: 116
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 27a0f6580821bcab0800000000000000
-      internalID: -4986871819178931598
+      spriteID: d7beff6eea4d28f50800000000000000
+      internalID: 6882297028240468861
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossRushJamThumbnail_1
+      name: landscape_1_clouds_1
       rect:
         serializedVersion: 2
-        x: 473
-        y: 29
-        width: 246
-        height: 80
+        x: 43
+        y: 274
+        width: 10
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +162,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d52b273882d2a85c0800000000000000
-      internalID: -4212504849424403875
+      spriteID: 1100b6c4d485990c0800000000000000
+      internalID: -4568523257972850671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landscape_1_clouds_2
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 238
+        width: 111
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 294891deddeb61150800000000000000
+      internalID: 5843067426934719634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landscape_1_clouds_3
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 163
+        width: 278
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8669fce994af44390800000000000000
+      internalID: -7834862257613859224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landscape_1_clouds_4
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 237
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d73dcbf82373a78d0800000000000000
+      internalID: -2847903124059008131
       vertices: []
       indices: 
       edges: []
@@ -163,7 +238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -173,8 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BossRushJamThumbnail_0: -4986871819178931598
-      BossRushJamThumbnail_1: -4212504849424403875
+      landscape_1_clouds_0: 6882297028240468861
+      landscape_1_clouds_1: -4568523257972850671
+      landscape_1_clouds_2: 5843067426934719634
+      landscape_1_clouds_3: -7834862257613859224
+      landscape_1_clouds_4: -2847903124059008131
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

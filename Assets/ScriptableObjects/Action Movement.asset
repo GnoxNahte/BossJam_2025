@@ -22,7 +22,7 @@ MonoBehaviour:
   StopAcceleration: -33.333332
   TurnAcceleration: -200
   InAirTurnAcceleration: -100
-  DashTime: 0.15
+  DashTime: 0.2
   DashCurve:
     serializedVersion: 2
     m_Curve:
@@ -36,17 +36,27 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0.73829204
     - serializedVersion: 3
-      time: 1
+      time: 0.75
       value: 7
-      inSlope: -25.3782
-      outSlope: -25.3782
+      inSlope: -21.310886
+      outSlope: -7.8676333
+      tangentMode: 1
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.5371902
+    - serializedVersion: 3
+      time: 1
+      value: 5
+      inSlope: -14.367282
+      outSlope: -14.367282
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.07713497
+      inWeight: 0.31955886
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  SpinHorizontalSpeed: 10
   MaxFallVelocity: -10
   Gravity: -16.666666
   FallingGravity: -24

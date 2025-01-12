@@ -34,6 +34,8 @@ public class PlayerMovementStats : ScriptableObject
     public float DashTime;
     public AnimationCurve DashCurve;
 
+    public float SpinHorizontalSpeed;
+
     // ===== Gravity =====
     [Header("Gravity")]
 
