@@ -58,17 +58,17 @@ MonoBehaviour:
     m_RotationOrder: 4
   SpinHorizontalSpeed: 10
   MaxFallVelocity: -10
-  Gravity: -16.666666
-  FallingGravity: -24
+  Gravity: -22.222221
+  FallingGravity: -32
   WallSlideMaxSpeedTime: 0.5
   WallSlideMaxSpeed: -2
   WallSlideAcceleration: -4
-  MaxJumpHeight: 0.75
+  MaxJumpHeight: 1
   MinJumpHeight: 0.01
-  MinJumpTime: 0.0039999997
+  MinJumpTime: 0.003
   TimeToMaxHeight: 0.3
   TimeToGround: 0.25
-  JumpVelocity: 5
+  JumpVelocity: 6.6666665
   GravityMultiplierWhenRelease: 4
   CoyoteTime: 0.175
   JumpBuffer: 0.15

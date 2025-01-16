@@ -91,7 +91,7 @@ public class PlayerMovement : MonoBehaviour
     // Returns if can start charging spin
     public void ChargeSpin()
     {
-        isCharging = true;
+        // isCharging = true;
         velocity = Vector2.zero;
     }
 

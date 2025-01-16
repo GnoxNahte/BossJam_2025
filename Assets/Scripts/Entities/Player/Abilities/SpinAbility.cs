@@ -18,6 +18,7 @@ public class SpinAbility : PlayerAbilityBase
     {
         Name = "Spin";
         Type = PlayerAbilitySystem.Type.Spin;
+        IfShowInUI = false;
     }
     #endregion
 

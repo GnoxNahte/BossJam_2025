@@ -12,6 +12,9 @@ public class GameUIManager : MonoBehaviour
     {
         foreach (var ability in playerAbilitySystem.Abilities)
         {
+            if (!ability.Value.IfShowInUI)
+                continue;
+            
             GameObject abilityUI_GO = Instantiate(abilityUIPrefab, abilityUIParent);
             AbilityUI abilityUI = abilityUI_GO.GetComponent<AbilityUI>();
 

@@ -64,8 +64,9 @@ public class PlayerAppearance : MonoBehaviour
         // float angle = Mathf.Atan2(_playerMovement.FacingDirection.y, _playerMovement.FacingDirection.x) * Mathf.Rad2Deg;
         // sr.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
-        Vector3 newScale = new Vector3(_playerMovement.FacingDirection.x > 0 ? 1f : -1f, 1f, 1f);
-        sr.transform.localScale = newScale * 0.3f;
+        bool ifFacingLeft = _playerMovement.FacingDirection.x < 0;
+        Vector3 newScale = new Vector3(ifFacingLeft ? 1f : -1f, 1f, 1f);
+        sr.flipX = ifFacingLeft;
         attackParent.localScale = newScale;
         attackParent.localPosition = new Vector3(
             (_playerMovement.FacingDirection.x > 0 ? 1f : -1f) * Mathf.Abs(attackParent.localPosition.x),
