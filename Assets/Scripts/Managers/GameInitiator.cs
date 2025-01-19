@@ -17,6 +17,7 @@ public class GameInitiator : MonoBehaviour
     
     [Header("Game Objects")]
     public GameObject Player;
+    public GameObject BorderTriggersPrefab;
 
     [Header("Temp")] 
     [SerializeField] private Transform playerStart;
@@ -33,11 +34,11 @@ public class GameInitiator : MonoBehaviour
     #region Private Methods
     private async Awaitable LoadGame()
     {
-        await InstantiatePrefabs();
-        
         // await SceneManager.LoadSceneAsync("Boss 1", LoadSceneMode.Additive);
         if (!SceneManager.GetSceneByName("TestLevel").isLoaded && !SceneManager.GetSceneByName("MainMenuLevel").isLoaded)
             await SceneManager.LoadSceneAsync("MainMenuLevel", LoadSceneMode.Additive);
+            
+        await InstantiatePrefabs();
     }
 
     private async Awaitable InstantiatePrefabs()
@@ -61,6 +62,20 @@ public class GameInitiator : MonoBehaviour
         cameraManager.Init(player);
         gameUIManager.Init(player.PlayerAbilitySystem);
         inputManager.Init(player.PlayerAbilitySystem);
+        
+        // === Init other objects ===
+        Camera mainCamera = Camera.main;
+        Debug.Assert(mainCamera);
+        
+        Vector3 leftBorderPos = mainCamera.ViewportToWorldPoint(new Vector3(0, 0.5f, 0));
+        GameObject leftBorder = Instantiate(BorderTriggersPrefab, leftBorderPos, Quaternion.identity, mainCamera.transform);
+        
+        Vector3 rightBorderPos = mainCamera.ViewportToWorldPoint(new Vector3(1f, 0.5f, 0));
+        GameObject rightBorder = Instantiate(BorderTriggersPrefab, rightBorderPos, Quaternion.identity, mainCamera.transform);
+
+        BossShip boss = FindAnyObjectByType<BossShip>();
+        if (boss)
+            boss.Init(player, leftBorder, rightBorder);
     }
     #endregion
 }

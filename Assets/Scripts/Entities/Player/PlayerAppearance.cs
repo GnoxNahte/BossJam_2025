@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class PlayerAppearance : MonoBehaviour
 {
+
     #region Serialized Variables
 
     [SerializeField] private SpriteRenderer sr;
@@ -15,11 +16,13 @@ public class PlayerAppearance : MonoBehaviour
     
     // Anim IDs
     // TODO: Consider calling animation states directly instead of using Triggers
-    private readonly int _onAttackAnimID = Animator.StringToHash("OnAttack");
-    private readonly int _onDashAnimID = Animator.StringToHash("OnDash");
-    private readonly int _onSpinChargeAnimID = Animator.StringToHash("OnSpinCharge");
-    private readonly int _onSpinAnimID = Animator.StringToHash("OnSpin");
-    private readonly int _onSpinEndId = Animator.StringToHash("OnSpinEnd");
+    private static readonly int AnimId_OnAttack = Animator.StringToHash("OnAttack");
+    private static readonly int AnimID_OnDash = Animator.StringToHash("OnDash");
+    private static readonly int AnimId_OnSpinCharge = Animator.StringToHash("OnSpinCharge");
+    private static readonly int AnimId_OnSpin = Animator.StringToHash("OnSpin");
+    private static readonly int AnimID_OnSpinEnd = Animator.StringToHash("OnSpinEnd");
+
+    private static readonly int AnimId_OnDeath = Animator.StringToHash("OnDeath");
     #endregion
     
     #region Public Methods
@@ -29,10 +32,10 @@ public class PlayerAppearance : MonoBehaviour
     {
         switch (type)
         {
-            case PlayerAbilitySystem.Type.Attack: _animator.SetTrigger(_onAttackAnimID); break;
-            case PlayerAbilitySystem.Type.Dash: _animator.SetTrigger(_onDashAnimID); break;
-            case PlayerAbilitySystem.Type.SpinCharge: _animator.SetTrigger(_onSpinChargeAnimID); break;
-            case PlayerAbilitySystem.Type.Spin: _animator.SetTrigger(_onSpinAnimID); break;
+            case PlayerAbilitySystem.Type.Attack: _animator.SetTrigger(AnimId_OnAttack); break;
+            case PlayerAbilitySystem.Type.Dash: _animator.SetTrigger(AnimID_OnDash); break;
+            case PlayerAbilitySystem.Type.SpinCharge: _animator.SetTrigger(AnimId_OnSpinCharge); break;
+            case PlayerAbilitySystem.Type.Spin: _animator.SetTrigger(AnimId_OnSpin); break;
             default: Debug.LogError("Player Animator: Activating unknown ability - " + type); break;
         }
     }
@@ -41,12 +44,12 @@ public class PlayerAppearance : MonoBehaviour
     {
         switch (type)
         {
-            case PlayerAbilitySystem.Type.Spin: _animator.SetTrigger(_onSpinEndId); break;
+            case PlayerAbilitySystem.Type.Spin: _animator.SetTrigger(AnimID_OnSpinEnd); break;
             // default: Debug.LogError("Player Animator: Activating unknown ability - " + type); break;
         }
     }
 
-    public void Init(PlayerMovement playerMovement)
+    public void Init(PlayerMovement playerMovement, Health health)
     {
         _playerMovement = playerMovement;
     }
@@ -77,6 +80,9 @@ public class PlayerAppearance : MonoBehaviour
     #endregion
     
     #region Private Methods
-    
+    private void OnDeath()
+    {
+        _animator.SetTrigger(AnimId_OnDeath);
+    }
     #endregion
 }

@@ -1,0 +1,1050 @@
+fileFormatVersion: 2
+guid: c7aa946da20a02b49a5543b90a09102f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9112492075707488676
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_0
+  - first:
+      213: 3519322616180057334
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_1
+  - first:
+      213: -7248773257255831676
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_2
+  - first:
+      213: 2890063164249545499
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_3
+  - first:
+      213: 6875785799786542416
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_4
+  - first:
+      213: -8345270423018669609
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_5
+  - first:
+      213: 8879402385021175804
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_6
+  - first:
+      213: 5199870338142398959
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_7
+  - first:
+      213: -1338102856259312715
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_8
+  - first:
+      213: 5272574477960572979
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_9
+  - first:
+      213: 8392237032530252811
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_10
+  - first:
+      213: 9081357479904468216
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_11
+  - first:
+      213: 7120429454839730390
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_12
+  - first:
+      213: 6742097614600415103
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_13
+  - first:
+      213: 1592510282963107749
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_14
+  - first:
+      213: -2989531311061977415
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_15
+  - first:
+      213: 2613842067051364937
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_16
+  - first:
+      213: 2930814025276454422
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_17
+  - first:
+      213: 7157392076599316850
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_18
+  - first:
+      213: 4621013877191996673
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_19
+  - first:
+      213: -5070425105188105936
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_20
+  - first:
+      213: 7252727718946424782
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_21
+  - first:
+      213: -7051228675626112586
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_22
+  - first:
+      213: -3893460803017273261
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_23
+  - first:
+      213: 5617259547892563711
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_24
+  - first:
+      213: 5124562680514934475
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_25
+  - first:
+      213: -8401244385760230794
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_26
+  - first:
+      213: -2669116390772316781
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_27
+  - first:
+      213: -7390261133686461964
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_28
+  - first:
+      213: -2648239496383261626
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_29
+  - first:
+      213: 3919936078594808739
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_30
+  - first:
+      213: -8656018025757853545
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_31
+  - first:
+      213: -1904782837893786898
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_32
+  - first:
+      213: 2956606407460539649
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_33
+  - first:
+      213: -5753295863548614837
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_34
+  - first:
+      213: 8339750090427132246
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_35
+  - first:
+      213: -4684176140312259983
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_36
+  - first:
+      213: 1856124096882071697
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_37
+  - first:
+      213: -601366124664300463
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_38
+  - first:
+      213: -7380979579648335223
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_39
+  - first:
+      213: 7546335514373821404
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_40
+  - first:
+      213: -3303922056417814610
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_41
+  - first:
+      213: -6667407955406049694
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_42
+  - first:
+      213: 6704521102629841800
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_43
+  - first:
+      213: -729733492353000592
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_44
+  - first:
+      213: -7676173945309489076
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_45
+  - first:
+      213: -7268236175400693656
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_46
+  - first:
+      213: -525973616492674144
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_47
+  - first:
+      213: 2565900061847191088
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_48
+  - first:
+      213: 8840866251276336142
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_49
+  - first:
+      213: -1217077800476289085
+    second: ENEMY_BOSS_2_SECUENCE-Sheet_sequence_50
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boss_Ship_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1484
+        width: 254
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 80, y: -36}
+        - {x: 90, y: -23}
+        - {x: 90, y: -14}
+        - {x: 80, y: -5}
+        - {x: 75, y: -4}
+        - {x: 55, y: 11}
+        - {x: 61, y: 18}
+        - {x: 68, y: 25}
+        - {x: 78, y: 27}
+        - {x: 82, y: 33}
+        - {x: 84, y: 44}
+        - {x: 83, y: 52}
+        - {x: 78, y: 55}
+        - {x: 60, y: 56}
+        - {x: 53, y: 49}
+        - {x: 48, y: 47}
+        - {x: 37, y: 42}
+        - {x: 31, y: 59}
+        - {x: 32, y: 63}
+        - {x: 33, y: 68}
+        - {x: 32, y: 70}
+        - {x: 17, y: 70}
+        - {x: 7, y: 67}
+        - {x: -7, y: 58}
+        - {x: -23, y: 42}
+        - {x: -26, y: 43}
+        - {x: -52, y: 42}
+        - {x: -58, y: 41}
+        - {x: -61, y: 40}
+        - {x: -78, y: 32}
+        - {x: -82, y: 30}
+        - {x: -92, y: 18}
+        - {x: -92, y: 5}
+        - {x: -87, y: 0}
+        - {x: -79, y: -1}
+        - {x: -56, y: -10}
+        - {x: -50, y: -11}
+        - {x: -42, y: -18}
+        - {x: -37, y: -20}
+        - {x: -27, y: -22}
+        - {x: -5, y: -24}
+        - {x: 12, y: -26}
+        - {x: 25, y: -20}
+        - {x: 29, y: -16}
+        - {x: 49, y: -32}
+        - {x: 54, y: -31}
+        - {x: 60, y: -38}
+        - {x: 67, y: -39}
+        - {x: 76, y: -39}
+      - - {x: 91, y: -11}
+        - {x: 91, y: -8}
+        - {x: 88, y: -7}
+        - {x: 86, y: -9}
+        - {x: 88, y: -12}
+      tessellationDetail: 0.4
+      bones: []
+      spriteID: 203593b0f782c5b4fb6b548a1bec81d3
+      internalID: -1885155273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ship_1
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1484
+        width: 254
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ffab5825b45584a81eda1212d26626
+      internalID: -2077002519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ship_2
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 1484
+        width: 254
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db3282a165d1db84a8f54315dc6ed36e
+      internalID: 1551708984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ship_3
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 1484
+        width: 254
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8219405596c464240a2eb1f01bf2ea70
+      internalID: -497685672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ship_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1272
+        width: 254
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e001b0f4a7124b49b00b97300b7fd52
+      internalID: 183234968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ship_5
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1272
+        width: 254
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68848701be72b94fb207cbe286f363c
+      internalID: 100854748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ship_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1060
+        width: 254
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba51215d32b751e4bacd2ec7dd3dd345
+      internalID: -703901802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ship_7
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1060
+        width: 254
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aefb82e15bd6af4cb1f93af5de32253
+      internalID: -1647638019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ship_8
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 1060
+        width: 254
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c975a987771abf24a90fbff0017c932b
+      internalID: 1343050129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ship_9
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 1060
+        width: 254
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7775834170cd96d4b95d7190484a0c67
+      internalID: -764726561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ship_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 848
+        width: 254
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa9a5552b98473f429060898b944ecb9
+      internalID: 1990659984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ship_11
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 848
+        width: 254
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d9195480ad357041a416a748667de93
+      internalID: 85124333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ship_12
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 848
+        width: 254
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229ae35aae5c72546bb8327013e49162
+      internalID: -1879820705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ship_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 636
+        width: 254
+        height: 212
+      alignment: 9
+      pivot: {x: 0.48818898, y: 0.4528302}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc7d58b7532d6f45a195d2a8cb8c03c
+      internalID: -25499765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ship_14
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 636
+        width: 254
+        height: 212
+      alignment: 9
+      pivot: {x: 0.48818898, y: 0.4528302}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb8c0b02dc315f4bafb1ed6760b0d53
+      internalID: -1739706071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ship_15
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 636
+        width: 254
+        height: 212
+      alignment: 9
+      pivot: {x: 0.48818898, y: 0.4528302}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ce1ee02a1195543bee87d5b456638b
+      internalID: -1646637102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ship_16
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 636
+        width: 254
+        height: 212
+      alignment: 9
+      pivot: {x: 0.48818898, y: 0.4528302}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c47f61330445a284d97bd3117d9ea1a5
+      internalID: -410902294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ship_17
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 636
+        width: 254
+        height: 212
+      alignment: 9
+      pivot: {x: 0.48818898, y: 0.4528302}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f78616c27e6c81f4dbc1e924a9f322ba
+      internalID: 1289144447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ship_18
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 636
+        width: 254
+        height: 212
+      alignment: 9
+      pivot: {x: 0.48818898, y: 0.4528302}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b058653039ea447b7b693322067ec3
+      internalID: 1469627291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ship_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 424
+        width: 254
+        height: 212
+      alignment: 9
+      pivot: {x: 0.4566929, y: 0.46698114}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cdd4bed4f3f14140b6cf426f36ba882
+      internalID: -443125522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ship_20
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 424
+        width: 254
+        height: 212
+      alignment: 9
+      pivot: {x: 0.4094488, y: 0.46698114}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 837cadf1b95609046b2bb45024bf4acd
+      internalID: 1524005343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ship_21
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 424
+        width: 254
+        height: 212
+      alignment: 9
+      pivot: {x: 0.35826772, y: 0.4528302}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20fe749270733274c9566374be51051e
+      internalID: 870649162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ship_22
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 424
+        width: 254
+        height: 212
+      alignment: 9
+      pivot: {x: 0.2874016, y: 0.46698114}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f10348c403289b48ab06713ad839d46
+      internalID: 1519554527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ship_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 212
+        width: 254
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce55d4ac73f164644a0e71522f3cf17e
+      internalID: -752958691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ship_24
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 212
+        width: 254
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45985a1b86d20ad4fa27a136091f7968
+      internalID: 1254770279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ship_25
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 212
+        width: 254
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23943e3e01d86cc489f54666bdf57d65
+      internalID: -1083549927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ship_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 254
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2b25496291d7345b79dce994b9e3bc
+      internalID: -122571505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ship_27
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 0
+        width: 254
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 445ebdf5205db6c4a84390281d86e1f9
+      internalID: -652139467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ship_28
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 0
+        width: 254
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b3f8557500b094799b6b832393b124
+      internalID: 204866577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ship_29
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 0
+        width: 254
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5701d01512c0b9d4b9b0cb4ce4d7507b
+      internalID: 1587606721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ship_30
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 0
+        width: 254
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4211f2b44233f4344bd3ed3b78365717
+      internalID: -730163917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b25495652847497439297874d27d2752
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Boss_Ship_0: -1885155273
+      Boss_Ship_1: -2077002519
+      Boss_Ship_10: 1990659984
+      Boss_Ship_11: 85124333
+      Boss_Ship_12: -1879820705
+      Boss_Ship_13: -25499765
+      Boss_Ship_14: -1739706071
+      Boss_Ship_15: -1646637102
+      Boss_Ship_16: -410902294
+      Boss_Ship_17: 1289144447
+      Boss_Ship_18: 1469627291
+      Boss_Ship_19: -443125522
+      Boss_Ship_2: 1551708984
+      Boss_Ship_20: 1524005343
+      Boss_Ship_21: 870649162
+      Boss_Ship_22: 1519554527
+      Boss_Ship_23: -752958691
+      Boss_Ship_24: 1254770279
+      Boss_Ship_25: -1083549927
+      Boss_Ship_26: -122571505
+      Boss_Ship_27: -652139467
+      Boss_Ship_28: 204866577
+      Boss_Ship_29: 1587606721
+      Boss_Ship_3: -497685672
+      Boss_Ship_30: -730163917
+      Boss_Ship_4: 183234968
+      Boss_Ship_5: 100854748
+      Boss_Ship_6: -703901802
+      Boss_Ship_7: -1647638019
+      Boss_Ship_8: 1343050129
+      Boss_Ship_9: -764726561
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

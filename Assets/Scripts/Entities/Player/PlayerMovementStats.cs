@@ -88,6 +88,8 @@ public class PlayerMovementStats : ScriptableObject
 
     [Tooltip("Horizontal jump velocity when wall jumping (When horizontal input towards wall)")]
     public float WallJumpHorizontalVelocityTowardsWall;
+    
+    public Vector2 SpinHitVelocity;
 
     [Header("Others")]
 

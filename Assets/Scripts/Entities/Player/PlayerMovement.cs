@@ -228,7 +228,7 @@ public class PlayerMovement : MonoBehaviour
         // Stop and apply knockback if collided
         if (leftWallChecker.IsColliding || rightWallChecker.IsColliding)
         {
-            velocity = new Vector2(stats.WallJumpHorizontalVelocity, stats.JumpVelocity);
+            velocity = stats.SpinHitVelocity;
             if (rightWallChecker.IsColliding)
                 velocity.x *= -1; // Flip horizontal velocity
             

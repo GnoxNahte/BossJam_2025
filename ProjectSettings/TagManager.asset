@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - PlayerStartPos
+  - CameraBorders
   layers:
   - Default
   - TransparentFX
@@ -16,13 +17,13 @@ TagManager:
   - 
   - 
   - 
+  - Boss
+  - BossProjectile
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - PlayerProjectile
   - 
   - 
   - 
