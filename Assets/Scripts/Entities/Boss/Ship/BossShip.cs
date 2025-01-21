@@ -15,6 +15,7 @@ public class BossShip : BossBase
     
     #region Serialized Variables
     [SerializeField] [ReadOnly] private State currState = State.Preparing;
+    [SerializeField] [ReadOnly] private State nextState = State.Preparing;
     [Header("Preparing")]
     [SerializeField] private float prepareTime = 1.5f;
     [SerializeField] private GameObject attackWarningPrefab;
@@ -29,6 +30,7 @@ public class BossShip : BossBase
     [SerializeField] private float firingCooldown;
     [Header("References")]
     [SerializeField] private SpriteRenderer sr;
+    [SerializeField] private GameObject lighting;
 
     [SerializeField] private ObjectPool bombPool;
     #endregion
@@ -37,7 +39,7 @@ public class BossShip : BossBase
 
     private bool _isMovingRight;
     private float _prepareTimeLeft;
-    private SmoothVerticalFollow _attackWarning;
+    private AttackWarningFlashing _attackWarning;
     
     private float _attackCooldownLeft;
     
@@ -59,7 +61,7 @@ public class BossShip : BossBase
     {
         base.Init(player);
         
-        _attackWarning.SetTargetAndPosition(Player.TargetShipBombing);
+        _attackWarning.follow.SetTargetAndPosition(Player.TargetShipBombing);
         ChangeState(State.Preparing);
         
         _leftBorder = leftBorder;
@@ -84,7 +86,7 @@ public class BossShip : BossBase
     {
         Camera gameCamera = Camera.main;
         GameObject attackWarningGameObj = Instantiate(attackWarningPrefab, gameCamera?.transform);
-        _attackWarning = attackWarningGameObj.GetComponent<SmoothVerticalFollow>();
+        _attackWarning = attackWarningGameObj.GetComponent<AttackWarningFlashing>();
         bombPool.transform.SetParent(null);
     }
 
@@ -110,9 +112,13 @@ public class BossShip : BossBase
             case State.Preparing:
             {
                 _prepareTimeLeft -= Time.deltaTime;
+                _attackWarning.SetTimeLeftPercentage(_prepareTimeLeft / prepareTime);
                 if (_prepareTimeLeft <= 0)
-                    ChangeState(State.Firing);
+                {
+                    // ChangeState(State.Firing);
                     // ChangeState(Random.value < 0.5f ? State.Bombing : State.Firing);
+                    ChangeState(nextState);
+                }
                 break;
             }
             case State.Bombing:
@@ -149,15 +155,18 @@ public class BossShip : BossBase
     private void ChangeState(State newState)
     {
         print("Changing state: " + currState + " -> " + newState);
+        Debug.Assert(newState != currState, "Setting next state to the same current state: " + currState);
         
         _attackCooldownLeft = -1f;
         _animator.SetBool(AnimId_IsBombing, false);
-        _animator.SetBool(AnimId_IsBombing, false);
+        _animator.SetBool(AnimId_IsFiring, false);
         
         switch (newState)
         {
             case State.Preparing: 
                 _prepareTimeLeft = prepareTime;
+                nextState = Random.value < 0.5f ? State.Bombing : State.Firing;
+                _attackWarning.follow.SetTargetAndPosition(nextState == State.Bombing ? Player.TargetShipBombing : Player.TargetCenter);
                 break;
             case State.Bombing:
             case State.Firing:
@@ -167,7 +176,7 @@ public class BossShip : BossBase
                 // _rb.simulated = false;
                 transform.localScale = new Vector3(_isMovingRight ? -1f : 1f, transform.localScale.y, transform.localScale.z);
                 Vector2 pos = new Vector2(Camera.main.ViewportToWorldPoint(Vector2.right * (_isMovingRight ? -0.2f : 1.2f)).x,
-                                            _attackWarning.transform.position.y);
+                    _attackWarning.transform.position.y);
                 // _rb.MovePosition(pos);
                 transform.position = pos;
                 // _rb.simulated = true;
@@ -176,19 +185,20 @@ public class BossShip : BossBase
                 {
                     _attackCooldownLeft = bombingCooldown;
                     _animator.SetBool(AnimId_IsBombing, true);
-                    _attackWarning.SetTargetAndPosition(Player.TargetShipBombing);
+                    // _attackWarning.SetTargetAndPosition(Player.TargetShipBombing);
                 }
                 else
                 {
                     _attackCooldownLeft = firingCooldown;
                     _animator.SetBool(AnimId_IsFiring, true);
-                    _attackWarning.SetTargetAndPosition(Player.TargetCenter);
+                    // _attackWarning.SetTargetAndPosition(Player.TargetCenter);
                 }
                 break;
         }
         
         bool isPreparing = newState == State.Preparing;
         sr.enabled = !isPreparing;
+        lighting.SetActive(!isPreparing);
         _rb.simulated = !isPreparing;
         _attackWarning.gameObject.SetActive(isPreparing);
         currState = newState;

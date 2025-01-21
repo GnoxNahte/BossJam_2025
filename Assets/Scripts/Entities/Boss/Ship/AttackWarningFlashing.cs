@@ -10,6 +10,7 @@ public class AttackWarningFlashing : MonoBehaviour
     private Vector2 range;
 
     [SerializeField] private AnimationCurve durationCurve;
+    [field: SerializeField] public SmoothVerticalFollow follow { get; private set; }
     #endregion
     
     #region Private Variables
@@ -33,6 +34,7 @@ public class AttackWarningFlashing : MonoBehaviour
     private void Awake()
     {
         _sr = GetComponent<SpriteRenderer>();
+        follow = GetComponent<SmoothVerticalFollow>();
     }
 
     private void Update()
