@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class Bomb : MonoBehaviour
 {
+    [field: SerializeField] public Vector2 PlayerKnockbackSpeed { get; private set; }
+
     private Animator _animator;
     private Rigidbody2D _rb;
     private ObjectPool _objectPool;
@@ -15,17 +17,17 @@ public class Bomb : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
     }
 
-    private void OnEnable()
-    {
-        _animator.SetTrigger(AnimId_Reset);
-        _rb.simulated = true;
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
         _animator.SetTrigger(AnimId_OnExplode);
         _rb.linearVelocity = Vector2.zero;
         _rb.simulated = false;
+    }
+
+    private void OnEnable()
+    {
+        _animator.SetTrigger(AnimId_Reset);
+        _rb.simulated = true;
     }
 
     public void OnAnimationFinish()

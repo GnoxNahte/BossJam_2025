@@ -1,18 +1,21 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using VInspector;
 
 // Game Object Pool. Written by GnoxNahte
 public class ObjectPool : MonoBehaviour
 {
     [SerializeField] GameObject prefab;
-    [SerializeField] List<GameObject> objs;
-    [SerializeField] List<GameObject> inactiveObjs;
+    [SerializeField] private int startCount;
+    [SerializeField] [ReadOnly] List<GameObject> objs;
+    [SerializeField] [ReadOnly] List<GameObject> inactiveObjs;
 
-    [SerializeField] private int totalObjsCount;
-    [SerializeField] private int activeObjsCount;
-    [SerializeField] private int inactiveObjsCount;
+    [SerializeField] [ReadOnly] private int totalObjsCount;
+    [SerializeField] [ReadOnly] private int activeObjsCount;
+    [SerializeField] [ReadOnly] private int inactiveObjsCount;
 
     [SerializeField] private bool ifCheckInactive;
 
@@ -20,7 +23,21 @@ public class ObjectPool : MonoBehaviour
 
     public bool initDone { get; private set; }
 
-    public void Init(int startCapacity = 100)
+    private void Start()
+    {
+        Init(startCount);
+    }
+
+    private void Update()
+    {
+#if UNITY_EDITOR
+        totalObjsCount = objs.Count;
+        inactiveObjsCount = inactiveObjs.Count;
+        activeObjsCount = totalObjsCount - inactiveObjsCount;
+#endif
+    }
+
+    private void Init(int startCapacity = 100)
     {
         objs = new List<GameObject>(startCapacity);
         inactiveObjs = new List<GameObject>(startCapacity);
@@ -42,16 +59,7 @@ public class ObjectPool : MonoBehaviour
 
         initDone = true;
     }
-
-    private void Update()
-    {
-#if UNITY_EDITOR
-        totalObjsCount = objs.Count;
-        inactiveObjsCount = inactiveObjs.Count;
-        activeObjsCount = totalObjsCount - inactiveObjsCount;
-#endif
-    }
-
+    
     public GameObject Get(Vector2 position)
     {
         return Get(position, Quaternion.identity);

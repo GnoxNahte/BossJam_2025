@@ -1,12 +1,17 @@
+using System;
 using UnityEngine;
 using VInspector;
 
 public class PlayerMovement : MonoBehaviour
 {
     #region Public Variables
-    
+    public bool IsInAir => isInAir;
     public Vector2 Velocity => velocity; 
-    public Vector2 FacingDirection => _facingDirection; 
+    public Vector2 FacingDirection => _facingDirection;
+    public bool IsSpinning => isSpinning || isCharging;
+    public bool IsDead => isDead;
+    
+    public Action OnHit;
     #endregion
     
     #region Serialized Variables
@@ -20,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] protected PlatformCollisionTracker rightWallChecker;
     
     [SerializeField] protected AudioSource landSFX;
+
+    [SerializeField] private ObjectPool shockwavePool;
     
     // Read only, for debugging
     [Header("Tracking Variables")]
@@ -49,6 +56,8 @@ public class PlayerMovement : MonoBehaviour
     private bool isCharging;
     [SerializeField] [ReadOnly]
     private bool isSpinning;
+    [SerializeField] [ReadOnly]
+    private bool isDead;
     
     #endregion
     
@@ -91,7 +100,7 @@ public class PlayerMovement : MonoBehaviour
     // Returns if can start charging spin
     public void ChargeSpin()
     {
-        // isCharging = true;
+        isCharging = true;
         velocity = Vector2.zero;
     }
 
@@ -108,6 +117,8 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
+
+        shockwavePool.transform.parent = null;
     }
 
     private void Update()
@@ -119,7 +130,8 @@ public class PlayerMovement : MonoBehaviour
         else
             ifReleaseJumpAfterJumping = true;
 
-        if (_input.MoveDir.x != 0 && !(isCharging || isSpinning))
+        // if (_input.MoveDir != Vector2.zero && !(isCharging || isSpinning))
+        if (_input.MoveDir != Vector2.zero)
             _facingDirection = _input.MoveDir;
     }
 
@@ -143,6 +155,29 @@ public class PlayerMovement : MonoBehaviour
         _rb.MovePosition(_rb.position + totalMoveAmt);
     }
 
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        BossBase boss = other.gameObject.GetComponent<BossBase>();
+        if (boss)
+        {
+            ContactPoint2D contactPoint = other.contacts[0];
+            ApplyKnockback(contactPoint.normal, boss.PlayerKnockbackSpeed);
+            OnHit?.Invoke();
+
+            GameObject shockwave = shockwavePool.Get(contactPoint.point);
+            shockwave.GetComponent<Shockwave>().Init(shockwavePool);
+            return;
+        }
+        
+        Bomb bomb = other.gameObject.GetComponent<Bomb>();
+        if (bomb)
+        {
+            ApplyKnockback(other.contacts[0].normal, bomb.PlayerKnockbackSpeed);
+            OnHit?.Invoke();
+            return;
+        }
+    }
+
     #endregion
     
     #region Private Methods
@@ -150,8 +185,8 @@ public class PlayerMovement : MonoBehaviour
     // Updates horizontal velocity
     private void HorizontalMovement()
     {
-        if (isCharging)
-            return;
+        // if (isCharging)
+        //     return;
         
         if (dashTimeLeft > 0f)
         {
@@ -215,8 +250,8 @@ public class PlayerMovement : MonoBehaviour
         
         HandleGravity();
         
-        if (!isCharging)
-            HandleJump();
+        // if (!isCharging)
+        HandleJump();
     }
 
     private void SpinningMovement()
@@ -364,6 +399,17 @@ public class PlayerMovement : MonoBehaviour
         lastGroundedTime = float.MinValue;
         lastJumpTime = Time.realtimeSinceStartup;
         ifReleaseJumpAfterJumping = false;
+    }
+
+    // contactDirection - Direction from contact point to player
+    private void ApplyKnockback(Vector2 contactDirection, Vector2 speed)
+    {
+        velocity = speed * contactDirection.normalized;
+
+        if (velocity.y < 0f)
+            velocity.y *= 0.5f; // Down knockback is too strong, partly because of increased gravity when going down
+        
+        print("Knockback final vel: " + velocity);
     }
     
     private void ResetPlayer()

@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 5761712111559734208, guid: a762e37e561eda942ab8a0443b985397, type: 3}
+  startCount: 15
   objs: []
   inactiveObjs: []
   totalObjsCount: 0
@@ -165,9 +166,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21bb0d23bb7a7d245adf9563b0aeb1e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <PlayerKnockbackSpeed>k__BackingField: {x: 10, y: 15}
   currState: 0
   nextState: 0
-  prepareTime: 7
+  prepareTime: 1
   attackWarningPrefab: {fileID: 3921491619297347814, guid: aad22f36d1a43e54f8cc5b139669f2a1, type: 3}
   bombingSpawnPos: {fileID: 8427356829703871960}
   bombingMoveSpeed: 8
@@ -380,7 +382,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0

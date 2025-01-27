@@ -57,7 +57,7 @@ Transform:
   m_GameObject: {fileID: 590244215278099789}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.213, z: 0}
+  m_LocalPosition: {x: 0, y: 0.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -204,7 +204,7 @@ Transform:
   m_GameObject: {fileID: 660553845734959788}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.5, z: 0}
+  m_LocalPosition: {x: 0, y: 2.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -286,7 +286,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2311659948842064771, guid: ad021f7504987534f9bc179d81085832, type: 3}
+  m_Sprite: {fileID: 124385486, guid: 3daa1bed97fd30a40af5835c5e9ed3ce, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -435,6 +435,58 @@ MonoBehaviour:
   <CooldownTimeLeft>k__BackingField: 0
   <IsActive>k__BackingField: 0
   <IfShowInUI>k__BackingField: 1
+--- !u!1 &4123515240698725233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6932263576785632245}
+  - component: {fileID: 5386160578194922931}
+  m_Layer: 0
+  m_Name: ShockwavePool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6932263576785632245
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4123515240698725233}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2630409140149579082}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5386160578194922931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4123515240698725233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f8667e8ba185e546ab03dc2a826e63e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 5935747484678710166, guid: ac6342f274b260745a4a6a821878df29, type: 3}
+  startCount: 3
+  objs: []
+  inactiveObjs: []
+  totalObjsCount: 0
+  activeObjsCount: 0
+  inactiveObjsCount: 0
+  ifCheckInactive: 0
 --- !u!1 &4421792695844560069
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,6 +1116,7 @@ Transform:
   - {fileID: 6204780708571062698}
   - {fileID: 81667361043763338}
   - {fileID: 3800336722322912954}
+  - {fileID: 6932263576785632245}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1804797769028365432
@@ -1099,6 +1152,7 @@ MonoBehaviour:
   leftWallChecker: {fileID: 6394226183721352939}
   rightWallChecker: {fileID: 3523840535987174334}
   landSFX: {fileID: 0}
+  shockwavePool: {fileID: 5386160578194922931}
   velocity: {x: 0, y: 0}
   lastJumpPressed: 0
   lastGroundedTime: 0
@@ -1108,6 +1162,7 @@ MonoBehaviour:
   dashTimeLeft: 0
   isCharging: 0
   isSpinning: 0
+  isDead: 0
 --- !u!114 &9210179023277053121
 MonoBehaviour:
   m_ObjectHideFlags: 0

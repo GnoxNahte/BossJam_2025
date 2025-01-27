@@ -23,7 +23,8 @@ public class TransitionToGame : MonoBehaviour
         print("Load Game");
         SceneManager.LoadScene("GameScene", LoadSceneMode.Single);
         print("Load Scene");
-        await SceneManager.LoadSceneAsync("TestLevel", LoadSceneMode.Additive);
+        SceneManager.LoadScene("TestLevel", LoadSceneMode.Additive);
+        // await SceneManager.LoadSceneAsync("TestLevel", LoadSceneMode.Additive);
         print("Done");
     }
 

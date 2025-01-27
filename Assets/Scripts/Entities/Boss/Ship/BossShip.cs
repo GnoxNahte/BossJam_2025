@@ -42,6 +42,8 @@ public class BossShip : BossBase
     private AttackWarningFlashing _attackWarning;
     
     private float _attackCooldownLeft;
+
+    private bool _isInitDone = false;
     
     private GameObject _leftBorder, _rightBorder;
     
@@ -60,14 +62,14 @@ public class BossShip : BossBase
     public void Init(Player player, GameObject leftBorder, GameObject rightBorder)
     {
         base.Init(player);
-        
+        print("Init boss ship");   
         _attackWarning.follow.SetTargetAndPosition(Player.TargetShipBombing);
         ChangeState(State.Preparing);
         
         _leftBorder = leftBorder;
         _rightBorder = rightBorder;
         
-        bombPool.Init(20);
+        _isInitDone = true;
     }
 
     #endregion
@@ -80,13 +82,15 @@ public class BossShip : BossBase
         
         _rb = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
+        
+        Camera gameCamera = Camera.main;
+        GameObject attackWarningGameObj = Instantiate(attackWarningPrefab, gameCamera?.transform);
+        _attackWarning = attackWarningGameObj.GetComponent<AttackWarningFlashing>();
+
     }
 
     private void Start()
     {
-        Camera gameCamera = Camera.main;
-        GameObject attackWarningGameObj = Instantiate(attackWarningPrefab, gameCamera?.transform);
-        _attackWarning = attackWarningGameObj.GetComponent<AttackWarningFlashing>();
         bombPool.transform.SetParent(null);
     }
 
@@ -129,14 +133,24 @@ public class BossShip : BossBase
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    // private void OnTriggerEnter2D(Collider2D other)
+    // {
+    //     Player player = other.gameObject.GetComponent<Player>();
+    //     if (player != null)
+    //     {
+    //         _animator.SetTrigger(AnimId_OnHit);
+    //         Health.TakeDamage(player.SpinAttackDamage);
+    //         return;
+    //     }
+    // }
+
+    private void OnCollisionEnter2D(Collision2D other)
     {
         Player player = other.gameObject.GetComponent<Player>();
         if (player != null)
         {
             _animator.SetTrigger(AnimId_OnHit);
             Health.TakeDamage(player.SpinAttackDamage);
-            return;
         }
     }
 
@@ -154,8 +168,13 @@ public class BossShip : BossBase
 
     private void ChangeState(State newState)
     {
-        print("Changing state: " + currState + " -> " + newState);
-        Debug.Assert(newState != currState, "Setting next state to the same current state: " + currState);
+#if UNITY_EDITOR
+        if (_isInitDone)
+        {
+            // print("Changing state: " + currState + " -> " + newState);
+            Debug.Assert(newState != currState, "Setting next state to the same current state: " + currState);
+        }  
+#endif
         
         _attackCooldownLeft = -1f;
         _animator.SetBool(AnimId_IsBombing, false);

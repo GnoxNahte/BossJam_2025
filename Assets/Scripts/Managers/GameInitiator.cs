@@ -43,6 +43,7 @@ public class GameInitiator : MonoBehaviour
 
     private async Awaitable InstantiatePrefabs()
     {
+        print("Init prefabs");
         // === Instantiate Objects ===
         GameObject managerParent = new GameObject("Managers");
         // GameObject inputManagerGO = (await InstantiateAsync(InputManagerPrefab, managerParent.transform))[0];
@@ -76,6 +77,8 @@ public class GameInitiator : MonoBehaviour
         BossShip boss = FindAnyObjectByType<BossShip>();
         if (boss)
             boss.Init(player, leftBorder, rightBorder);
+        else 
+            print("Can't find boss ship");
     }
     #endregion
 }
