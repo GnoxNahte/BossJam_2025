@@ -77,7 +77,7 @@ public class InputManager : MonoBehaviour
         // === Abilities ===
         if (_dash.IsPressed())
             _playerMovement.Dash();
-        if (_charge.IsPressed())
+        if (_charge.WasPressedThisFrame())
             _playerMovement.Spin();
     }
     #endregion

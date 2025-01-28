@@ -56,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] [ReadOnly]
     private float dashTimeLeft;
+    [SerializeField] [ReadOnly]
     private float lastDashTime;
 
     // Stops movement if using ability
@@ -74,6 +75,7 @@ public class PlayerMovement : MonoBehaviour
     
     // Only change when there's input
     private Vector2 _facingDirection;
+    private bool _isLastFacingRight; // For when _facingDirection.x == 0 && _facingDirection.y == (1 or 0)
     
     private Coroutine _invincibilityCoroutine;
     private WaitForSeconds _invincibilityWait;
@@ -104,24 +106,20 @@ public class PlayerMovement : MonoBehaviour
         isSpinning = false;
     }
     
-    public void CancelDash()
-    {
-        dashTimeLeft = -1f;
-        velocity = stats.DashCurve.Evaluate(1f) * _facingDirection;
-    }
-    
-    // Returns if can start charging spin
-    public void ChargeSpin()
-    {
-        dashTimeLeft = -1f;
-    }
-
     public void Spin()
     {
+        if (isSpinning)
+            return;
+        
         dashTimeLeft = -1f;
         
         isSpinning = true;
-        velocity = new Vector2(stats.SpinHorizontalSpeed * (FacingDirection.x > 0 ? 1 : -1), 0f);
+        bool ifGoRight;
+        if (_facingDirection.x != 0)
+            ifGoRight = _facingDirection.x > 0;
+        else
+            ifGoRight = _isLastFacingRight;
+        velocity = new Vector2(stats.SpinHorizontalSpeed * (ifGoRight ? 1 : -1), 0f);
     }
     #endregion
     
@@ -145,7 +143,9 @@ public class PlayerMovement : MonoBehaviour
         else
             ifReleaseJumpAfterJumping = true;
 
-        // if (_input.MoveDir != Vector2.zero && !(isCharging || isSpinning))
+        if (_input.MoveDir.x != 0f)
+            _isLastFacingRight = _input.MoveDir.x > 0f;
+        
         if (_input.MoveDir != Vector2.zero)
             _facingDirection = _input.MoveDir;
     }
@@ -160,6 +160,7 @@ public class PlayerMovement : MonoBehaviour
         
         Vector2 platformMoveAmt = groundChecker.GetPlatformMoveAmt();
         Vector2 totalMoveAmt = platformMoveAmt + velocity * Time.deltaTime;
+        
         _rb.MovePosition(_rb.position + totalMoveAmt);
     }
 
@@ -185,7 +186,7 @@ public class PlayerMovement : MonoBehaviour
             }
             
             ApplyKnockback(contactPoint.normal, entity.KnockbackSpeed);
-            ActivateInvincibility();
+            // ActivateInvincibility();
         }
         
         Bomb bomb = other.gameObject.GetComponent<Bomb>();
@@ -195,7 +196,7 @@ public class PlayerMovement : MonoBehaviour
             ApplyKnockback(contactPoint.normal, bomb.PlayerKnockbackSpeed);
             OnHit?.Invoke(bomb.Damage, contactPoint.point);
             
-            ActivateInvincibility();
+            // ActivateInvincibility();
             return;
         }
     }
@@ -242,6 +243,9 @@ public class PlayerMovement : MonoBehaviour
             }
             
             // Negate 1f - percentage so that the curve goes from left to right.
+            Vector2 dir = _facingDirection;
+            if (dir.x == 0f)
+                dir.x = _isLastFacingRight ? 1f : -1f;
             velocity = stats.DashCurve.Evaluate(1f - dashTimeLeft / stats.DashTime) * _facingDirection;
             
             return;
@@ -429,7 +433,7 @@ public class PlayerMovement : MonoBehaviour
         dashTimeLeft = -1f;
         
         velocity = speed * contactDirection.normalized;
-        Debug.DrawRay(transform.position, contactDirection, Color.red, 1f);
+        Debug.DrawRay(transform.position, velocity, Color.red, 1f);
 
         if (Mathf.Abs(velocity.y) < stats.MinKnockbackVerticalSpeed)
         {
@@ -441,6 +445,10 @@ public class PlayerMovement : MonoBehaviour
         
         Debug.DrawRay(transform.position, velocity, Color.green, 1f);
         print("Knockback final vel: " + velocity);
+        
+        Vector2 totalMoveAmt = velocity * Time.fixedDeltaTime;
+        
+        transform.position = (_rb.position + totalMoveAmt);
     }
 
     private void ActivateInvincibility()
