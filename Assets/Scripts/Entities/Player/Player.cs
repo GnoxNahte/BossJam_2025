@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Player : EntityBase
@@ -27,11 +28,13 @@ public class Player : EntityBase
     
     #region Public Methods
     
-    public void Init(InputManager input)
+    public void Init(InputManager input, FillUI playerHealthUI)
     {
         _playerMovement.Init(_playerAbilitySystem, input);
         _playerAbilitySystem.Init(this);
         _playerAppearance.Init(_playerMovement, Health);
+        
+        Health.LinkFillUI(playerHealthUI);
     }
 
     public void TakeDamage(int damage)
@@ -41,6 +44,16 @@ public class Player : EntityBase
     #endregion
     
     #region Unity Methods
+
+    private void OnEnable()
+    {
+        _playerMovement.OnHit += TakeDamage;
+    }
+
+    private void OnDisable()
+    {
+        _playerMovement.OnHit -= TakeDamage;
+    }
 
     protected override void Awake()
     {

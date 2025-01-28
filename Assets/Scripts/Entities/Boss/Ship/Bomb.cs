@@ -4,6 +4,7 @@ using UnityEngine;
 public class Bomb : MonoBehaviour
 {
     [field: SerializeField] public Vector2 PlayerKnockbackSpeed { get; private set; }
+    [field: SerializeField] public int Damage { get; private set; }
 
     private Animator _animator;
     private Rigidbody2D _rb;

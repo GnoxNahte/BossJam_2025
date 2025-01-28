@@ -11,9 +11,10 @@ public class CameraManager : MonoBehaviour
     #endregion
     
     #region Public Methods
-    public void Init(Player player)
+    public void Init(Player player, Collider2D cameraConfiner)
     {
         gameCamera.Follow = player.transform;
+        gameCamera.GetComponent<CinemachineConfiner2D>().BoundingShape2D = cameraConfiner;
     }
     #endregion
     

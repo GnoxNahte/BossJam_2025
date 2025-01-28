@@ -5,6 +5,9 @@ public class GameUIManager : MonoBehaviour
     #region Serialized Variables
     [SerializeField] private GameObject abilityUIPrefab;
     [SerializeField] private Transform abilityUIParent;
+
+    [field: SerializeField] public FillUI BossHealthUI { get; private set; }
+    [field: SerializeField] public FillUI PlayerHealthUI { get; private set; }
     #endregion
     
     #region Public Methods

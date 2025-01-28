@@ -1147,6 +1147,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: e666f351b19071547b4992dff15fa685, type: 2}
+  spinDamage: 10
+  invincibilityMask:
+    serializedVersion: 2
+    m_Bits: 3072
+  invincibilityDuration: 3
   ceilingChecker: {fileID: 3967786579101266458}
   groundChecker: {fileID: 2446640281547453604}
   leftWallChecker: {fileID: 6394226183721352939}
@@ -1175,6 +1180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e878f5fd04d64a34198683cc862437d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  invincibilityAlpha: 0.5
   sr: {fileID: 5198375377145650706}
   attackParent: {fileID: 7592935016093612687}
 --- !u!114 &1542681338911003812
@@ -1320,7 +1326,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b586e53c57c8ca84e9cac04e8e2d5669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Amt>k__BackingField: 100
+  maxHealth: 100
+  <CurrHealth>k__BackingField: 0
 --- !u!1 &8149317426119211722
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ public class PlayerAppearance : MonoBehaviour
 
     #region Serialized Variables
 
+    [SerializeField] private float invincibilityAlpha;
     [SerializeField] private SpriteRenderer sr;
     [SerializeField] private Transform attackParent;
     #endregion
@@ -59,6 +60,17 @@ public class PlayerAppearance : MonoBehaviour
         OnEnable();
     }
 
+    public void OnInvincibilityChange(bool isInvincible)
+    {
+        Color color = sr.color;
+        color.a = isInvincible ? invincibilityAlpha : 1f;
+        sr.color = color;
+    }
+
+    #endregion
+    
+    #region Unity Methods
+    
     private void OnEnable()
     {
         if (_playerMovement)
@@ -70,10 +82,7 @@ public class PlayerAppearance : MonoBehaviour
         if (_playerMovement)
             _playerMovement.OnHit -= OnHit; 
     }
-
-    #endregion
     
-    #region Unity Methods
     private void Awake()
     {
         _animator = GetComponent<Animator>();
@@ -110,7 +119,7 @@ public class PlayerAppearance : MonoBehaviour
         _animator.SetBool(AnimId_IsDead, _playerMovement.IsDead);
     }
 
-    private void OnHit()
+    private void OnHit(int damage)
     {
         _animator.SetTrigger(AnimId_OnHit);
     }

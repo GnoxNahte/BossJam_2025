@@ -58,25 +58,18 @@ public class GameInitiator : MonoBehaviour
         GameUIManager gameUIManager = gameUIManagerGO.GetComponent<GameUIManager>();
         Player player = playerGO.GetComponent<Player>();
         
+        LevelManager levelManager = FindFirstObjectByType<LevelManager>();
+        
         // === Init Objects ===
-        player.Init(inputManager);
-        cameraManager.Init(player);
+        player.Init(inputManager, gameUIManager.PlayerHealthUI);
+        cameraManager.Init(player, levelManager.CameraConfier);
         gameUIManager.Init(player.PlayerAbilitySystem);
         inputManager.Init(player.PlayerAbilitySystem);
         
         // === Init other objects ===
-        Camera mainCamera = Camera.main;
-        Debug.Assert(mainCamera);
-        
-        Vector3 leftBorderPos = mainCamera.ViewportToWorldPoint(new Vector3(0, 0.5f, 0));
-        GameObject leftBorder = Instantiate(BorderTriggersPrefab, leftBorderPos, Quaternion.identity, mainCamera.transform);
-        
-        Vector3 rightBorderPos = mainCamera.ViewportToWorldPoint(new Vector3(1f, 0.5f, 0));
-        GameObject rightBorder = Instantiate(BorderTriggersPrefab, rightBorderPos, Quaternion.identity, mainCamera.transform);
-
         BossShip boss = FindAnyObjectByType<BossShip>();
         if (boss)
-            boss.Init(player, leftBorder, rightBorder);
+            boss.Init(player, levelManager.LeftBorder, levelManager.RightBorder, gameUIManager.BossHealthUI);
         else 
             print("Can't find boss ship");
     }

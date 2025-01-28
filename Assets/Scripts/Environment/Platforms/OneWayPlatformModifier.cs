@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(PlatformEffector2D))]
 public class OneWayPlatformModifier : PlatformModifierBase
 {
     public bool IsFlipped { get; private set; }

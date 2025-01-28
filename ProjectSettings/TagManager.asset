@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PlayerStartPos
   - CameraBorders
+  - CameraConfiner
   layers:
   - Default
   - TransparentFX

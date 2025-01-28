@@ -153,7 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b586e53c57c8ca84e9cac04e8e2d5669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Amt>k__BackingField: 100
+  maxHealth: 100
+  <CurrHealth>k__BackingField: 0
 --- !u!114 &5855261382567464579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -696,11 +697,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2178954521796974372, guid: c493b6fe455118e49854da53a9057c11, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.774
       objectReference: {fileID: 0}
     - target: {fileID: 2178954521796974372, guid: c493b6fe455118e49854da53a9057c11, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.133
       objectReference: {fileID: 0}
     - target: {fileID: 2178954521796974372, guid: c493b6fe455118e49854da53a9057c11, type: 3}
       propertyPath: m_LocalPosition.z
@@ -733,6 +734,10 @@ PrefabInstance:
     - target: {fileID: 2178954521796974372, guid: c493b6fe455118e49854da53a9057c11, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4004374059266099025, guid: c493b6fe455118e49854da53a9057c11, type: 3}
+      propertyPath: m_FlipX
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4055590443624066736, guid: c493b6fe455118e49854da53a9057c11, type: 3}
       propertyPath: m_Name

@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using VInspector;
 
@@ -11,12 +12,16 @@ public class PlayerMovement : MonoBehaviour
     public bool IsSpinning => isSpinning || isCharging;
     public bool IsDead => isDead;
     
-    public Action OnHit;
+    // Takes in damage
+    public Action<int> OnHit;
     #endregion
     
     #region Serialized Variables
 
     [SerializeField] private PlayerMovementStats stats;
+    [SerializeField] private int spinDamage;
+    [SerializeField] private LayerMask invincibilityMask;
+    [SerializeField] private float invincibilityDuration;
 
     [Header("References")]
     [SerializeField] protected PlatformCollisionTracker ceilingChecker;
@@ -66,9 +71,13 @@ public class PlayerMovement : MonoBehaviour
     private InputManager _input;
     private Rigidbody2D _rb;
     private PlayerAbilitySystem _abilitySystem;
+    private PlayerAppearance _appearance;
     
     // Only change when there's input
     private Vector2 _facingDirection;
+    
+    private Coroutine _invincibilityCoroutine;
+    private WaitForSeconds _invincibilityWait;
     
     #endregion
     
@@ -101,7 +110,7 @@ public class PlayerMovement : MonoBehaviour
     public void ChargeSpin()
     {
         isCharging = true;
-        velocity = Vector2.zero;
+        // velocity = Vector2.zero;
     }
 
     public void Spin()
@@ -117,8 +126,11 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
+        _appearance = GetComponent<PlayerAppearance>();
 
         shockwavePool.transform.parent = null;
+        
+        _invincibilityWait = new WaitForSeconds(invincibilityDuration);
     }
 
     private void Update()
@@ -138,15 +150,8 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         // Updates the velocity for horizontal and vertical movement
-        if (isSpinning)
-        {
-            SpinningMovement();
-        }
-        else
-        {
-            HorizontalMovement();
-            VerticalMovement();
-        }
+        HorizontalMovement();
+        VerticalMovement();
 
         _rb.linearVelocity = Vector2.zero;
         
@@ -162,10 +167,21 @@ public class PlayerMovement : MonoBehaviour
         {
             ContactPoint2D contactPoint = other.contacts[0];
             ApplyKnockback(contactPoint.normal, boss.PlayerKnockbackSpeed);
-            OnHit?.Invoke();
+            // OnHit?.Invoke();
 
-            GameObject shockwave = shockwavePool.Get(contactPoint.point);
-            shockwave.GetComponent<Shockwave>().Init(shockwavePool);
+            if (isSpinning)
+            {
+                GameObject shockwave = shockwavePool.Get(contactPoint.point);
+                shockwave.GetComponent<Shockwave>().Init(shockwavePool);
+                
+                boss.TakeDamage(spinDamage);
+                
+                StopSpinning();
+            }
+            else
+            {
+                ActivateInvincibility();
+            }
             return;
         }
         
@@ -173,7 +189,11 @@ public class PlayerMovement : MonoBehaviour
         if (bomb)
         {
             ApplyKnockback(other.contacts[0].normal, bomb.PlayerKnockbackSpeed);
-            OnHit?.Invoke();
+            OnHit?.Invoke(bomb.Damage);
+            
+            StopSpinning();
+            
+            ActivateInvincibility();
             return;
         }
     }
@@ -185,8 +205,24 @@ public class PlayerMovement : MonoBehaviour
     // Updates horizontal velocity
     private void HorizontalMovement()
     {
-        // if (isCharging)
-        //     return;
+        if (isCharging || isSpinning)
+        {
+            // Stop and apply knockback if collided
+            if (leftWallChecker.IsColliding || rightWallChecker.IsColliding)
+            {
+                velocity = stats.SpinHitVelocity;
+                if (rightWallChecker.IsColliding)
+                    velocity.x *= -1; // Flip horizontal velocity
+
+                StopSpinning();
+            }
+            else
+            {
+                velocity.x = stats.SpinHorizontalSpeed * (FacingDirection.x > 0 ? 1 : -1);
+            }
+            
+            return;
+        }
         
         if (dashTimeLeft > 0f)
         {
@@ -207,6 +243,7 @@ public class PlayerMovement : MonoBehaviour
         }
         
         float xInput = _input.MoveDir.x;
+        
         bool isGrounded = !isInAir;
         
         // Slow down the player if not pressing any buttons 
@@ -252,32 +289,6 @@ public class PlayerMovement : MonoBehaviour
         
         // if (!isCharging)
         HandleJump();
-    }
-
-    private void SpinningMovement()
-    {
-        if (HandleJump())
-        {
-            isSpinning = false;
-        }
-        // Stop and apply knockback if collided
-        if (leftWallChecker.IsColliding || rightWallChecker.IsColliding)
-        {
-            velocity = stats.SpinHitVelocity;
-            if (rightWallChecker.IsColliding)
-                velocity.x *= -1; // Flip horizontal velocity
-            
-            isSpinning = false;
-        }
-
-        if (!isSpinning)
-        {
-            _abilitySystem.OnAbilityEnd(PlayerAbilitySystem.Type.Spin);
-            return;
-        }
-        
-        HandleGravity();
-        HandleLanding();
     }
 
     private void HandleLanding()
@@ -401,15 +412,50 @@ public class PlayerMovement : MonoBehaviour
         ifReleaseJumpAfterJumping = false;
     }
 
+    private void StopSpinning()
+    {
+        isSpinning = false;
+        _abilitySystem.OnAbilityEnd(PlayerAbilitySystem.Type.Spin);
+    }
+
     // contactDirection - Direction from contact point to player
     private void ApplyKnockback(Vector2 contactDirection, Vector2 speed)
     {
         velocity = speed * contactDirection.normalized;
 
+        if (Mathf.Abs(velocity.y) < stats.SpinHitVelocity.y)
+        {
+            velocity.y = stats.SpinHitVelocity.y;
+        }
+
         if (velocity.y < 0f)
             velocity.y *= 0.5f; // Down knockback is too strong, partly because of increased gravity when going down
         
         print("Knockback final vel: " + velocity);
+    }
+
+    private void ActivateInvincibility()
+    {
+        if (_invincibilityCoroutine != null)
+        {
+            Debug.LogWarning("Invincibility Coroutine is still running");
+            StopCoroutine(_invincibilityCoroutine);
+            _invincibilityCoroutine = null;
+        }
+        _invincibilityCoroutine = StartCoroutine(InvincibilityCoroutine());
+    }
+
+    private IEnumerator InvincibilityCoroutine()
+    {
+        _rb.excludeLayers = invincibilityMask;
+        _appearance.OnInvincibilityChange(true);
+
+        yield return _invincibilityWait;
+        
+        _appearance.OnInvincibilityChange(false);
+        _rb.excludeLayers = 0;
+        
+        _invincibilityCoroutine = null;
     }
     
     private void ResetPlayer()

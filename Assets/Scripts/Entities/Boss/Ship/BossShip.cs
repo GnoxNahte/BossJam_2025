@@ -59,7 +59,7 @@ public class BossShip : BossBase
 
     #region Public Methods
 
-    public void Init(Player player, GameObject leftBorder, GameObject rightBorder)
+    public void Init(Player player, GameObject leftBorder, GameObject rightBorder, FillUI healthUI)
     {
         base.Init(player);
         print("Init boss ship");   
@@ -70,6 +70,8 @@ public class BossShip : BossBase
         _rightBorder = rightBorder;
         
         _isInitDone = true;
+        
+        Health.LinkFillUI(healthUI);
     }
 
     #endregion
@@ -199,6 +201,8 @@ public class BossShip : BossBase
                 // _rb.MovePosition(pos);
                 transform.position = pos;
                 // _rb.simulated = true;
+                
+                fire.gameObject.SetActive(newState == State.Firing);
 
                 if (newState == State.Bombing)
                 {
