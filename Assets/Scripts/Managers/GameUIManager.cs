@@ -11,8 +11,14 @@ public class GameUIManager : MonoBehaviour
     #endregion
     
     #region Public Methods
-    public void Init(PlayerAbilitySystem playerAbilitySystem)
+    public void Init(PlayerAbilitySystem playerAbilitySystem, bool isMainMenuLoaded)
     {
+        if (isMainMenuLoaded)
+        {
+            BossHealthUI.Disable();
+            PlayerHealthUI.Disable();
+        }
+        
         foreach (var ability in playerAbilitySystem.Abilities)
         {
             if (!ability.Value.IfShowInUI)

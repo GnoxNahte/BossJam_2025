@@ -1131,7 +1131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4812dfc16139ad14ab1aeb125d95335b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <SpinAttackDamage>k__BackingField: 0
+  <KnockbackSpeed>k__BackingField: {x: 0, y: 0}
   <TargetCenter>k__BackingField: {fileID: 4863215394029096660}
   <TargetShipBombing>k__BackingField: {fileID: 9106945149889460311}
 --- !u!114 &6115550355396038473
@@ -1147,11 +1147,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: e666f351b19071547b4992dff15fa685, type: 2}
-  spinDamage: 10
+  normalDamage: 10
+  dashDamage: 20
+  spinDamage: 50
   invincibilityMask:
     serializedVersion: 2
     m_Bits: 3072
-  invincibilityDuration: 3
+  invincibilityDuration: 1
   ceilingChecker: {fileID: 3967786579101266458}
   groundChecker: {fileID: 2446640281547453604}
   leftWallChecker: {fileID: 6394226183721352939}

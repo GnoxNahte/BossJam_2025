@@ -146,15 +146,15 @@ public class BossShip : BossBase
     //     }
     // }
 
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        Player player = other.gameObject.GetComponent<Player>();
-        if (player != null)
-        {
-            _animator.SetTrigger(AnimId_OnHit);
-            Health.TakeDamage(player.SpinAttackDamage);
-        }
-    }
+    // private void OnCollisionEnter2D(Collision2D other)
+    // {
+    //     Player player = other.gameObject.GetComponent<Player>();
+    //     if (player != null)
+    //     {
+    //         _animator.SetTrigger(AnimId_OnHit);
+    //         TakeDamage(player.SpinAttackDamage, other.contacts[0].point);
+    //     }
+    // }
 
     private void OnTriggerExit2D(Collider2D other)
     {

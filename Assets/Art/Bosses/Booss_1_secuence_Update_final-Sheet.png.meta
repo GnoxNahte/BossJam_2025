@@ -1,0 +1,4705 @@
+fileFormatVersion: 2
+guid: 6ee175325958ff84186950080808725b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1242194552070925699
+    second: Booss_1_secuence_Update_final-Sheet_0
+  - first:
+      213: -5501212801010547030
+    second: Booss_1_secuence_Update_final-Sheet_1
+  - first:
+      213: 1750593522400306864
+    second: Booss_1_secuence_Update_final-Sheet_2
+  - first:
+      213: -4099082563586113272
+    second: Booss_1_secuence_Update_final-Sheet_3
+  - first:
+      213: -3245349115195915700
+    second: Booss_1_secuence_Update_final-Sheet_4
+  - first:
+      213: 188861266763386568
+    second: Booss_1_secuence_Update_final-Sheet_5
+  - first:
+      213: 4671054559140928115
+    second: Booss_1_secuence_Update_final-Sheet_6
+  - first:
+      213: 4280316832214390465
+    second: Booss_1_secuence_Update_final-Sheet_7
+  - first:
+      213: -7091627017908093500
+    second: Booss_1_secuence_Update_final-Sheet_8
+  - first:
+      213: -5953072979861053704
+    second: Booss_1_secuence_Update_final-Sheet_9
+  - first:
+      213: 6742931125028514542
+    second: Booss_1_secuence_Update_final-Sheet_10
+  - first:
+      213: 3955105115078578204
+    second: Booss_1_secuence_Update_final-Sheet_11
+  - first:
+      213: 6941602553918220826
+    second: Booss_1_secuence_Update_final-Sheet_12
+  - first:
+      213: 3065763783144896705
+    second: Booss_1_secuence_Update_final-Sheet_13
+  - first:
+      213: 5915148595235472193
+    second: Booss_1_secuence_Update_final-Sheet_14
+  - first:
+      213: -5002442679503532171
+    second: Booss_1_secuence_Update_final-Sheet_15
+  - first:
+      213: 9202128746611562530
+    second: Booss_1_secuence_Update_final-Sheet_16
+  - first:
+      213: 4396818214624936123
+    second: Booss_1_secuence_Update_final-Sheet_17
+  - first:
+      213: 4604986441901759116
+    second: Booss_1_secuence_Update_final-Sheet_18
+  - first:
+      213: -8324990571968885210
+    second: Booss_1_secuence_Update_final-Sheet_19
+  - first:
+      213: 4715284115400081298
+    second: Booss_1_secuence_Update_final-Sheet_20
+  - first:
+      213: -5350611354094160718
+    second: Booss_1_secuence_Update_final-Sheet_21
+  - first:
+      213: 5550955868464962017
+    second: Booss_1_secuence_Update_final-Sheet_22
+  - first:
+      213: 11378035920491072
+    second: Booss_1_secuence_Update_final-Sheet_23
+  - first:
+      213: -8973768347143525748
+    second: Booss_1_secuence_Update_final-Sheet_24
+  - first:
+      213: -3994197770362398259
+    second: Booss_1_secuence_Update_final-Sheet_25
+  - first:
+      213: 7572158613048226421
+    second: Booss_1_secuence_Update_final-Sheet_26
+  - first:
+      213: -4930814685723007215
+    second: Booss_1_secuence_Update_final-Sheet_27
+  - first:
+      213: 7880000780690192612
+    second: Booss_1_secuence_Update_final-Sheet_28
+  - first:
+      213: -8037324786168601532
+    second: Booss_1_secuence_Update_final-Sheet_29
+  - first:
+      213: 5303380586555928760
+    second: Booss_1_secuence_Update_final-Sheet_30
+  - first:
+      213: 7176586695739647795
+    second: Booss_1_secuence_Update_final-Sheet_31
+  - first:
+      213: -1300746885903756332
+    second: Booss_1_secuence_Update_final-Sheet_32
+  - first:
+      213: -6089429736220228115
+    second: Booss_1_secuence_Update_final-Sheet_33
+  - first:
+      213: 6890563756159046826
+    second: Booss_1_secuence_Update_final-Sheet_34
+  - first:
+      213: -1763076479217907
+    second: Booss_1_secuence_Update_final-Sheet_35
+  - first:
+      213: 1599188995960934413
+    second: Booss_1_secuence_Update_final-Sheet_36
+  - first:
+      213: 7050459910083961900
+    second: Booss_1_secuence_Update_final-Sheet_37
+  - first:
+      213: 7205943179601721641
+    second: Booss_1_secuence_Update_final-Sheet_38
+  - first:
+      213: 5351753624579196538
+    second: Booss_1_secuence_Update_final-Sheet_39
+  - first:
+      213: -125381427192605227
+    second: Booss_1_secuence_Update_final-Sheet_40
+  - first:
+      213: -3868939914359049344
+    second: Booss_1_secuence_Update_final-Sheet_41
+  - first:
+      213: -2698639832037067758
+    second: Booss_1_secuence_Update_final-Sheet_42
+  - first:
+      213: -6247289504042600304
+    second: Booss_1_secuence_Update_final-Sheet_43
+  - first:
+      213: -2298203948508372340
+    second: Booss_1_secuence_Update_final-Sheet_44
+  - first:
+      213: -8244819287117244955
+    second: Booss_1_secuence_Update_final-Sheet_45
+  - first:
+      213: 9100938094875045884
+    second: Booss_1_secuence_Update_final-Sheet_46
+  - first:
+      213: 3200464165440073870
+    second: Booss_1_secuence_Update_final-Sheet_47
+  - first:
+      213: -9031447102568418774
+    second: Booss_1_secuence_Update_final-Sheet_48
+  - first:
+      213: 6003033345316303826
+    second: Booss_1_secuence_Update_final-Sheet_49
+  - first:
+      213: 9132476826669504476
+    second: Booss_1_secuence_Update_final-Sheet_50
+  - first:
+      213: 303364208816383316
+    second: Booss_1_secuence_Update_final-Sheet_51
+  - first:
+      213: 359296200192920274
+    second: Booss_1_secuence_Update_final-Sheet_52
+  - first:
+      213: -7918889429879682590
+    second: Booss_1_secuence_Update_final-Sheet_53
+  - first:
+      213: 1388289293151961944
+    second: Booss_1_secuence_Update_final-Sheet_54
+  - first:
+      213: -4933940336644515569
+    second: Booss_1_secuence_Update_final-Sheet_55
+  - first:
+      213: 647984310418691326
+    second: Booss_1_secuence_Update_final-Sheet_56
+  - first:
+      213: -4521989527074331733
+    second: Booss_1_secuence_Update_final-Sheet_57
+  - first:
+      213: -3778203414177034917
+    second: Booss_1_secuence_Update_final-Sheet_58
+  - first:
+      213: 3297224420865535262
+    second: Booss_1_secuence_Update_final-Sheet_59
+  - first:
+      213: -4748468009551352115
+    second: Booss_1_secuence_Update_final-Sheet_60
+  - first:
+      213: -3030260696472056875
+    second: Booss_1_secuence_Update_final-Sheet_61
+  - first:
+      213: 1516809202454455201
+    second: Booss_1_secuence_Update_final-Sheet_62
+  - first:
+      213: 1895772609574060437
+    second: Booss_1_secuence_Update_final-Sheet_63
+  - first:
+      213: -1934457042647070007
+    second: Booss_1_secuence_Update_final-Sheet_64
+  - first:
+      213: 7283953996913267561
+    second: Booss_1_secuence_Update_final-Sheet_65
+  - first:
+      213: 1552369091630966018
+    second: Booss_1_secuence_Update_final-Sheet_66
+  - first:
+      213: 1112779356330434482
+    second: Booss_1_secuence_Update_final-Sheet_67
+  - first:
+      213: -2604002504179073689
+    second: Booss_1_secuence_Update_final-Sheet_68
+  - first:
+      213: 8649725297059262816
+    second: Booss_1_secuence_Update_final-Sheet_69
+  - first:
+      213: -9082947798813929360
+    second: Booss_1_secuence_Update_final-Sheet_70
+  - first:
+      213: 1246104767750141768
+    second: Booss_1_secuence_Update_final-Sheet_71
+  - first:
+      213: 1724527581367190056
+    second: Booss_1_secuence_Update_final-Sheet_72
+  - first:
+      213: -90695392670774252
+    second: Booss_1_secuence_Update_final-Sheet_73
+  - first:
+      213: -594241983687993536
+    second: Booss_1_secuence_Update_final-Sheet_74
+  - first:
+      213: -7343316789747784265
+    second: Booss_1_secuence_Update_final-Sheet_75
+  - first:
+      213: -1034484848197106146
+    second: Booss_1_secuence_Update_final-Sheet_76
+  - first:
+      213: 3547762222663035932
+    second: Booss_1_secuence_Update_final-Sheet_77
+  - first:
+      213: 994497953839190332
+    second: Booss_1_secuence_Update_final-Sheet_78
+  - first:
+      213: -1202865063806094662
+    second: Booss_1_secuence_Update_final-Sheet_79
+  - first:
+      213: 3133765501568193875
+    second: Booss_1_secuence_Update_final-Sheet_80
+  - first:
+      213: -7503514864663747706
+    second: Booss_1_secuence_Update_final-Sheet_81
+  - first:
+      213: 7910155487114113907
+    second: Booss_1_secuence_Update_final-Sheet_82
+  - first:
+      213: -3508784091328016449
+    second: Booss_1_secuence_Update_final-Sheet_83
+  - first:
+      213: 9199521958698215758
+    second: Booss_1_secuence_Update_final-Sheet_84
+  - first:
+      213: -802414181739662988
+    second: Booss_1_secuence_Update_final-Sheet_85
+  - first:
+      213: 5997056071479012517
+    second: Booss_1_secuence_Update_final-Sheet_86
+  - first:
+      213: -7080934310910055702
+    second: Booss_1_secuence_Update_final-Sheet_87
+  - first:
+      213: -2057995994504674535
+    second: Booss_1_secuence_Update_final-Sheet_88
+  - first:
+      213: -6186607901075491795
+    second: Booss_1_secuence_Update_final-Sheet_89
+  - first:
+      213: -2199344019040367012
+    second: Booss_1_secuence_Update_final-Sheet_90
+  - first:
+      213: 4703149263837252328
+    second: Booss_1_secuence_Update_final-Sheet_91
+  - first:
+      213: -5369134438018569528
+    second: Booss_1_secuence_Update_final-Sheet_92
+  - first:
+      213: -2255659407623554802
+    second: Booss_1_secuence_Update_final-Sheet_93
+  - first:
+      213: -7620303305698536222
+    second: Booss_1_secuence_Update_final-Sheet_94
+  - first:
+      213: 3763871607573236864
+    second: Booss_1_secuence_Update_final-Sheet_95
+  - first:
+      213: -2068029835765099718
+    second: Booss_1_secuence_Update_final-Sheet_96
+  - first:
+      213: 3085611608509633092
+    second: Booss_1_secuence_Update_final-Sheet_97
+  - first:
+      213: 7122238455230225588
+    second: Booss_1_secuence_Update_final-Sheet_98
+  - first:
+      213: -8110037681184053059
+    second: Booss_1_secuence_Update_final-Sheet_99
+  - first:
+      213: -4987701281630139677
+    second: Booss_1_secuence_Update_final-Sheet_100
+  - first:
+      213: 1498404836084451213
+    second: Booss_1_secuence_Update_final-Sheet_101
+  - first:
+      213: -1213100059570064654
+    second: Booss_1_secuence_Update_final-Sheet_102
+  - first:
+      213: -1323495738006103294
+    second: Booss_1_secuence_Update_final-Sheet_103
+  - first:
+      213: 5824917520470527899
+    second: Booss_1_secuence_Update_final-Sheet_104
+  - first:
+      213: 3382013268781899328
+    second: Booss_1_secuence_Update_final-Sheet_105
+  - first:
+      213: 3783537945302669523
+    second: Booss_1_secuence_Update_final-Sheet_106
+  - first:
+      213: -7399071991320572703
+    second: Booss_1_secuence_Update_final-Sheet_107
+  - first:
+      213: 2520761200899646341
+    second: Booss_1_secuence_Update_final-Sheet_108
+  - first:
+      213: -2182637762608332158
+    second: Booss_1_secuence_Update_final-Sheet_109
+  - first:
+      213: 9081605111951820263
+    second: Booss_1_secuence_Update_final-Sheet_110
+  - first:
+      213: -3937414529915012327
+    second: Booss_1_secuence_Update_final-Sheet_111
+  - first:
+      213: 4308343973720709711
+    second: Booss_1_secuence_Update_final-Sheet_112
+  - first:
+      213: -8751323449260866167
+    second: Booss_1_secuence_Update_final-Sheet_113
+  - first:
+      213: -7318685572402210399
+    second: Booss_1_secuence_Update_final-Sheet_114
+  - first:
+      213: 4300422924910835831
+    second: Booss_1_secuence_Update_final-Sheet_115
+  - first:
+      213: -3119399439637731727
+    second: Booss_1_secuence_Update_final-Sheet_116
+  - first:
+      213: 2021221478483952049
+    second: Booss_1_secuence_Update_final-Sheet_117
+  - first:
+      213: 536214968625865111
+    second: Booss_1_secuence_Update_final-Sheet_118
+  - first:
+      213: -2792888898648486774
+    second: Booss_1_secuence_Update_final-Sheet_119
+  - first:
+      213: 5468019311353561180
+    second: Booss_1_secuence_Update_final-Sheet_120
+  - first:
+      213: -5228130296074568725
+    second: Booss_1_secuence_Update_final-Sheet_121
+  - first:
+      213: 3171041166399748169
+    second: Booss_1_secuence_Update_final-Sheet_122
+  - first:
+      213: -5308615366105674224
+    second: Booss_1_secuence_Update_final-Sheet_123
+  - first:
+      213: -7803017863416317128
+    second: Booss_1_secuence_Update_final-Sheet_124
+  - first:
+      213: 5247547621097202415
+    second: Booss_1_secuence_Update_final-Sheet_125
+  - first:
+      213: 1175715271412166709
+    second: Booss_1_secuence_Update_final-Sheet_126
+  - first:
+      213: 61659521303152163
+    second: Booss_1_secuence_Update_final-Sheet_127
+  - first:
+      213: -6110683109734050761
+    second: Booss_1_secuence_Update_final-Sheet_128
+  - first:
+      213: -83768926713095614
+    second: Booss_1_secuence_Update_final-Sheet_129
+  - first:
+      213: -5898283847683914389
+    second: Booss_1_secuence_Update_final-Sheet_130
+  - first:
+      213: -4702404421907314809
+    second: Booss_1_secuence_Update_final-Sheet_131
+  - first:
+      213: -7121321871023402736
+    second: Booss_1_secuence_Update_final-Sheet_132
+  - first:
+      213: 89174481123320198
+    second: Booss_1_secuence_Update_final-Sheet_133
+  - first:
+      213: 218582535791457631
+    second: Booss_1_secuence_Update_final-Sheet_134
+  - first:
+      213: -9154634232708317632
+    second: Booss_1_secuence_Update_final-Sheet_135
+  - first:
+      213: -1720571502755560352
+    second: Booss_1_secuence_Update_final-Sheet_136
+  - first:
+      213: 6038418232842600230
+    second: Booss_1_secuence_Update_final-Sheet_137
+  - first:
+      213: 4537251375133160277
+    second: Booss_1_secuence_Update_final-Sheet_138
+  - first:
+      213: -8573025050910735405
+    second: Booss_1_secuence_Update_final-Sheet_139
+  - first:
+      213: -180667636364681913
+    second: Booss_1_secuence_Update_final-Sheet_140
+  - first:
+      213: 759576866794762797
+    second: Booss_1_secuence_Update_final-Sheet_141
+  - first:
+      213: -5859902085300184853
+    second: Booss_1_secuence_Update_final-Sheet_142
+  - first:
+      213: 2253478217093837129
+    second: Booss_1_secuence_Update_final-Sheet_143
+  - first:
+      213: 8714123962932686456
+    second: Booss_1_secuence_Update_final-Sheet_144
+  - first:
+      213: 7362496111946950657
+    second: Booss_1_secuence_Update_final-Sheet_145
+  - first:
+      213: 4813979679182635043
+    second: Booss_1_secuence_Update_final-Sheet_146
+  - first:
+      213: -3707580600965630315
+    second: Booss_1_secuence_Update_final-Sheet_147
+  - first:
+      213: 176488599883101300
+    second: Booss_1_secuence_Update_final-Sheet_148
+  - first:
+      213: 1828595472304598373
+    second: Booss_1_secuence_Update_final-Sheet_149
+  - first:
+      213: 3246340885052603054
+    second: Booss_1_secuence_Update_final-Sheet_150
+  - first:
+      213: -1115117878782615841
+    second: Booss_1_secuence_Update_final-Sheet_151
+  - first:
+      213: 1181771904734599884
+    second: Booss_1_secuence_Update_final-Sheet_152
+  - first:
+      213: -5450471153572582965
+    second: Booss_1_secuence_Update_final-Sheet_153
+  - first:
+      213: -6156307093242018669
+    second: Booss_1_secuence_Update_final-Sheet_154
+  - first:
+      213: -1730006611505920281
+    second: Booss_1_secuence_Update_final-Sheet_155
+  - first:
+      213: -304192402955019385
+    second: Booss_1_secuence_Update_final-Sheet_156
+  - first:
+      213: -2962064766594010023
+    second: Booss_1_secuence_Update_final-Sheet_157
+  - first:
+      213: 6483196823412610884
+    second: Booss_1_secuence_Update_final-Sheet_158
+  - first:
+      213: -5688599751942956402
+    second: Booss_1_secuence_Update_final-Sheet_159
+  - first:
+      213: 1152654765163004680
+    second: Booss_1_secuence_Update_final-Sheet_160
+  - first:
+      213: 5704257310361148874
+    second: Booss_1_secuence_Update_final-Sheet_161
+  - first:
+      213: 3985880450103805110
+    second: Booss_1_secuence_Update_final-Sheet_162
+  - first:
+      213: 1875196674894640880
+    second: Booss_1_secuence_Update_final-Sheet_163
+  - first:
+      213: -6070375787444356983
+    second: Booss_1_secuence_Update_final-Sheet_164
+  - first:
+      213: -2890890239334993934
+    second: Booss_1_secuence_Update_final-Sheet_165
+  - first:
+      213: 4992797583716195983
+    second: Booss_1_secuence_Update_final-Sheet_166
+  - first:
+      213: 1625479048993632488
+    second: Booss_1_secuence_Update_final-Sheet_167
+  - first:
+      213: -2990596709697349193
+    second: Booss_1_secuence_Update_final-Sheet_168
+  - first:
+      213: 5238854075944469026
+    second: Booss_1_secuence_Update_final-Sheet_169
+  - first:
+      213: 7253069245901461747
+    second: Booss_1_secuence_Update_final-Sheet_170
+  - first:
+      213: 6724932580069403120
+    second: Booss_1_secuence_Update_final-Sheet_171
+  - first:
+      213: -8049063821564533856
+    second: Booss_1_secuence_Update_final-Sheet_172
+  - first:
+      213: 6803241044575766828
+    second: Booss_1_secuence_Update_final-Sheet_173
+  - first:
+      213: 5533359156554801276
+    second: Booss_1_secuence_Update_final-Sheet_174
+  - first:
+      213: -7358918429250008904
+    second: Booss_1_secuence_Update_final-Sheet_175
+  - first:
+      213: -6987052845414717008
+    second: Booss_1_secuence_Update_final-Sheet_176
+  - first:
+      213: -6918665831277686501
+    second: Booss_1_secuence_Update_final-Sheet_177
+  - first:
+      213: -8272478913264991239
+    second: Booss_1_secuence_Update_final-Sheet_178
+  - first:
+      213: 8687148715665912538
+    second: Booss_1_secuence_Update_final-Sheet_179
+  - first:
+      213: 2506597099270534973
+    second: Booss_1_secuence_Update_final-Sheet_180
+  - first:
+      213: -5975995632471367473
+    second: Booss_1_secuence_Update_final-Sheet_181
+  - first:
+      213: 6322153445194303771
+    second: Booss_1_secuence_Update_final-Sheet_182
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 2306
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7213e5e2a6d2cee0800000000000000
+      internalID: -1242194552070925699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 2300
+        width: 142
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa64fe9aa14c7a3b0800000000000000
+      internalID: -5501212801010547030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 2311
+        width: 76
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b625c8988b5b4810800000000000000
+      internalID: 1750593522400306864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 2306
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 801c37450222d17c0800000000000000
+      internalID: -4099082563586113272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 2300
+        width: 142
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c428e90ac2436f2d0800000000000000
+      internalID: -3245349115195915700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 2311
+        width: 76
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ce034d4258fe9200800000000000000
+      internalID: 188861266763386568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 2309
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37a501c8f5be2d040800000000000000
+      internalID: 4671054559140928115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 2298
+        width: 142
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c693461b7db66b30800000000000000
+      internalID: 4280316832214390465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 2314
+        width: 76
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cd760edcca759d90800000000000000
+      internalID: -7091627017908093500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 2306
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fed7616aaf626da0800000000000000
+      internalID: -5953072979861053704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 2300
+        width: 142
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeaef34f124b39d50800000000000000
+      internalID: 6742931125028514542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 2311
+        width: 76
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c10d699a52b53e630800000000000000
+      internalID: 3955105115078578204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 2081
+        y: 2313
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1a6d3e9eb6855060800000000000000
+      internalID: 6941602553918220826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 2164
+        y: 2299
+        width: 142
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c8fb9beae7cb8a20800000000000000
+      internalID: 3065763783144896705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 2316
+        y: 2315
+        width: 76
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14349acbe44d61250800000000000000
+      internalID: 5915148595235472193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 2580
+        y: 2306
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57f40f613e0c39ab0800000000000000
+      internalID: -5002442679503532171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2664
+        y: 2300
+        width: 142
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 228513f075784bf70800000000000000
+      internalID: 9202128746611562530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 2311
+        width: 76
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb0cfa0fed2a40d30800000000000000
+      internalID: 4396818214624936123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 2056
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8a5b0945c238ef30800000000000000
+      internalID: 4604986441901759116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 2049
+        width: 142
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62e8157be21b77c80800000000000000
+      internalID: -8324990571968885210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 2061
+        width: 76
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29fb6799bed007140800000000000000
+      internalID: 4715284115400081298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 2053
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b4bb0c725fceb5b0800000000000000
+      internalID: -5350611354094160718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 2053
+        width: 142
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e959bfb3f4f80d40800000000000000
+      internalID: 5550955868464962017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 2064
+        width: 76
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 042584d634c682000800000000000000
+      internalID: 11378035920491072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 2050
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8aaddbbb35c67380800000000000000
+      internalID: -8973768347143525748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 2053
+        width: 142
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc954ee3a42c198c0800000000000000
+      internalID: -3994197770362398259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 2068
+        width: 76
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57277a9b326b51960800000000000000
+      internalID: 7572158613048226421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 2051
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 117633cfa2a329bb0800000000000000
+      internalID: -4930814685723007215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 2051
+        width: 142
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e8f6d2c5f26b5d60800000000000000
+      internalID: 7880000780690192612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 2066
+        width: 76
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4446af7c0bfa57090800000000000000
+      internalID: -8037324786168601532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 2051
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b07e528b84699940800000000000000
+      internalID: 5303380586555928760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 2164
+        y: 2055
+        width: 142
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3372b5b939b589360800000000000000
+      internalID: 7176586695739647795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 2315
+        y: 2066
+        width: 76
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d3d2035991d2fde0800000000000000
+      internalID: -1300746885903756332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1819
+        width: 99
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de584e70beffd7ba0800000000000000
+      internalID: -6089429736220228115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 1803
+        width: 142
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa49a0c7a3330af50800000000000000
+      internalID: 6890563756159046826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 1819
+        width: 98
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0f8eb4cd7cb9fff0800000000000000
+      internalID: -1763076479217907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1823
+        width: 99
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0017f04be5713610800000000000000
+      internalID: 1599188995960934413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 1803
+        width: 142
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c24efabeee348d160800000000000000
+      internalID: 7050459910083961900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 1823
+        width: 98
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9293fc3a427a00460800000000000000
+      internalID: 7205943179601721641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1827
+        width: 99
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a76c376119f354a40800000000000000
+      internalID: 5351753624579196538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 1803
+        width: 142
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d5d0ca914e824ef0800000000000000
+      internalID: -125381427192605227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1827
+        width: 98
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0837c4b75a3ce4ac0800000000000000
+      internalID: -3868939914359049344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 1829
+        width: 99
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 214f5baee518c8ad0800000000000000
+      internalID: -2698639832037067758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1803
+        width: 142
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 098b38eab4b2d49a0800000000000000
+      internalID: -6247289504042600304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 1829
+        width: 98
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8222cb6fa32b10e0800000000000000
+      internalID: -2298203948508372340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 2054
+        y: 1802
+        width: 95
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e556129a84849d80800000000000000
+      internalID: -8244819287117244955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 2164
+        y: 1803
+        width: 142
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cffe8db7af60d4e70800000000000000
+      internalID: 9100938094875045884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 2321
+        y: 1801
+        width: 95
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e803c61a3355a6c20800000000000000
+      internalID: 3200464165440073870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 2664
+        y: 1803
+        width: 142
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a22bdabf5bad9a280800000000000000
+      internalID: -9031447102568418774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 3164
+        y: 1803
+        width: 142
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d3376aa50f0f4350800000000000000
+      internalID: 6003033345316303826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 3664
+        y: 1802
+        width: 142
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd75f15b9431dbe70800000000000000
+      internalID: 9132476826669504476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 4164
+        y: 1802
+        width: 142
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45561100424c53400800000000000000
+      internalID: 303364208816383316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 1802
+        width: 142
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2da85ad8df97cf400800000000000000
+      internalID: 359296200192920274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 2554
+        y: 1783
+        width: 95
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e90d6405047a1290800000000000000
+      internalID: -7918889429879682590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 2821
+        y: 1783
+        width: 95
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8530dc3b1c1344310800000000000000
+      internalID: 1388289293151961944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 3054
+        y: 1783
+        width: 95
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f09155ba76f178bb0800000000000000
+      internalID: -4933940336644515569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 3321
+        y: 1783
+        width: 95
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef458821c4a1ef800800000000000000
+      internalID: 647984310418691326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 3530
+        y: 1771
+        width: 131
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba3a2b0db7aae31c0800000000000000
+      internalID: -4521989527074331733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 3549
+        y: 1807
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5d4fc83300219bc0800000000000000
+      internalID: -3778203414177034917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 3813
+        y: 1771
+        width: 126
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1dee6e242812cd20800000000000000
+      internalID: 3297224420865535262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 3910
+        y: 1807
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcea267f08d0a1eb0800000000000000
+      internalID: -4748468009551352115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 4030
+        y: 1771
+        width: 131
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5db84f993f952f5d0800000000000000
+      internalID: -3030260696472056875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 4048
+        y: 1813
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a36758eee9cc0510800000000000000
+      internalID: 1516809202454455201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 4138
+        y: 1810
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 591c398e4232f4a10800000000000000
+      internalID: 1895772609574060437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 4313
+        y: 1771
+        width: 126
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cac4c3a19d6725e0800000000000000
+      internalID: -1934457042647070007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 4326
+        y: 1805
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9635d42719dc51560800000000000000
+      internalID: 7283953996913267561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 4411
+        y: 1809
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 205a5fac67f1b8510800000000000000
+      internalID: 1552369091630966018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 4530
+        y: 1771
+        width: 131
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bf9677cde2617f00800000000000000
+      internalID: 1112779356330434482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 4552
+        y: 1814
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76dbd20e489bcdbd0800000000000000
+      internalID: -2604002504179073689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 4602
+        y: 1814
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0617de7545ff90870800000000000000
+      internalID: 8649725297059262816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 4639
+        y: 1814
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 070974ab913e2f180800000000000000
+      internalID: -9082947798813929360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 4813
+        y: 1771
+        width: 126
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 847faa22fad0b4110800000000000000
+      internalID: 1246104767750141768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 4824
+        y: 1808
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82241c4c2b0cee710800000000000000
+      internalID: 1724527581367190056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 4863
+        y: 1815
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41c08195509cdbef0800000000000000
+      internalID: -90695392670774252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 4910
+        y: 1814
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04757a37014d0c7f0800000000000000
+      internalID: -594241983687993536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1563
+        width: 72
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b5ebe9494c471a90800000000000000
+      internalID: -7343316789747784265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 1553
+        width: 142
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1600b1f285c4a1f0800000000000000
+      internalID: -1034484848197106146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 1562
+        width: 72
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1c6165d1fe2c3130800000000000000
+      internalID: 3547762222663035932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_78
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1556
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c311074be9a2dcd00800000000000000
+      internalID: 994497953839190332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_79
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 1549
+        width: 142
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab23c17f8909e4fe0800000000000000
+      internalID: -1202865063806094662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_80
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 1561
+        width: 76
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 355985ace1f5d7b20800000000000000
+      internalID: 3133765501568193875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_81
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1550
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 683aad46cf82ed790800000000000000
+      internalID: -7503514864663747706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_82
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 1553
+        width: 142
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3733b87718486cd60800000000000000
+      internalID: 7910155487114113907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_83
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 1568
+        width: 76
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbf0ad2957b4e4fc0800000000000000
+      internalID: -3508784091328016449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_84
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1306
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e49ec93fa744baf70800000000000000
+      internalID: 9199521958698215758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_85
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 1300
+        width: 142
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 471fba69d804dd4f0800000000000000
+      internalID: -802414181739662988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_86
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 1311
+        width: 76
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ac2b9629b2d93350800000000000000
+      internalID: 5997056071479012517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_87
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1306
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeaa458b2c77bbd90800000000000000
+      internalID: -7080934310910055702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_88
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 1300
+        width: 142
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9134f56fb878073e0800000000000000
+      internalID: -2057995994504674535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_89
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 1311
+        width: 76
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2435cb54e0c42aa0800000000000000
+      internalID: -6186607901075491795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_90
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 1309
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5e083e644c5a71e0800000000000000
+      internalID: -2199344019040367012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_91
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 1298
+        width: 142
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eac8ac4651f44140800000000000000
+      internalID: 4703149263837252328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_92
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 1314
+        width: 76
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ca269eeca00d75b0800000000000000
+      internalID: -5369134438018569528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_93
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 1306
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e09745248b942b0e0800000000000000
+      internalID: -2255659407623554802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_94
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1300
+        width: 142
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e49a1f748e3f3690800000000000000
+      internalID: -7620303305698536222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_95
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 1311
+        width: 76
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08cc4950945fb3430800000000000000
+      internalID: 3763871607573236864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_96
+      rect:
+        serializedVersion: 2
+        x: 2083
+        y: 1309
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a33df4e32d1ec43e0800000000000000
+      internalID: -2068029835765099718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_97
+      rect:
+        serializedVersion: 2
+        x: 2164
+        y: 1298
+        width: 142
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 442d900e86b42da20800000000000000
+      internalID: 3085611608509633092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_98
+      rect:
+        serializedVersion: 2
+        x: 2314
+        y: 1314
+        width: 76
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bcdf99c32647d260800000000000000
+      internalID: 7122238455230225588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_99
+      rect:
+        serializedVersion: 2
+        x: 2580
+        y: 1306
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db8edf1a2bb537f80800000000000000
+      internalID: -8110037681184053059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_100
+      rect:
+        serializedVersion: 2
+        x: 2664
+        y: 1300
+        width: 142
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eaccae3c1028cab0800000000000000
+      internalID: -4987701281630139677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_101
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 1311
+        width: 76
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d878a8072476bc410800000000000000
+      internalID: 1498404836084451213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_102
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1067
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f232505ce33a2fe0800000000000000
+      internalID: -1213100059570064654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_103
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 1053
+        width: 142
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20b176273aff1ade0800000000000000
+      internalID: -1323495738006103294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_104
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 1074
+        width: 76
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9f48958f9346d050800000000000000
+      internalID: 5824917520470527899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_105
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1053
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04e176736235fee20800000000000000
+      internalID: 3382013268781899328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_106
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 1054
+        width: 142
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d81af717b3d18430800000000000000
+      internalID: 3783537945302669523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_107
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 1068
+        width: 76
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ec8bc1d937315990800000000000000
+      internalID: -7399071991320572703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_108
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1050
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 583e537e4fa8bf220800000000000000
+      internalID: 2520761200899646341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_109
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 1052
+        width: 142
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 282806ed486b5b1e0800000000000000
+      internalID: -2182637762608332158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_110
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 1073
+        width: 76
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e58240abb7580e70800000000000000
+      internalID: 9081605111951820263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_111
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 800
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91b34faa85e7b59c0800000000000000
+      internalID: -3937414529915012327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_112
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 801
+        width: 145
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4a51db74005acb30800000000000000
+      internalID: 4308343973720709711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_113
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 823
+        width: 76
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 985824c70bd0d8680800000000000000
+      internalID: -8751323449260866167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_114
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 790
+        width: 74
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a9903a7f3ece6a90800000000000000
+      internalID: -7318685572402210399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_115
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 803
+        width: 148
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 778b1479ddb2eab30800000000000000
+      internalID: 4300422924910835831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_116
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 823
+        width: 89
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17627d7acbaa5b4d0800000000000000
+      internalID: -3119399439637731727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_117
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 806
+        width: 77
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b10d6dc932dc0c10800000000000000
+      internalID: 2021221478483952049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_118
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 798
+        width: 144
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79121384ca4017700800000000000000
+      internalID: 536214968625865111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_119
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 808
+        width: 82
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8ccce2185aad39d0800000000000000
+      internalID: -2792888898648486774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_120
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 778
+        width: 88
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c508436c79e42eb40800000000000000
+      internalID: 5468019311353561180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_121
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 792
+        width: 233
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beb740f0233f177b0800000000000000
+      internalID: -5228130296074568725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_122
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 770
+        width: 323
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 948b563d32dc10c20800000000000000
+      internalID: 3171041166399748169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_123
+      rect:
+        serializedVersion: 2
+        x: 2573
+        y: 778
+        width: 88
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01e471663720456b0800000000000000
+      internalID: -5308615366105674224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_124
+      rect:
+        serializedVersion: 2
+        x: 2661
+        y: 792
+        width: 233
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83bfa0b689c16b390800000000000000
+      internalID: -7803017863416317128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_125
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 599
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe2e17932c803d840800000000000000
+      internalID: 5247547621097202415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_126
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 596
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53036856fcaf05010800000000000000
+      internalID: 1175715271412166709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_127
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 599
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3268b48020f0bd000800000000000000
+      internalID: 61659521303152163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_128
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 596
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7349255661e723ba0800000000000000
+      internalID: -6110683109734050761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_129
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 342
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24adc00ea9466def0800000000000000
+      internalID: -83768926713095614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_130
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 379
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b65406a4716152ea0800000000000000
+      internalID: -5898283847683914389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_131
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 342
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7870df9b714bdbeb0800000000000000
+      internalID: -4702404421907314809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_132
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 354
+        width: 63
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0111e6a1d7bfb2d90800000000000000
+      internalID: -7121321871023402736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_133
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 384
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 681a266d7bfcc3100800000000000000
+      internalID: 89174481123320198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_134
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 363
+        width: 39
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5534ff78af880300800000000000000
+      internalID: 218582535791457631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_135
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 360
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04e3ace2ba434f080800000000000000
+      internalID: -9154634232708317632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_136
+      rect:
+        serializedVersion: 2
+        x: 2216
+        y: 383
+        width: 43
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 064489f855d4f18e0800000000000000
+      internalID: -1720571502755560352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_137
+      rect:
+        serializedVersion: 2
+        x: 2258
+        y: 383
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62f33ddc365ccc350800000000000000
+      internalID: 6038418232842600230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_138
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 339
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 553f677161e87fe30800000000000000
+      internalID: 4537251375133160277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_139
+      rect:
+        serializedVersion: 2
+        x: 2203
+        y: 367
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d3c0f5532f760980800000000000000
+      internalID: -8573025050910735405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_140
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 364
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74dd210fdb32e7df0800000000000000
+      internalID: -180667636364681913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_141
+      rect:
+        serializedVersion: 2
+        x: 2216
+        y: 334
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d22f7ecc22f8a8a00800000000000000
+      internalID: 759576866794762797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_142
+      rect:
+        serializedVersion: 2
+        x: 2260
+        y: 355
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be89c1bb9127daea0800000000000000
+      internalID: -5859902085300184853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_143
+      rect:
+        serializedVersion: 2
+        x: 2267
+        y: 365
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94175febf76f54f10800000000000000
+      internalID: 2253478217093837129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_144
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 339
+        width: 35
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87e625b2399cee870800000000000000
+      internalID: 8714123962932686456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_145
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 340
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 108eac4a437dc2660800000000000000
+      internalID: 7362496111946950657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_146
+      rect:
+        serializedVersion: 2
+        x: 1713
+        y: 336
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32041ad3301bec240800000000000000
+      internalID: 4813979679182635043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_147
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 354
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 596705746170c8cc0800000000000000
+      internalID: -3707580600965630315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_148
+      rect:
+        serializedVersion: 2
+        x: 1757
+        y: 352
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47430fe4273037200800000000000000
+      internalID: 176488599883101300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_149
+      rect:
+        serializedVersion: 2
+        x: 2207
+        y: 358
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56d6a9cc4e9706910800000000000000
+      internalID: 1828595472304598373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_150
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 337
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaa3369c5d15d0d20800000000000000
+      internalID: 3246340885052603054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_151
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 344
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fde9978823e4680f0800000000000000
+      internalID: -1115117878782615841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_152
+      rect:
+        serializedVersion: 2
+        x: 1757
+        y: 341
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cca1e3b394f766010800000000000000
+      internalID: 1181771904734599884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_153
+      rect:
+        serializedVersion: 2
+        x: 2245
+        y: 334
+        width: 34
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc9eac81d590c54b0800000000000000
+      internalID: -5450471153572582965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_154
+      rect:
+        serializedVersion: 2
+        x: 2267
+        y: 345
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3948713f057609aa0800000000000000
+      internalID: -6156307093242018669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_155
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 337
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e6cc1e1728cdf7e0800000000000000
+      internalID: -1730006611505920281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_156
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 94
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78b5e760f9a47cbf0800000000000000
+      internalID: -304192402955019385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_157
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 105
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 954b679d9c1a4e6d0800000000000000
+      internalID: -2962064766594010023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_158
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 113
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44713745921f8f950800000000000000
+      internalID: 6483196823412610884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_159
+      rect:
+        serializedVersion: 2
+        x: 1715
+        y: 116
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8a90144aa80e01b0800000000000000
+      internalID: -5688599751942956402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_160
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 111
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 803c332e66d0fff00800000000000000
+      internalID: 1152654765163004680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_161
+      rect:
+        serializedVersion: 2
+        x: 2213
+        y: 117
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acd50832dc7992f40800000000000000
+      internalID: 5704257310361148874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_162
+      rect:
+        serializedVersion: 2
+        x: 2274
+        y: 105
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b48c99b621b05730800000000000000
+      internalID: 3985880450103805110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_163
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 98
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f6b61bc079060a10800000000000000
+      internalID: 1875196674894640880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_164
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 104
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9883f303261b1cba0800000000000000
+      internalID: -6070375787444356983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_165
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 105
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ff2bc7d4ae71e7d0800000000000000
+      internalID: -2890890239334993934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_166
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 108
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8e15dc03faf94540800000000000000
+      internalID: 4992797583716195983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_167
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 107
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e0fa19359cde8610800000000000000
+      internalID: 1625479048993632488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_168
+      rect:
+        serializedVersion: 2
+        x: 2201
+        y: 94
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b9990c23244f76d0800000000000000
+      internalID: -2990596709697349193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_169
+      rect:
+        serializedVersion: 2
+        x: 2261
+        y: 106
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22207c2860624b840800000000000000
+      internalID: 5238854075944469026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_170
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 90
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f8544dfc0418a460800000000000000
+      internalID: 7253069245901461747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_171
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 85
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f9ec752d82c35d50800000000000000
+      internalID: 6724932580069403120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_172
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 81
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a3a23d991bfb4090800000000000000
+      internalID: -8049063821564533856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_173
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 92
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c29cb475fa7f96e50800000000000000
+      internalID: 6803241044575766828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_174
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 94
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c70aa1df5d07acc40800000000000000
+      internalID: 5533359156554801276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_175
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 87
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b84a758daedfd990800000000000000
+      internalID: -7358918429250008904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_176
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 80
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b96c22c470090f90800000000000000
+      internalID: -6987052845414717008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_177
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 80
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b119f074516fbff90800000000000000
+      internalID: -6918665831277686501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_178
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f34ee20240423d80800000000000000
+      internalID: -8272478913264991239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_179
+      rect:
+        serializedVersion: 2
+        x: 1715
+        y: 76
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad2f14cfab3fe8870800000000000000
+      internalID: 8687148715665912538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_180
+      rect:
+        serializedVersion: 2
+        x: 1747
+        y: 75
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d377b0108c839c220800000000000000
+      internalID: 2506597099270534973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_181
+      rect:
+        serializedVersion: 2
+        x: 2213
+        y: 75
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc0224b62aff01da0800000000000000
+      internalID: -5975995632471367473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Booss_1_secuence_Update_final-Sheet_182
+      rect:
+        serializedVersion: 2
+        x: 2251
+        y: 71
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b19815cef0dccb750800000000000000
+      internalID: 6322153445194303771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -13,7 +13,6 @@ public class Player : EntityBase
     
     #region Serialized Variables
 
-    [field: SerializeField] public int SpinAttackDamage { get; private set; }
     [field: SerializeField] public Transform TargetCenter { get; private set; }
     [field: SerializeField] public Transform TargetShipBombing { get; private set; }
     #endregion
@@ -35,11 +34,6 @@ public class Player : EntityBase
         _playerAppearance.Init(_playerMovement, Health);
         
         Health.LinkFillUI(playerHealthUI);
-    }
-
-    public void TakeDamage(int damage)
-    {
-        Health.TakeDamage(damage);
     }
     #endregion
     

@@ -38,7 +38,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3419241994908041840, guid: d3ed480a76c71ab47b342630373a3b2e, type: 3}
       propertyPath: m_Name
-      value: Floor Variant
+      value: Sprite Floor
       objectReference: {fileID: 0}
     - target: {fileID: 8817474270228545304, guid: d3ed480a76c71ab47b342630373a3b2e, type: 3}
       propertyPath: m_Size.x

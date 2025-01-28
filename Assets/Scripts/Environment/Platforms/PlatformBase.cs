@@ -19,6 +19,7 @@ public class PlatformBase : MonoBehaviour
     public Type PlatformType => platformType;
 
     [SerializeField] protected Type platformType;
+    
     [SerializeField] protected SerializedDictionary<Type, PlatformModifierBase> modifiers;
 
     public bool HasPlatformTypeFlag(Type type)

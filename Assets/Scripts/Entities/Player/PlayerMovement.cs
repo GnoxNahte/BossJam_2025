@@ -12,13 +12,15 @@ public class PlayerMovement : MonoBehaviour
     public bool IsSpinning => isSpinning || isCharging;
     public bool IsDead => isDead;
     
-    // Takes in damage
-    public Action<int> OnHit;
+    // Takes in damage and position
+    public Action<int, Vector2> OnHit;
     #endregion
     
     #region Serialized Variables
 
     [SerializeField] private PlayerMovementStats stats;
+    [SerializeField] private int normalDamage;
+    [SerializeField] private int dashDamage;
     [SerializeField] private int spinDamage;
     [SerializeField] private LayerMask invincibilityMask;
     [SerializeField] private float invincibilityDuration;
@@ -98,6 +100,8 @@ public class PlayerMovement : MonoBehaviour
     public void Dash()
     {
         dashTimeLeft = stats.DashTime;
+
+        isCharging = isSpinning = false;
     }
     
     public void CancelDash()
@@ -162,36 +166,35 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        BossBase boss = other.gameObject.GetComponent<BossBase>();
-        if (boss)
+        EntityBase entity = other.gameObject.GetComponent<EntityBase>();
+        if (entity != null)
         {
             ContactPoint2D contactPoint = other.contacts[0];
-            ApplyKnockback(contactPoint.normal, boss.PlayerKnockbackSpeed);
-            // OnHit?.Invoke();
+
+            int damage = normalDamage;
+            if (isSpinning) 
+                damage = spinDamage;
+            else if (dashTimeLeft > 0f) 
+                damage = dashDamage;
+                
+            entity.TakeDamage(damage, contactPoint.point);
 
             if (isSpinning)
             {
                 GameObject shockwave = shockwavePool.Get(contactPoint.point);
                 shockwave.GetComponent<Shockwave>().Init(shockwavePool);
-                
-                boss.TakeDamage(spinDamage);
-                
-                StopSpinning();
             }
-            else
-            {
-                ActivateInvincibility();
-            }
-            return;
+            
+            ApplyKnockback(contactPoint.normal, entity.KnockbackSpeed);
+            ActivateInvincibility();
         }
         
         Bomb bomb = other.gameObject.GetComponent<Bomb>();
         if (bomb)
         {
-            ApplyKnockback(other.contacts[0].normal, bomb.PlayerKnockbackSpeed);
-            OnHit?.Invoke(bomb.Damage);
-            
-            StopSpinning();
+            ContactPoint2D contactPoint = other.contacts[0];
+            ApplyKnockback(contactPoint.normal, bomb.PlayerKnockbackSpeed);
+            OnHit?.Invoke(bomb.Damage, contactPoint.point);
             
             ActivateInvincibility();
             return;
@@ -421,6 +424,9 @@ public class PlayerMovement : MonoBehaviour
     // contactDirection - Direction from contact point to player
     private void ApplyKnockback(Vector2 contactDirection, Vector2 speed)
     {
+        StopSpinning();
+        dashTimeLeft = -1f;
+        
         velocity = speed * contactDirection.normalized;
 
         if (Mathf.Abs(velocity.y) < stats.SpinHitVelocity.y)

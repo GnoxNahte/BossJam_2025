@@ -24,7 +24,7 @@ public class OneWayPlatformModifier : PlatformModifierBase
     private void Awake()
     {
         _effector2D = GetComponent<PlatformEffector2D>();
-        Debug.Assert(GetComponent<LevelPlatformBase>().HasPlatformTypeFlag(PlatformBase.Type.OneWay), "Platform type is not one way");
+        Debug.Assert(GetComponent<PlatformBase>().HasPlatformTypeFlag(PlatformBase.Type.OneWay), "Platform type is not one way");
     }
 
     private void OnCollisionExit2D(Collision2D collision)

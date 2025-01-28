@@ -11,16 +11,13 @@ public class GameInitiator : MonoBehaviour
     [Header("Managers")]
     public GameObject InputManagerPrefab;
     public GameObject CameraManagerPrefab;
+    public GameObject DamageManagerPrefab;
     [Header("UI")] 
     public Transform Canvas;
     public GameObject GameUIManagerPrefab;
     
     [Header("Game Objects")]
     public GameObject Player;
-    public GameObject BorderTriggersPrefab;
-
-    [Header("Temp")] 
-    [SerializeField] private Transform playerStart;
     
     #endregion
     
@@ -35,13 +32,17 @@ public class GameInitiator : MonoBehaviour
     private async Awaitable LoadGame()
     {
         // await SceneManager.LoadSceneAsync("Boss 1", LoadSceneMode.Additive);
-        if (!SceneManager.GetSceneByName("TestLevel").isLoaded && !SceneManager.GetSceneByName("MainMenuLevel").isLoaded)
+        bool isMainMenuLoaded = SceneManager.GetSceneByName("MainMenuLevel").isLoaded;
+        if (!SceneManager.GetSceneByName("TestLevel").isLoaded && !isMainMenuLoaded)
+        {
             await SceneManager.LoadSceneAsync("MainMenuLevel", LoadSceneMode.Additive);
+            isMainMenuLoaded = true;
+        } 
             
-        await InstantiatePrefabs();
+        await InstantiatePrefabs(isMainMenuLoaded);
     }
 
-    private async Awaitable InstantiatePrefabs()
+    private async Awaitable InstantiatePrefabs(bool isMainMenuLoaded)
     {
         print("Init prefabs");
         // === Instantiate Objects ===
@@ -49,8 +50,9 @@ public class GameInitiator : MonoBehaviour
         // GameObject inputManagerGO = (await InstantiateAsync(InputManagerPrefab, managerParent.transform))[0];
         GameObject inputManagerGO = Instantiate(InputManagerPrefab, managerParent.transform); 
         GameObject cameraManagerGO = Instantiate(CameraManagerPrefab, managerParent.transform); 
-        GameObject gameUIManagerGO = Instantiate(GameUIManagerPrefab, Canvas.transform); 
-        GameObject playerGO = Instantiate(Player, playerStart.position, Quaternion.identity);
+        GameObject damageTextManageGO = Instantiate(DamageManagerPrefab, managerParent.transform);
+        GameObject gameUIManagerGO = Instantiate(GameUIManagerPrefab, Canvas.transform);
+        GameObject playerGO = Instantiate(Player);
         
         // === Get relevant components ===
         InputManager inputManager = inputManagerGO.GetComponent<InputManager>();
@@ -62,9 +64,10 @@ public class GameInitiator : MonoBehaviour
         
         // === Init Objects ===
         player.Init(inputManager, gameUIManager.PlayerHealthUI);
+        playerGO.transform.position = levelManager.PlayerStart.position;
         cameraManager.Init(player, levelManager.CameraConfier);
-        gameUIManager.Init(player.PlayerAbilitySystem);
-        inputManager.Init(player.PlayerAbilitySystem);
+        gameUIManager.Init(player.PlayerAbilitySystem, isMainMenuLoaded);
+        inputManager.Init(player.PlayerAbilitySystem, player.PlayerMovement);
         
         // === Init other objects ===
         BossShip boss = FindAnyObjectByType<BossShip>();

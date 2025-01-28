@@ -23,13 +23,15 @@ public class InputManager : MonoBehaviour
     private InputAction _pause;
     
     private PlayerAbilitySystem _playerAbilitySystem;
+    private PlayerMovement _playerMovement;
     #endregion
 
     #region Public Methods
 
-    public void Init(PlayerAbilitySystem playerAbilitySystem)
+    public void Init(PlayerAbilitySystem playerAbilitySystem, PlayerMovement playerMovement)
     {
         _playerAbilitySystem = playerAbilitySystem;
+        _playerMovement = playerMovement;
     }
 
     #endregion
@@ -75,14 +77,22 @@ public class InputManager : MonoBehaviour
         IsCharging = _charge.IsPressed();
         
         // === Abilities ===
+        // if (_dash.IsPressed())
+        //     _playerAbilitySystem.TryActivateAbility(PlayerAbilitySystem.Type.Dash);
+        // if (_attack.IsPressed())
+        //     _playerAbilitySystem.TryActivateAbility(PlayerAbilitySystem.Type.Attack);
+        // if (_charge.IsPressed())
+        //     _playerAbilitySystem.TryActivateAbility(PlayerAbilitySystem.Type.SpinCharge);
+        // if (_charge.WasReleasedThisFrame())
+        //     _playerAbilitySystem.OnAbilityEnd(PlayerAbilitySystem.Type.SpinCharge);
+        
+        // === Abilities ===
         if (_dash.IsPressed())
-            _playerAbilitySystem.TryActivateAbility(PlayerAbilitySystem.Type.Dash);
-        if (_attack.IsPressed())
-            _playerAbilitySystem.TryActivateAbility(PlayerAbilitySystem.Type.Attack);
+            _playerMovement.Dash();
         if (_charge.IsPressed())
-            _playerAbilitySystem.TryActivateAbility(PlayerAbilitySystem.Type.SpinCharge);
+            _playerMovement.ChargeSpin();
         if (_charge.WasReleasedThisFrame())
-            _playerAbilitySystem.OnAbilityEnd(PlayerAbilitySystem.Type.SpinCharge);
+            _playerMovement.Spin();
     }
     #endregion
 }

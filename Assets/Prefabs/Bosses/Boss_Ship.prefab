@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b586e53c57c8ca84e9cac04e8e2d5669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 1000
   <CurrHealth>k__BackingField: 0
 --- !u!114 &5855261382567464579
 MonoBehaviour:
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21bb0d23bb7a7d245adf9563b0aeb1e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <PlayerKnockbackSpeed>k__BackingField: {x: 10, y: 15}
+  <KnockbackSpeed>k__BackingField: {x: 10, y: 15}
   currState: 0
   nextState: 0
   prepareTime: 1

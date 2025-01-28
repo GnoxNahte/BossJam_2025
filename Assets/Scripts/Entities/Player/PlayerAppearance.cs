@@ -119,7 +119,7 @@ public class PlayerAppearance : MonoBehaviour
         _animator.SetBool(AnimId_IsDead, _playerMovement.IsDead);
     }
 
-    private void OnHit(int damage)
+    private void OnHit(int damage, Vector2 position)
     {
         _animator.SetTrigger(AnimId_OnHit);
     }
