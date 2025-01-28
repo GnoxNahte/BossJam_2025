@@ -66,8 +66,8 @@ public class GameInitiator : MonoBehaviour
         player.Init(inputManager, gameUIManager.PlayerHealthUI);
         playerGO.transform.position = levelManager.PlayerStart.position;
         cameraManager.Init(player, levelManager.CameraConfier);
-        gameUIManager.Init(player.PlayerAbilitySystem, isMainMenuLoaded);
-        inputManager.Init(player.PlayerAbilitySystem, player.PlayerMovement);
+        gameUIManager.Init(isMainMenuLoaded);
+        inputManager.Init(player.PlayerMovement);
         
         // === Init other objects ===
         BossShip boss = FindAnyObjectByType<BossShip>();

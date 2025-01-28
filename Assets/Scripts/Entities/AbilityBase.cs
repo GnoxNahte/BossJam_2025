@@ -16,7 +16,7 @@ public abstract class AbilityBase<T> : MonoBehaviour where T : System.Enum
 
     // Only can cancel abilities from these types. 
     // Cancel ability from type -> activate this ability
-    [field: SerializeField] public PlayerAbilitySystem.Type[] CancelFromTypes { get; protected set; }
+    [field: SerializeField] public T[] CancelFromTypes { get; protected set; }
 
     [Header("Tracking variables")]
     [field: SerializeField] [field: ReadOnly]
@@ -60,12 +60,12 @@ public abstract class AbilityBase<T> : MonoBehaviour where T : System.Enum
         IsActive = false;
     }
 
-    public bool IsCancelableFromAbility(PlayerAbilitySystem.Type previousAbility)
+    public bool IsCancelableFromAbility(T previousAbility)
     {
         return CancelFromTypes.Contains(previousAbility);
     }
 
-    public virtual void CancelAbility(PlayerAbilitySystem.Type nextAbility) {}
+    public virtual void CancelAbility(T nextAbility) {}
 
     #endregion
 

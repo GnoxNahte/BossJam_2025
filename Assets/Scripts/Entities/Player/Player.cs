@@ -8,7 +8,6 @@ public class Player : EntityBase
     
     public PlayerMovement PlayerMovement => _playerMovement;
     public PlayerAppearance PlayerAppearance => _playerAppearance;
-    public PlayerAbilitySystem PlayerAbilitySystem => _playerAbilitySystem;
     #endregion
     
     #region Serialized Variables
@@ -21,7 +20,6 @@ public class Player : EntityBase
 
     private PlayerMovement _playerMovement;
     private PlayerAppearance _playerAppearance;
-    private PlayerAbilitySystem _playerAbilitySystem;
     
     #endregion
     
@@ -29,8 +27,7 @@ public class Player : EntityBase
     
     public void Init(InputManager input, FillUI playerHealthUI)
     {
-        _playerMovement.Init(_playerAbilitySystem, input);
-        _playerAbilitySystem.Init(this);
+        _playerMovement.Init(input);
         _playerAppearance.Init(_playerMovement, Health);
         
         Health.LinkFillUI(playerHealthUI);
@@ -55,7 +52,6 @@ public class Player : EntityBase
         
         _playerMovement = GetComponent<PlayerMovement>();
         _playerAppearance = GetComponent<PlayerAppearance>();
-        _playerAbilitySystem = GetComponent<PlayerAbilitySystem>();
     }
 
     #endregion

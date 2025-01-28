@@ -22,6 +22,7 @@ MonoBehaviour:
   StopAcceleration: -33.333332
   TurnAcceleration: -200
   InAirTurnAcceleration: -100
+  DashCooldown: 0.5
   DashTime: 0.2
   DashCurve:
     serializedVersion: 2
@@ -57,6 +58,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   SpinHorizontalSpeed: 10
+  SpinVerticalSpeed: 0
   MaxFallVelocity: -10
   Gravity: -22.222221
   FallingGravity: -32
@@ -75,9 +77,5 @@ MonoBehaviour:
   WallJumpHorizontalVelocity: 5
   WallJumpHorizontalVelocityTowardsWall: 5
   SpinHitVelocity: {x: 5, y: 10}
-  ImpulseCurve:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  MinKnockbackVerticalSpeed: 12
+  InvincibilityDuration: 0.1

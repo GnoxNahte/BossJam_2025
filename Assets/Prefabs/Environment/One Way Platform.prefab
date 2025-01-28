@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1554317048798418196, guid: 7c079a95166c7874981947bd48055840, type: 3}
       propertyPath: m_Name
-      value: Floor Variant (1) Variant
+      value: One Way Platform
       objectReference: {fileID: 0}
     - target: {fileID: 2191482553876573689, guid: 7c079a95166c7874981947bd48055840, type: 3}
       propertyPath: size.x

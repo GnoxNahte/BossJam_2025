@@ -22,15 +22,13 @@ public class InputManager : MonoBehaviour
     private InputAction _attack;
     private InputAction _pause;
     
-    private PlayerAbilitySystem _playerAbilitySystem;
     private PlayerMovement _playerMovement;
     #endregion
 
     #region Public Methods
 
-    public void Init(PlayerAbilitySystem playerAbilitySystem, PlayerMovement playerMovement)
+    public void Init(PlayerMovement playerMovement)
     {
-        _playerAbilitySystem = playerAbilitySystem;
         _playerMovement = playerMovement;
     }
 

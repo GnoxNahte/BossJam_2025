@@ -31,6 +31,7 @@ public class PlayerMovementStats : ScriptableObject
     [ReadOnly]
     public float InAirTurnAcceleration;
 
+    public float DashCooldown;
     public float DashTime;
     public AnimationCurve DashCurve;
 
@@ -91,11 +92,11 @@ public class PlayerMovementStats : ScriptableObject
     public float WallJumpHorizontalVelocityTowardsWall;
     
     public Vector2 SpinHitVelocity;
+    public float MinKnockbackVerticalSpeed;
 
     [Header("Others")]
 
-    [Tooltip("X-axis is size, y-axis the force percentage")]
-    public AnimationCurve ImpulseCurve;
+    public float InvincibilityDuration;
 
     private void OnValidate()
     {

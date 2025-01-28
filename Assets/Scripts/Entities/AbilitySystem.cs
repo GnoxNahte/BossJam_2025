@@ -1,10 +1,10 @@
 using UnityEngine;
 using VInspector;
 
-public class AbilitySystem : MonoBehaviour
+public class AbilitySystem<T> : MonoBehaviour where T : System.Enum
 {
     #region Serialized Variables
     [field: SerializeField] 
-    public SerializedDictionary<PlayerAbilitySystem.Type, PlayerAbilityBase> Abilities { get; protected set; }
+    public SerializedDictionary<T, AbilityBase<T>> Abilities { get; protected set; }
     #endregion
 }

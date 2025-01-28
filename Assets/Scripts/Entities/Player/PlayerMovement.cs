@@ -23,7 +23,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private int dashDamage;
     [SerializeField] private int spinDamage;
     [SerializeField] private LayerMask invincibilityMask;
-    [SerializeField] private float invincibilityDuration;
 
     [Header("References")]
     [SerializeField] protected PlatformCollisionTracker ceilingChecker;
@@ -57,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] [ReadOnly]
     private float dashTimeLeft;
+    private float lastDashTime;
 
     // Stops movement if using ability
     [SerializeField] [ReadOnly]
@@ -72,7 +72,6 @@ public class PlayerMovement : MonoBehaviour
 
     private InputManager _input;
     private Rigidbody2D _rb;
-    private PlayerAbilitySystem _abilitySystem;
     private PlayerAppearance _appearance;
     
     // Only change when there's input
@@ -84,10 +83,9 @@ public class PlayerMovement : MonoBehaviour
     #endregion
     
     #region Public Methods
-    public void Init(PlayerAbilitySystem abilitySystem, InputManager input)
+    public void Init(InputManager input)
     {
         _input = input;
-        _abilitySystem = abilitySystem;
         
         ResetPlayer();
     }
@@ -99,6 +97,10 @@ public class PlayerMovement : MonoBehaviour
     
     public void Dash()
     {
+        if (Time.time - lastDashTime < stats.DashCooldown)
+            return;
+        
+        lastDashTime = Time.time;
         dashTimeLeft = stats.DashTime;
 
         isCharging = isSpinning = false;
@@ -113,12 +115,15 @@ public class PlayerMovement : MonoBehaviour
     // Returns if can start charging spin
     public void ChargeSpin()
     {
+        dashTimeLeft = -1f;
         isCharging = true;
         // velocity = Vector2.zero;
     }
 
     public void Spin()
     {
+        dashTimeLeft = -1f;
+        
         isCharging = false;
         
         isSpinning = true;
@@ -134,7 +139,7 @@ public class PlayerMovement : MonoBehaviour
 
         shockwavePool.transform.parent = null;
         
-        _invincibilityWait = new WaitForSeconds(invincibilityDuration);
+        _invincibilityWait = new WaitForSeconds(stats.InvincibilityDuration);
     }
 
     private void Update()
@@ -234,7 +239,6 @@ public class PlayerMovement : MonoBehaviour
             // On finish dash
             if (dashTimeLeft < 0f)
             {
-                _abilitySystem.OnAbilityEnd(PlayerAbilitySystem.Type.Dash);
                 dashTimeLeft = -1f;
                 return;
             }
@@ -418,7 +422,6 @@ public class PlayerMovement : MonoBehaviour
     private void StopSpinning()
     {
         isSpinning = false;
-        _abilitySystem.OnAbilityEnd(PlayerAbilitySystem.Type.Spin);
     }
 
     // contactDirection - Direction from contact point to player
@@ -428,10 +431,11 @@ public class PlayerMovement : MonoBehaviour
         dashTimeLeft = -1f;
         
         velocity = speed * contactDirection.normalized;
+        Debug.DrawRay(transform.position, contactDirection, Color.red, 1f);
 
-        if (Mathf.Abs(velocity.y) < stats.SpinHitVelocity.y)
+        if (Mathf.Abs(velocity.y) < stats.MinKnockbackVerticalSpeed)
         {
-            velocity.y = stats.SpinHitVelocity.y;
+            velocity.y = stats.MinKnockbackVerticalSpeed;
         }
 
         if (velocity.y < 0f)

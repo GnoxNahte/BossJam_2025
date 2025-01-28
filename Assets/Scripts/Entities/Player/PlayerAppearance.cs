@@ -29,29 +29,6 @@ public class PlayerAppearance : MonoBehaviour
     #endregion
     
     #region Public Methods
-    // ReSharper triggers for Debug.LogError
-    // ReSharper disable Unity.PerformanceAnalysis
-    public void OnActivateAbility(PlayerAbilitySystem.Type type)
-    {
-        switch (type)
-        {
-            case PlayerAbilitySystem.Type.Attack: _animator.SetTrigger(AnimId_OnAttack); break;
-            // case PlayerAbilitySystem.Type.Dash: _animator.SetTrigger(AnimID_OnDash); break;
-            // case PlayerAbilitySystem.Type.SpinCharge: _animator.SetTrigger(AnimId_OnSpinCharge); break;
-            // case PlayerAbilitySystem.Type.Spin: _animator.SetTrigger(AnimId_OnSpin); break;
-            // default: Debug.LogError("Player Animator: Activating unknown ability - " + type); break;
-        }
-    }
-    
-    public void OnAbilityEnd(PlayerAbilitySystem.Type type)
-    {
-        // switch (type)
-        // {
-        //     case PlayerAbilitySystem.Type.Spin: _animator.SetTrigger(AnimID_OnSpinEnd); break;
-        //     // default: Debug.LogError("Player Animator: Activating unknown ability - " + type); break;
-        // }
-    }
-
     public void Init(PlayerMovement playerMovement, Health health)
     {
         _playerMovement = playerMovement;

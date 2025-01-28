@@ -297,59 +297,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &2776088529033696197
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2353644762228266302}
-  - component: {fileID: 218851409037276141}
-  m_Layer: 0
-  m_Name: Spin Ability
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2353644762228266302
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2776088529033696197}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 81667361043763338}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &218851409037276141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2776088529033696197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3599cc75e489064780cd143e1acb2c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <Name>k__BackingField: Spin
-  <Icon>k__BackingField: {fileID: 0}
-  <Cooldown>k__BackingField: 0
-  <ChainAbility>k__BackingField: {fileID: 0}
-  <CancelFromTypes>k__BackingField: 02000000
-  <Type>k__BackingField: 3
-  <CooldownTimeLeft>k__BackingField: 0
-  <IsActive>k__BackingField: 0
-  <IfShowInUI>k__BackingField: 0
 --- !u!1 &3187836382229151766
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,59 +329,6 @@ Transform:
   - {fileID: 180609740209447904}
   m_Father: {fileID: 6204780708571062698}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &3188709186547100336
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2254548735271075216}
-  - component: {fileID: 4114532281335497279}
-  m_Layer: 0
-  m_Name: Dash Ability
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2254548735271075216
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3188709186547100336}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 81667361043763338}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4114532281335497279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3188709186547100336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19f5c7659e7c549468559b7d7de72aca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <Name>k__BackingField: Dash
-  <Icon>k__BackingField: {fileID: 0}
-  <Cooldown>k__BackingField: 0.5
-  <ChainAbility>k__BackingField: {fileID: 0}
-  <CancelFromTypes>k__BackingField: 
-  <Type>k__BackingField: 0
-  <CooldownTimeLeft>k__BackingField: 0
-  <IsActive>k__BackingField: 0
-  <IfShowInUI>k__BackingField: 1
 --- !u!1 &4123515240698725233
 GameObject:
   m_ObjectHideFlags: 0
@@ -1005,41 +899,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &7198569006228177929
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 81667361043763338}
-  m_Layer: 0
-  m_Name: Abilities
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &81667361043763338
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7198569006228177929}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2254548735271075216}
-  - {fileID: 8771090328491832337}
-  - {fileID: 2531810679031442900}
-  - {fileID: 2353644762228266302}
-  m_Father: {fileID: 2630409140149579082}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7870840765545168029
 GameObject:
   m_ObjectHideFlags: 0
@@ -1085,7 +944,6 @@ GameObject:
   - component: {fileID: 1804797769028365432}
   - component: {fileID: 6115550355396038473}
   - component: {fileID: 9210179023277053121}
-  - component: {fileID: 1542681338911003812}
   - component: {fileID: 3443995739950263447}
   - component: {fileID: 5485078080117663160}
   - component: {fileID: 3260060891999964613}
@@ -1114,7 +972,6 @@ Transform:
   - {fileID: 1543980999970460891}
   - {fileID: 1302227883408666478}
   - {fileID: 6204780708571062698}
-  - {fileID: 81667361043763338}
   - {fileID: 3800336722322912954}
   - {fileID: 6932263576785632245}
   m_Father: {fileID: 0}
@@ -1153,7 +1010,6 @@ MonoBehaviour:
   invincibilityMask:
     serializedVersion: 2
     m_Bits: 3072
-  invincibilityDuration: 1
   ceilingChecker: {fileID: 3967786579101266458}
   groundChecker: {fileID: 2446640281547453604}
   leftWallChecker: {fileID: 6394226183721352939}
@@ -1185,42 +1041,6 @@ MonoBehaviour:
   invincibilityAlpha: 0.5
   sr: {fileID: 5198375377145650706}
   attackParent: {fileID: 7592935016093612687}
---- !u!114 &1542681338911003812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8045721543996125440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df785610c352ea94ebcf98220631d7e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <Abilities>k__BackingField:
-    serializedKvps:
-    - Key: 0
-      Value: {fileID: 4114532281335497279}
-      index: 0
-      isKeyRepeated: 0
-      isKeyNull: 0
-    - Key: 1
-      Value: {fileID: 6771165114254686136}
-      index: 1
-      isKeyRepeated: 0
-      isKeyNull: 0
-    - Key: 2
-      Value: {fileID: 3440141353913144752}
-      index: 2
-      isKeyRepeated: 0
-      isKeyNull: 0
-    - Key: 3
-      Value: {fileID: 218851409037276141}
-      index: 3
-      isKeyRepeated: 0
-      isKeyNull: 0
-    dividerPos: 0.33
-  currAbility: {fileID: 0}
 --- !u!50 &3443995739950263447
 Rigidbody2D:
   serializedVersion: 5
@@ -1422,109 +1242,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <CollidingObjs>k__BackingField: []
---- !u!1 &8623148238702360546
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8771090328491832337}
-  - component: {fileID: 6771165114254686136}
-  m_Layer: 0
-  m_Name: Attack Ability
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8771090328491832337
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8623148238702360546}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 81667361043763338}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6771165114254686136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8623148238702360546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 011617359d1c08f48b0c2d54465391a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <Name>k__BackingField: Attack
-  <Icon>k__BackingField: {fileID: 0}
-  <Cooldown>k__BackingField: 0.3
-  <ChainAbility>k__BackingField: {fileID: 0}
-  <CancelFromTypes>k__BackingField: 00000000
-  <Type>k__BackingField: 1
-  <CooldownTimeLeft>k__BackingField: 0
-  <IsActive>k__BackingField: 0
-  <IfShowInUI>k__BackingField: 1
---- !u!1 &8944268687124150160
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2531810679031442900}
-  - component: {fileID: 3440141353913144752}
-  m_Layer: 0
-  m_Name: Spin - Charge Ability
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2531810679031442900
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8944268687124150160}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 81667361043763338}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3440141353913144752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8944268687124150160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fc690a24f19c2b4694a9beddb0023bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <Name>k__BackingField: Spin - Charge
-  <Icon>k__BackingField: {fileID: 0}
-  <Cooldown>k__BackingField: 0
-  <ChainAbility>k__BackingField: {fileID: 218851409037276141}
-  <CancelFromTypes>k__BackingField: 
-  <Type>k__BackingField: 2
-  <CooldownTimeLeft>k__BackingField: 0
-  <IsActive>k__BackingField: 0
-  <IfShowInUI>k__BackingField: 1

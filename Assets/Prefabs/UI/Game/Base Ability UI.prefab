@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4688793287227056884}
-  - component: {fileID: 967340551539799795}
   m_Layer: 5
   m_Name: Base Ability UI
   m_TagString: Untagged
@@ -38,21 +37,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 50, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &967340551539799795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 658710598841455004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b4aab81f51479244b733d3997eef943, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  abilityIcon: {fileID: 2433160297057614752}
-  abilityFill: {fileID: 5670357488977169564}
-  abilityName: {fileID: 2146321507472095725}
 --- !u!1 &3182193757470454971
 GameObject:
   m_ObjectHideFlags: 0
