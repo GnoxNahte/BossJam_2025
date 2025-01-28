@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public bool IsInAir => isInAir;
     public Vector2 Velocity => velocity; 
     public Vector2 FacingDirection => _facingDirection;
-    public bool IsSpinning => isSpinning || isCharging;
+    public bool IsSpinning => isSpinning;
     public bool IsDead => isDead;
     
     // Takes in damage and position
@@ -60,8 +60,6 @@ public class PlayerMovement : MonoBehaviour
 
     // Stops movement if using ability
     [SerializeField] [ReadOnly]
-    private bool isCharging;
-    [SerializeField] [ReadOnly]
     private bool isSpinning;
     [SerializeField] [ReadOnly]
     private bool isDead;
@@ -103,7 +101,7 @@ public class PlayerMovement : MonoBehaviour
         lastDashTime = Time.time;
         dashTimeLeft = stats.DashTime;
 
-        isCharging = isSpinning = false;
+        isSpinning = false;
     }
     
     public void CancelDash()
@@ -116,15 +114,11 @@ public class PlayerMovement : MonoBehaviour
     public void ChargeSpin()
     {
         dashTimeLeft = -1f;
-        isCharging = true;
-        // velocity = Vector2.zero;
     }
 
     public void Spin()
     {
         dashTimeLeft = -1f;
-        
-        isCharging = false;
         
         isSpinning = true;
         velocity = new Vector2(stats.SpinHorizontalSpeed * (FacingDirection.x > 0 ? 1 : -1), 0f);
@@ -181,7 +175,7 @@ public class PlayerMovement : MonoBehaviour
                 damage = spinDamage;
             else if (dashTimeLeft > 0f) 
                 damage = dashDamage;
-                
+            
             entity.TakeDamage(damage, contactPoint.point);
 
             if (isSpinning)
@@ -213,10 +207,14 @@ public class PlayerMovement : MonoBehaviour
     // Updates horizontal velocity
     private void HorizontalMovement()
     {
-        if (isCharging || isSpinning)
+        if (isSpinning)
         {
+            // If hit either left or right wall and the wall isn't a one way
+            bool ifHitWall = (leftWallChecker.IsColliding && !leftWallChecker.GetCollidingPlatformWithType(PlatformBase.Type.OneWay)) ||
+                             (rightWallChecker.IsColliding && !rightWallChecker.GetCollidingPlatformWithType(PlatformBase.Type.OneWay));
+                
             // Stop and apply knockback if collided
-            if (leftWallChecker.IsColliding || rightWallChecker.IsColliding)
+            if (ifHitWall)
             {
                 velocity = stats.SpinHitVelocity;
                 if (rightWallChecker.IsColliding)
@@ -441,6 +439,7 @@ public class PlayerMovement : MonoBehaviour
         if (velocity.y < 0f)
             velocity.y *= 0.5f; // Down knockback is too strong, partly because of increased gravity when going down
         
+        Debug.DrawRay(transform.position, velocity, Color.green, 1f);
         print("Knockback final vel: " + velocity);
     }
 

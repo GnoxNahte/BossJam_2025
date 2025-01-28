@@ -75,21 +75,9 @@ public class InputManager : MonoBehaviour
         IsCharging = _charge.IsPressed();
         
         // === Abilities ===
-        // if (_dash.IsPressed())
-        //     _playerAbilitySystem.TryActivateAbility(PlayerAbilitySystem.Type.Dash);
-        // if (_attack.IsPressed())
-        //     _playerAbilitySystem.TryActivateAbility(PlayerAbilitySystem.Type.Attack);
-        // if (_charge.IsPressed())
-        //     _playerAbilitySystem.TryActivateAbility(PlayerAbilitySystem.Type.SpinCharge);
-        // if (_charge.WasReleasedThisFrame())
-        //     _playerAbilitySystem.OnAbilityEnd(PlayerAbilitySystem.Type.SpinCharge);
-        
-        // === Abilities ===
         if (_dash.IsPressed())
             _playerMovement.Dash();
         if (_charge.IsPressed())
-            _playerMovement.ChargeSpin();
-        if (_charge.WasReleasedThisFrame())
             _playerMovement.Spin();
     }
     #endregion

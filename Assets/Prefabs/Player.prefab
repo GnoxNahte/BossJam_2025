@@ -1023,7 +1023,6 @@ MonoBehaviour:
   ifReleaseJumpAfterJumping: 0
   isInAir: 0
   dashTimeLeft: 0
-  isCharging: 0
   isSpinning: 0
   isDead: 0
 --- !u!114 &9210179023277053121
