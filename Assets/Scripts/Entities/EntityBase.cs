@@ -15,10 +15,17 @@ public class EntityBase : MonoBehaviour
         Health.TakeDamage(damage);
         DamageTextManager.OnDamage(damage, position, _isPlayer);
     }
+
+    protected virtual void OnDead()
+    {
+        print(name + " is Dead");
+    }
     
     protected virtual void Awake()
     {
         Health = GetComponent<Health>();
         _isPlayer = GetComponent<Player>() != null;
+        
+        Health.OnDeath += OnDead;
     }
 }

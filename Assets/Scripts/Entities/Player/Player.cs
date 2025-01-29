@@ -20,17 +20,25 @@ public class Player : EntityBase
 
     private PlayerMovement _playerMovement;
     private PlayerAppearance _playerAppearance;
+    private GameUIManager _gameUIManager;
     
     #endregion
     
     #region Public Methods
     
-    public void Init(InputManager input, FillUI playerHealthUI)
+    public void Init(InputManager input, GameUIManager gameUIManager)
     {
         _playerMovement.Init(input);
         _playerAppearance.Init(_playerMovement, Health);
         
-        Health.LinkFillUI(playerHealthUI);
+        _gameUIManager = gameUIManager;
+        Health.LinkFillUI(gameUIManager.PlayerHealthUI);
+    }
+    
+    // Called in Animation events
+    public void OnDeathAnimDone()
+    {
+        _gameUIManager.OnDeath();
     }
     #endregion
     
@@ -56,7 +64,18 @@ public class Player : EntityBase
 
     #endregion
     
-    #region Private Methods
-    
+    #region Private/Protected Methods
+
+    protected override void OnDead()
+    {
+        if (_playerMovement.IsDead)
+            return;
+        
+        base.OnDead();
+
+        _gameUIManager.OnDeath();
+        _playerMovement.OnDeath();
+    }
+
     #endregion
 }

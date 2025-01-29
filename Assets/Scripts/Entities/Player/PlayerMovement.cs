@@ -64,6 +64,8 @@ public class PlayerMovement : MonoBehaviour
     private bool isSpinning;
     [SerializeField] [ReadOnly]
     private bool isDead;
+    [SerializeField] [ReadOnly]
+    private bool isInvincibleDamage;
     
     #endregion
     
@@ -121,6 +123,13 @@ public class PlayerMovement : MonoBehaviour
             ifGoRight = _isLastFacingRight;
         velocity = new Vector2(stats.SpinHorizontalSpeed * (ifGoRight ? 1 : -1), 0f);
     }
+
+    public void OnDeath()
+    {
+        dashTimeLeft = -1f;
+        isSpinning = false;
+        isDead = true;
+    }
     #endregion
     
     #region Unity Methods
@@ -152,6 +161,20 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // If dead, just apply friction on gravity
+        if (isDead)
+        {
+            // Apply friction (Copied from HorizontalMovement())
+            float stopVelocityAmt = stats.StopAcceleration * Time.deltaTime;
+            // negate stopVelocityAmt because stats.stopAcceleration is always < 0 
+            if (Mathf.Abs(velocity.x) > -stopVelocityAmt)
+                velocity.x += stopVelocityAmt * (velocity.x > 0f ? 1f : -1f);
+            else
+                velocity.x = 0f;
+            
+            HandleGravity();
+            return;
+        }
         // Updates the velocity for horizontal and vertical movement
         HorizontalMovement();
         VerticalMovement();
@@ -194,10 +217,28 @@ public class PlayerMovement : MonoBehaviour
         {
             ContactPoint2D contactPoint = other.contacts[0];
             ApplyKnockback(contactPoint.normal, bomb.PlayerKnockbackSpeed);
-            OnHit?.Invoke(bomb.Damage, contactPoint.point);
+            if (!isInvincibleDamage)
+                OnHit?.Invoke(bomb.Damage, contactPoint.point);
             
-            // ActivateInvincibility();
+            ActivateInvincibility();
             return;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        DamageTrigger damageTrigger = other.gameObject.GetComponent<DamageTrigger>();
+        if (damageTrigger)
+        {
+            Vector2 dir = Vector2.one;
+            if (transform.position.x < other.transform.position.x)
+                dir.x *= -1f;
+            ApplyKnockback(dir, damageTrigger.KnockbackSpeed);
+            
+            if (!isInvincibleDamage)
+                OnHit?.Invoke(damageTrigger.Damage, transform.position);
+            
+            ActivateInvincibility();
         }
     }
 
@@ -464,13 +505,15 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator InvincibilityCoroutine()
     {
-        _rb.excludeLayers = invincibilityMask;
+        // _rb.excludeLayers = invincibilityMask;
+        isInvincibleDamage = true;
         _appearance.OnInvincibilityChange(true);
 
         yield return _invincibilityWait;
         
         _appearance.OnInvincibilityChange(false);
-        _rb.excludeLayers = 0;
+        // _rb.excludeLayers = 0;
+        isInvincibleDamage = false;
         
         _invincibilityCoroutine = null;
     }

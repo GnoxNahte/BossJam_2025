@@ -33,12 +33,13 @@ public class GameInitiator : MonoBehaviour
     {
         // await SceneManager.LoadSceneAsync("Boss 1", LoadSceneMode.Additive);
         bool isMainMenuLoaded = SceneManager.GetSceneByName("MainMenuLevel").isLoaded;
-        if (!SceneManager.GetSceneByName("TestLevel").isLoaded && !isMainMenuLoaded)
+        
+        if (SceneManager.loadedSceneCount <= 1 && !isMainMenuLoaded)
         {
             await SceneManager.LoadSceneAsync("MainMenuLevel", LoadSceneMode.Additive);
             isMainMenuLoaded = true;
         } 
-            
+        
         await InstantiatePrefabs(isMainMenuLoaded);
     }
 
@@ -63,7 +64,7 @@ public class GameInitiator : MonoBehaviour
         LevelManager levelManager = FindFirstObjectByType<LevelManager>();
         
         // === Init Objects ===
-        player.Init(inputManager, gameUIManager.PlayerHealthUI);
+        player.Init(inputManager, gameUIManager);
         playerGO.transform.position = levelManager.PlayerStart.position;
         cameraManager.Init(player, levelManager.CameraConfier);
         gameUIManager.Init(isMainMenuLoaded);

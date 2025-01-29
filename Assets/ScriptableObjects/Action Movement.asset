@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3378e33b11a1a4642b6599e453100ef1, type: 3}
   m_Name: Action Movement
   m_EditorClassIdentifier: 
-  MaxSpeed: 7
+  MaxSpeed: 6
   AirStrafeMaxSpeed: 4
   MaxSpeedTime: 0.1
   StopTime: 0.15
   TurnTime: 0.05
   InAirTurnTime: 0.1
-  MoveAcceleration: 70
-  StopAcceleration: -46.666664
-  TurnAcceleration: -280
-  InAirTurnAcceleration: -140
+  MoveAcceleration: 60
+  StopAcceleration: -40
+  TurnAcceleration: -240
+  InAirTurnAcceleration: -120
   DashCooldown: 0.5
   DashTime: 0.2
   DashCurve:

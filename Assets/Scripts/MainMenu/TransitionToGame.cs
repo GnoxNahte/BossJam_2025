@@ -4,7 +4,13 @@ using UnityEngine.SceneManagement;
 
 public class TransitionToGame : MonoBehaviour
 {
+    [SerializeField] private string sceneLevelName;
     #region Unity Methods
+
+    public async void TriggerTransition()
+    {
+        await LoadNextScene();
+    }
 
     private async void OnTriggerEnter2D(Collider2D other)
     {
@@ -22,8 +28,8 @@ public class TransitionToGame : MonoBehaviour
         }
         print("Load Game");
         SceneManager.LoadScene("GameScene", LoadSceneMode.Single);
-        print("Load Scene");
-        SceneManager.LoadScene("TestLevel", LoadSceneMode.Additive);
+        print("Load Scene: " + sceneLevelName);
+        SceneManager.LoadScene(sceneLevelName, LoadSceneMode.Additive);
         // await SceneManager.LoadSceneAsync("TestLevel", LoadSceneMode.Additive);
         print("Done");
     }

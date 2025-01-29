@@ -11,9 +11,12 @@ public class BossShip : BossBase
         Bombing,
         Firing,
         Dead,
+        None, // Debug only
     }
     
     #region Serialized Variables
+
+    [SerializeField] private State restrictState = State.None;
     [SerializeField] [ReadOnly] private State currState = State.Preparing;
     [SerializeField] [ReadOnly] private State nextState = State.Preparing;
     [Header("Preparing")]
@@ -88,7 +91,6 @@ public class BossShip : BossBase
         Camera gameCamera = Camera.main;
         GameObject attackWarningGameObj = Instantiate(attackWarningPrefab, gameCamera?.transform);
         _attackWarning = attackWarningGameObj.GetComponent<AttackWarningFlashing>();
-
     }
 
     private void Start()
@@ -187,6 +189,10 @@ public class BossShip : BossBase
             case State.Preparing: 
                 _prepareTimeLeft = prepareTime;
                 nextState = Random.value < 0.5f ? State.Bombing : State.Firing;
+                #if UNITY_EDITOR
+                if (restrictState != State.None)
+                    nextState = restrictState;
+                #endif
                 _attackWarning.follow.SetTargetAndPosition(nextState == State.Bombing ? Player.TargetShipBombing : Player.TargetCenter);
                 break;
             case State.Bombing:

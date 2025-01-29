@@ -168,6 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <KnockbackSpeed>k__BackingField: {x: 10, y: 15}
+  restrictState: 4
   currState: 0
   nextState: 0
   prepareTime: 1
@@ -735,17 +736,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4004374059266099025, guid: c493b6fe455118e49854da53a9057c11, type: 3}
-      propertyPath: m_FlipX
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4055590443624066736, guid: c493b6fe455118e49854da53a9057c11, type: 3}
       propertyPath: m_Name
       value: Fire
-      objectReference: {fileID: 0}
-    - target: {fileID: 4055590443624066736, guid: c493b6fe455118e49854da53a9057c11, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
