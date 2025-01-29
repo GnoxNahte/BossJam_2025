@@ -24,8 +24,7 @@ public class PlayerAppearance : MonoBehaviour
     private static readonly int AnimId_DirectionX = Animator.StringToHash("DirectionX");
     private static readonly int AnimId_DirectionY = Animator.StringToHash("DirectionY");
     private static readonly int AnimId_OnHit = Animator.StringToHash("OnHit");
-    private static readonly int AnimId_OnDamage = Animator.StringToHash("OnDamage");
-    private static readonly int AnimId_OnAttack = Animator.StringToHash("OnAttack");
+    private static readonly int AnimId_IsBossDefeated = Animator.StringToHash("IsBossDefeated");
     #endregion
     
     #region Public Methods
@@ -101,4 +100,9 @@ public class PlayerAppearance : MonoBehaviour
         _animator.SetTrigger(AnimId_OnHit);
     }
     #endregion
+
+    public void OnDefeatBoss()
+    {
+        _animator.SetBool(AnimId_IsBossDefeated, true);
+    }
 }

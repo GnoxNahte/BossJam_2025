@@ -7,4 +7,10 @@ public abstract class BossBase : EntityBase
     {
         Player = player;
     }
+
+    protected override void OnDead()
+    {
+        base.OnDead();
+        Player.OnDefeatBoss();
+    }
 }

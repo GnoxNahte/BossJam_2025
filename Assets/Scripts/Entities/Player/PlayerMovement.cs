@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 FacingDirection => _facingDirection;
     public bool IsSpinning => isSpinning;
     public bool IsDead => isDead;
+    public bool IsGemGrab => isGemGrab;
+    public bool IsDisabledMovement => isDead || isGemGrab;
     
     // Takes in damage and position
     public Action<int, Vector2> OnHit;
@@ -64,6 +66,8 @@ public class PlayerMovement : MonoBehaviour
     private bool isSpinning;
     [SerializeField] [ReadOnly]
     private bool isDead;
+    [SerializeField] [ReadOnly]
+    private bool isGemGrab;
     [SerializeField] [ReadOnly]
     private bool isInvincibleDamage;
     
@@ -124,10 +128,15 @@ public class PlayerMovement : MonoBehaviour
         velocity = new Vector2(stats.SpinHorizontalSpeed * (ifGoRight ? 1 : -1), 0f);
     }
 
+    public void OnGemGrab()
+    {
+        DisableInput();
+        isGemGrab = true;
+    }
+
     public void OnDeath()
     {
-        dashTimeLeft = -1f;
-        isSpinning = false;
+        DisableInput();
         isDead = true;
     }
     #endregion
@@ -145,6 +154,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        if (IsDisabledMovement)
+            return;
+        
         float realtime = Time.realtimeSinceStartup;
         
         if (_input.JumpPressedThisFrame) 
@@ -162,7 +174,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         // If dead, just apply friction on gravity
-        if (isDead)
+        if (IsDisabledMovement)
         {
             // Apply friction (Copied from HorizontalMovement())
             float stopVelocityAmt = stats.StopAcceleration * Time.deltaTime;
@@ -496,7 +508,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (_invincibilityCoroutine != null)
         {
-            Debug.LogWarning("Invincibility Coroutine is still running");
             StopCoroutine(_invincibilityCoroutine);
             _invincibilityCoroutine = null;
         }
@@ -517,6 +528,13 @@ public class PlayerMovement : MonoBehaviour
         
         _invincibilityCoroutine = null;
     }
+
+    private void DisableInput()
+    {
+        velocity.x = 0f;
+        dashTimeLeft = -1f;
+        isSpinning = false;
+    }
     
     private void ResetPlayer()
     {
@@ -529,6 +547,7 @@ public class PlayerMovement : MonoBehaviour
         ifReleaseJumpAfterJumping = true;
 
         isInAir = false;
+        isSpinning = false;
     }
     #endregion
 }

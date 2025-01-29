@@ -47,6 +47,8 @@ public class BossShip : BossBase
     private float _attackCooldownLeft;
 
     private bool _isInitDone = false;
+
+    private bool _isDead = false;
     
     private GameObject _leftBorder, _rightBorder;
     
@@ -57,6 +59,7 @@ public class BossShip : BossBase
     private static readonly int AnimId_OnHit = Animator.StringToHash("OnHit");
     private static readonly int AnimId_IsBombing = Animator.StringToHash("IsBombing");
     private static readonly int AnimId_IsFiring = Animator.StringToHash("IsFiring");
+    private static readonly int AnimId_IsDead = Animator.StringToHash("IsDead");
 
     #endregion
 
@@ -134,6 +137,8 @@ public class BossShip : BossBase
                 Vector2 displacement = bombingMoveSpeed * Time.fixedDeltaTime * (_isMovingRight ? 1f : -1f) * Vector2.right;
                 _rb.MovePosition(_rb.position + displacement);
                 break;
+            case State.Dead:
+                break;
         }
     }
 
@@ -170,6 +175,15 @@ public class BossShip : BossBase
     
     #region Private Methods
 
+    protected override void OnDead()
+    {
+        base.OnDead();
+        
+        _animator.SetBool(AnimId_IsDead, true);
+        _isDead = true;
+        currState = nextState = State.Dead;
+    }
+
     private void ChangeState(State newState)
     {
 #if UNITY_EDITOR
@@ -177,7 +191,7 @@ public class BossShip : BossBase
         {
             // print("Changing state: " + currState + " -> " + newState);
             Debug.Assert(newState != currState, "Setting next state to the same current state: " + currState);
-        }  
+        }
 #endif
         
         _attackCooldownLeft = -1f;

@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: d46ea659724bd96429c7e60e36b3f962
+guid: 87d7fad869c2697408753e438335cdb5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3061772704419217448
-    second: Health_bar_color_Cut_0
+      213: 1616780441437842540
+    second: BLUE_GEM_KNIFE_FLYING_BOSS-Sheet_0
+  - first:
+      213: 4002216384570576125
+    second: BLUE_GEM_KNIFE_FLYING_BOSS-Sheet_1
+  - first:
+      213: -5539728102379627720
+    second: BLUE_GEM_KNIFE_FLYING_BOSS-Sheet_2
+  - first:
+      213: -1075839185423461285
+    second: BLUE_GEM_KNIFE_FLYING_BOSS-Sheet_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +122,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Health_bar_color_Cut_0
+      name: BLUE_GEM_KNIFE_FLYING_BOSS-Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 16
+        x: 5
+        y: 8
+        width: 44
+        height: 40
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 13, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8dffa1282f56285d0800000000000000
-      internalID: -3061772704419217448
+      spriteID: c6ca3b3de35ff6610800000000000000
+      internalID: 1616780441437842540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLUE_GEM_KNIFE_FLYING_BOSS-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 11
+        width: 45
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfcc39cd89aba8730800000000000000
+      internalID: 4002216384570576125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLUE_GEM_KNIFE_FLYING_BOSS-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 10
+        width: 45
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83bd96144aeee13b0800000000000000
+      internalID: -5539728102379627720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLUE_GEM_KNIFE_FLYING_BOSS-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 9
+        width: 42
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b54936df5f9d111f0800000000000000
+      internalID: -1075839185423461285
       vertices: []
       indices: 
       edges: []
@@ -138,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d6dd516993edb0944a97e7b31e512514
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Health_bar_color_Cut_0: -3061772704419217448
+      BLUE_GEM_KNIFE_FLYING_BOSS-Sheet_0: 1616780441437842540
+      BLUE_GEM_KNIFE_FLYING_BOSS-Sheet_1: 4002216384570576125
+      BLUE_GEM_KNIFE_FLYING_BOSS-Sheet_2: -5539728102379627720
+      BLUE_GEM_KNIFE_FLYING_BOSS-Sheet_3: -1075839185423461285
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -14,6 +14,7 @@ public class Player : EntityBase
 
     [field: SerializeField] public Transform TargetCenter { get; private set; }
     [field: SerializeField] public Transform TargetShipBombing { get; private set; }
+    [field: SerializeField] public Transform GemTarget { get; private set; }
     #endregion
     
     #region Private Variables
@@ -39,6 +40,12 @@ public class Player : EntityBase
     public void OnDeathAnimDone()
     {
         _gameUIManager.OnDeath();
+    }
+
+    public void OnDefeatBoss()
+    {
+        _playerAppearance.OnDefeatBoss();
+        _playerMovement.OnGemGrab();
     }
     #endregion
     

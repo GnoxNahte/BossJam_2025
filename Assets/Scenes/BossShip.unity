@@ -2306,13 +2306,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss_Ship
       objectReference: {fileID: 0}
-    - target: {fileID: 3949742962426683297, guid: bfa8d80b41068cc48af8687e5cca2af2, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6951115197160951522, guid: bfa8d80b41068cc48af8687e5cca2af2, type: 3}
-      propertyPath: <Damage>k__BackingField
-      value: 1000
+    - target: {fileID: 6740825912537561101, guid: bfa8d80b41068cc48af8687e5cca2af2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7616785199762229685, guid: bfa8d80b41068cc48af8687e5cca2af2, type: 3}
       propertyPath: m_LocalPosition.x
