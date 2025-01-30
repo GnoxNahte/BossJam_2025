@@ -8,6 +8,7 @@ public class GameUIManager : MonoBehaviour
     [field: SerializeField] public FillUI PlayerHealthUI { get; private set; }
     
     [SerializeField] private TransitionToGame restartGameTransition;
+    [SerializeField] private TransitionToGame nextGameTransition;
 
     [SerializeField] private float fadeAnimDuration;
     [SerializeField] private CanvasGroup deathScreen;
@@ -16,13 +17,16 @@ public class GameUIManager : MonoBehaviour
     #endregion
     
     #region Public Methods
-    public void Init(bool isMainMenuLoaded)
+    public void Init(bool isMainMenuLoaded, string currSceneName, string nextSceneName)
     {
         if (isMainMenuLoaded)
         {
             BossHealthUI.Disable();
             PlayerHealthUI.Disable();
         }
+        
+        restartGameTransition.SetTransitionSceneName(currSceneName);
+        nextGameTransition.SetTransitionSceneName(nextSceneName);
     }
 
     public void OnDeath()
@@ -35,6 +39,12 @@ public class GameUIManager : MonoBehaviour
     public void OnRestartClicked()
     {
         restartGameTransition.TriggerTransition();
+    }
+
+    public void OnBossDefeated()
+    {
+        print("Defated");
+        StartCoroutine(WaitWinTransition());
     }
     #endregion
     
@@ -59,6 +69,14 @@ public class GameUIManager : MonoBehaviour
         deathScreen.alpha = 1f;
 
         _currAnim = null;
+    }
+
+    private IEnumerator WaitWinTransition()
+    {
+        print("wait Defated");
+        yield return new WaitForSeconds(5);
+        print("wait Defated 2");
+        nextGameTransition.TriggerTransition();
     }
     #endregion
 }

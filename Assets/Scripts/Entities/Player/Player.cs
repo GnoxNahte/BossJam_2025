@@ -46,6 +46,7 @@ public class Player : EntityBase
     {
         _playerAppearance.OnDefeatBoss();
         _playerMovement.OnGemGrab();
+        _gameUIManager.OnBossDefeated();
     }
     #endregion
     

@@ -15,12 +15,12 @@ GameObject:
   - component: {fileID: 8584933542910268497}
   - component: {fileID: 8087151421147452465}
   m_Layer: 11
-  m_Name: Bomb
+  m_Name: EnergyBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6089460423052593301
 Transform:
   m_ObjectHideFlags: 0
@@ -107,7 +107,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 49
-  m_Sprite: {fileID: -25499765, guid: c7aa946da20a02b49a5543b90a09102f, type: 3}
+  m_Sprite: {fileID: 5351753624579196538, guid: 6ee175325958ff84186950080808725b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -164,7 +164,7 @@ Animator:
   m_GameObject: {fileID: 5761712111559734208}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: fd95dbcebd024af4ba70c73f23017510, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0c6f40e046b4e744d848c9d4c22d6761, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -189,4 +189,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <PlayerKnockbackSpeed>k__BackingField: {x: 7, y: 7}
-  <Damage>k__BackingField: 20
+  <Damage>k__BackingField: 10

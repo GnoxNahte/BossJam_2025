@@ -67,7 +67,7 @@ public class BossShip : BossBase
 
     public void Init(Player player, GameObject leftBorder, GameObject rightBorder, FillUI healthUI)
     {
-        base.Init(player);
+        base.Init(player, healthUI);
         print("Init boss ship");   
         _attackWarning.follow.SetTargetAndPosition(Player.TargetShipBombing);
         ChangeState(State.Preparing);
@@ -76,8 +76,6 @@ public class BossShip : BossBase
         _rightBorder = rightBorder;
         
         _isInitDone = true;
-        
-        Health.LinkFillUI(healthUI);
     }
 
     #endregion

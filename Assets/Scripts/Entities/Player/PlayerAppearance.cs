@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class PlayerAppearance : MonoBehaviour
 {
-
     #region Serialized Variables
 
     [SerializeField] private float invincibilityAlpha;
@@ -25,6 +24,7 @@ public class PlayerAppearance : MonoBehaviour
     private static readonly int AnimId_DirectionY = Animator.StringToHash("DirectionY");
     private static readonly int AnimId_OnHit = Animator.StringToHash("OnHit");
     private static readonly int AnimId_IsBossDefeated = Animator.StringToHash("IsBossDefeated");
+    private static readonly int AnimId_OnHitAttack = Animator.StringToHash("OnHitAttack");
     #endregion
     
     #region Public Methods
@@ -43,6 +43,10 @@ public class PlayerAppearance : MonoBehaviour
         sr.color = color;
     }
 
+    public void OnHitAttack()
+    {
+        _animator.SetTrigger(AnimId_OnHitAttack);
+    }
     #endregion
     
     #region Unity Methods

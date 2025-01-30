@@ -5,6 +5,7 @@ public class SmoothVerticalFollow : MonoBehaviour
 {
     #region Serialized Variables
     [SerializeField] private float smoothTime;
+    [SerializeField] private float maxHeight = float.MaxValue;
     #endregion
     
     #region Private Variables
@@ -30,9 +31,10 @@ public class SmoothVerticalFollow : MonoBehaviour
 
     private void Update()
     {
+        float targetHeight = Mathf.Min(_target.position.y, maxHeight);
         transform.position = new Vector3(
             _target.position.x,
-            Mathf.SmoothDamp(transform.position.y, _target.position.y, ref _velocity, smoothTime),
+            Mathf.SmoothDamp(transform.position.y, targetHeight, ref _velocity, smoothTime),
             _target.position.z
         );
     }

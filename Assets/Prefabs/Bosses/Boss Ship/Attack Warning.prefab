@@ -102,6 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   smoothTime: 1
+  maxHeight: 5.4
 --- !u!114 &5018351518724054152
 MonoBehaviour:
   m_ObjectHideFlags: 0

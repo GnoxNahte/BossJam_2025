@@ -175,18 +175,8 @@ public class PlayerMovement : MonoBehaviour
     {
         // If dead, just apply friction on gravity
         if (IsDisabledMovement)
-        {
-            // Apply friction (Copied from HorizontalMovement())
-            float stopVelocityAmt = stats.StopAcceleration * Time.deltaTime;
-            // negate stopVelocityAmt because stats.stopAcceleration is always < 0 
-            if (Mathf.Abs(velocity.x) > -stopVelocityAmt)
-                velocity.x += stopVelocityAmt * (velocity.x > 0f ? 1f : -1f);
-            else
-                velocity.x = 0f;
-            
-            HandleGravity();
             return;
-        }
+        
         // Updates the velocity for horizontal and vertical movement
         HorizontalMovement();
         VerticalMovement();
@@ -221,12 +211,17 @@ public class PlayerMovement : MonoBehaviour
             }
             
             ApplyKnockback(contactPoint.normal, entity.KnockbackSpeed);
+            _appearance.OnHitAttack();
             // ActivateInvincibility();
         }
         
         Bomb bomb = other.gameObject.GetComponent<Bomb>();
         if (bomb)
         {
+            // Only damage player and apply knockback 
+            if (bomb.transform.position.y < transform.position.y)
+                return;
+            
             ContactPoint2D contactPoint = other.contacts[0];
             ApplyKnockback(contactPoint.normal, bomb.PlayerKnockbackSpeed);
             if (!isInvincibleDamage)
@@ -531,7 +526,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void DisableInput()
     {
-        velocity.x = 0f;
+        velocity = Vector2.zero;
         dashTimeLeft = -1f;
         isSpinning = false;
     }

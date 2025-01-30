@@ -19,6 +19,17 @@ public class ParallaxBackground : MonoBehaviour
     private Camera _cam;
     private SpriteRenderer _sr;
     #endregion
+
+    #region Public Methods
+
+    [Button]
+    public void ResetSpriteSize()
+    {
+        _sr = GetComponent<SpriteRenderer>();
+        _sr.size = _sr.sprite.bounds.size;
+    }
+
+    #endregion
     
     #region Unity Methods
     private void Awake()

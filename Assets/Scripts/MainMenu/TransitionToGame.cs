@@ -12,6 +12,11 @@ public class TransitionToGame : MonoBehaviour
         await LoadNextScene();
     }
 
+    public void SetTransitionSceneName(string sceneName)
+    {
+        sceneLevelName = sceneName;
+    }
+
     private async void OnTriggerEnter2D(Collider2D other)
     {
         await LoadNextScene();

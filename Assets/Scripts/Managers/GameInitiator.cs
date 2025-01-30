@@ -64,18 +64,22 @@ public class GameInitiator : MonoBehaviour
         LevelManager levelManager = FindFirstObjectByType<LevelManager>();
         
         // === Init Objects ===
+        print("Init objs");
         player.Init(inputManager, gameUIManager);
         playerGO.transform.position = levelManager.PlayerStart.position;
-        cameraManager.Init(player, levelManager.CameraConfier);
-        gameUIManager.Init(isMainMenuLoaded);
+        cameraManager.Init(player, levelManager.CameraConfier, levelManager.SkyColor);
+        gameUIManager.Init(isMainMenuLoaded, levelManager.CurrSceneName, levelManager.NextSceneName);
         inputManager.Init(player.PlayerMovement);
         
         // === Init other objects ===
-        BossShip boss = FindAnyObjectByType<BossShip>();
-        if (boss)
-            boss.Init(player, levelManager.LeftBorder, levelManager.RightBorder, gameUIManager.BossHealthUI);
-        else 
-            print("Can't find boss ship");
+        print("Init other objs");
+        BossShip bossShip = FindAnyObjectByType<BossShip>();
+        if (bossShip)
+            bossShip.Init(player, levelManager.LeftBorder, levelManager.RightBorder, gameUIManager.BossHealthUI);
+        
+        BossRock bossRock = FindAnyObjectByType<BossRock>();
+        if (bossRock)
+            bossRock.Init(player, levelManager.LevelCenter, gameUIManager.BossHealthUI);
     }
     #endregion
 }

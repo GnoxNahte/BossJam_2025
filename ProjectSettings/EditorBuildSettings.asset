@@ -11,11 +11,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenuLevel.unity
     guid: 05b649b0531c9984b89b2fa036698547
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Bosses/Boss 1.unity
     guid: e5d5c63f9b273464e87afabcfebe7072
   - enabled: 1
-    path: Assets/Scenes/BossShip.unity
+    path: Assets/Scenes/Bosses/BossShip.unity
     guid: ad1283c2032c7a745a8a5050f7b4c33e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

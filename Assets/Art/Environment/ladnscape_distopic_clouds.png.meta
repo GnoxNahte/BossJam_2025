@@ -1,0 +1,390 @@
+fileFormatVersion: 2
+guid: 0ceef8f7fb1565f43ad33b8a80e7cb85
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4842153946234875408
+    second: ladnscape_distopic_clouds_0
+  - first:
+      213: -3018836255157084336
+    second: ladnscape_distopic_clouds_1
+  - first:
+      213: -677324960876895977
+    second: ladnscape_distopic_clouds_2
+  - first:
+      213: 8614338681556552770
+    second: ladnscape_distopic_clouds_3
+  - first:
+      213: 4542007704740685286
+    second: ladnscape_distopic_clouds_4
+  - first:
+      213: 7380206223169613023
+    second: ladnscape_distopic_clouds_5
+  - first:
+      213: 3676230356710471391
+    second: ladnscape_distopic_clouds_6
+  - first:
+      213: 733661559138703081
+    second: ladnscape_distopic_clouds_7
+  - first:
+      213: -5121495066400207902
+    second: ladnscape_distopic_clouds_8
+  - first:
+      213: -2618176006218443080
+    second: ladnscape_distopic_clouds_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ladnscape_distopic_clouds_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 120
+        width: 368
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01ee519fb59c23340800000000000000
+      internalID: 4842153946234875408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ladnscape_distopic_clouds_1
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 241
+        width: 53
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05f9a40ab60fa16d0800000000000000
+      internalID: -3018836255157084336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ladnscape_distopic_clouds_2
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 227
+        width: 69
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7116d656988a996f0800000000000000
+      internalID: -677324960876895977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ladnscape_distopic_clouds_3
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 205
+        width: 104
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24cc511e3674c8770800000000000000
+      internalID: 8614338681556552770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ladnscape_distopic_clouds_4
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 199
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e5e72061f3780f30800000000000000
+      internalID: 4542007704740685286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ladnscape_distopic_clouds_5
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 83
+        width: 79
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdce62d3572cb6660800000000000000
+      internalID: 7380206223169613023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ladnscape_distopic_clouds_6
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 121
+        width: 167
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd63c3c2808940330800000000000000
+      internalID: 3676230356710471391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ladnscape_distopic_clouds_7
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 99
+        width: 190
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e652d90d4d7e2a00800000000000000
+      internalID: 733661559138703081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ladnscape_distopic_clouds_8
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 137
+        width: 114
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ebcc483f5bcce8b0800000000000000
+      internalID: -5121495066400207902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ladnscape_distopic_clouds_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 62
+        width: 129
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b616e54bce5aabd0800000000000000
+      internalID: -2618176006218443080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ladnscape_distopic_clouds_0: 4842153946234875408
+      ladnscape_distopic_clouds_1: -3018836255157084336
+      ladnscape_distopic_clouds_2: -677324960876895977
+      ladnscape_distopic_clouds_3: 8614338681556552770
+      ladnscape_distopic_clouds_4: 4542007704740685286
+      ladnscape_distopic_clouds_5: 7380206223169613023
+      ladnscape_distopic_clouds_6: 3676230356710471391
+      ladnscape_distopic_clouds_7: 733661559138703081
+      ladnscape_distopic_clouds_8: -5121495066400207902
+      ladnscape_distopic_clouds_9: -2618176006218443080
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

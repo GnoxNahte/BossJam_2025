@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4125554888584893919
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2222690482562799305}
+  m_Layer: 0
+  m_Name: LevelCenter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2222690482562799305
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4125554888584893919}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1708368503507010717}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4816860307847915269
 GameObject:
   m_ObjectHideFlags: 0
@@ -34,6 +65,7 @@ Transform:
   - {fileID: 570939234427577744}
   - {fileID: 3063193841209867990}
   - {fileID: 1824090913945590423}
+  - {fileID: 2222690482562799305}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4664171567763864649
@@ -52,6 +84,8 @@ MonoBehaviour:
   <LeftBorder>k__BackingField: {fileID: 931964163581463702}
   <RightBorder>k__BackingField: {fileID: 8013449557796995188}
   <PlayerStart>k__BackingField: {fileID: 1824090913945590423}
+  <SkyColor>k__BackingField: {r: 0.96862745, g: 0.9490196, b: 0.4745098, a: 1}
+  <LevelCenter>k__BackingField: {fileID: 2222690482562799305}
 --- !u!1 &7914572446798795167
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,13 +18,14 @@ public class Health : MonoBehaviour
     public void LinkFillUI(FillUI fillUI)
     {
         _fillUI = fillUI;
+        _fillUI.Init(maxHealth);
     }
     
     public void TakeDamage(int damage)
     {
         CurrHealth = Mathf.Clamp(CurrHealth - damage, 0, maxHealth);
 
-        _fillUI?.UpdateFill((float)CurrHealth / maxHealth);
+        _fillUI?.UpdateFill(CurrHealth);
         
         if (CurrHealth <= 0)
             OnDeath?.Invoke();
