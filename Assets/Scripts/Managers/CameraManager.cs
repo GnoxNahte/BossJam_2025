@@ -16,7 +16,7 @@ public class CameraManager : MonoBehaviour
         gameCamera.Follow = player.transform;
 
         if (levelManager.IfStaticCamera)
-            gameCamera.Follow = levelManager.StaticCameraTransform;
+            gameCamera.Follow = levelManager.StaticCameraFollow;
         else
             gameCamera.GetComponent<CinemachineConfiner2D>().BoundingShape2D = levelManager.CameraConfier;
         if (Camera.main)

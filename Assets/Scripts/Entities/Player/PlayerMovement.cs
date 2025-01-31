@@ -230,6 +230,22 @@ public class PlayerMovement : MonoBehaviour
             ActivateInvincibility();
             return;
         }
+        
+        Dagger dagger = other.gameObject.GetComponent<Dagger>();
+        if (dagger)
+        {
+            // Only damage player and apply knockback 
+            if (dagger.transform.position.y < transform.position.y)
+                return;
+            
+            ContactPoint2D contactPoint = other.contacts[0];
+            ApplyKnockback(contactPoint.normal, dagger.PlayerKnockbackSpeed);
+            if (!isInvincibleDamage)
+                OnHit?.Invoke(dagger.Damage, contactPoint.point);
+            
+            ActivateInvincibility();
+            return;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)

@@ -80,6 +80,10 @@ public class GameInitiator : MonoBehaviour
         BossRock bossRock = FindAnyObjectByType<BossRock>();
         if (bossRock)
             bossRock.Init(player, levelManager.LevelCenter, gameUIManager.BossHealthUI);
+        
+        BossEye bossEye = FindAnyObjectByType<BossEye>();
+        if (bossEye)
+            bossEye.Init(player, gameUIManager.BossHealthUI);
     }
     #endregion
 }

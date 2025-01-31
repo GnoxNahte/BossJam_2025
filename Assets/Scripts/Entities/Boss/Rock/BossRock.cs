@@ -34,12 +34,9 @@ public class BossRock : BossBase
     [SerializeField] private int bombingStreams;
     [SerializeField] private float bombFireSpeed;
     [SerializeField] private float rotateSpeed;
-    [SerializeField] [MinMaxSlider(0f, 360f)]
-    private Vector2 bombFireAngleRange_Left;
-    [SerializeField] [MinMaxSlider(0f, 360f)]
-    private Vector2 bombFireAngleRange_Right;
 
-    [Header("Ground Slam")] 
+    [Header("Ground Slam")]
+    [SerializeField] private int groundSlamDamage;
     [SerializeField] private float[] groundSlamPrepareDuration;
     [SerializeField] private AnimationCurve groundSlamPrepareSpeedCurve;
     [SerializeField] private float groundSlamAttackFollowMaxSpeed;
@@ -199,7 +196,14 @@ public class BossRock : BossBase
                 _rb.MovePosition(pos);
                 shockwave.gameObject.SetActive(true);
                 groundSlamParticles.Play();
+                return;
             }
+        }
+        
+        Player player = other.gameObject.GetComponent<Player>();
+        if (currState == State.GroundSlamAttack && player && player.transform.position.y < transform.position.y)
+        {
+            player.TakeDamage(groundSlamDamage, other.contacts[0].point);
         }
     }
 

@@ -11,7 +11,7 @@ public class LevelManager : MonoBehaviour
     [Header("References")]
     
     [field: ShowIf("IfStaticCamera")]
-    [field: SerializeField] public Transform StaticCameraTransform { get; private set; }
+    [field: SerializeField] public Transform StaticCameraFollow { get; private set; }
     [field: HideIf("IfStaticCamera")]
     [field: SerializeField] public Collider2D CameraConfier { get; private set; }
     [field: EndIf]

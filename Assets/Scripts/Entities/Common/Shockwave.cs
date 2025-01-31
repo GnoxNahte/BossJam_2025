@@ -6,6 +6,7 @@ using VInspector;
 
 public class Shockwave : MonoBehaviour
 {
+    public float ShockwaveTime => shockwaveTime;
     [SerializeField] private float shockwaveTime;
     [SerializeField] private Vector2 strengthRange; // Not using slider because might be reversed (X bigger than Y)
     [SerializeField] [MinMaxSlider(0f, 1f)] 

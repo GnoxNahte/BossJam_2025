@@ -109,7 +109,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  playerDamageColor: {r: 0.37254903, g: 0.87058824, b: 1, a: 1}
+  playerDamageColor: {r: 1, g: 0.63750005, b: 0, a: 1}
   enemyDamageColor: {r: 0.99215686, g: 0.34117648, b: 0.34117648, a: 1}
   duration: 1
 --- !u!23 &7869607869557262450
