@@ -274,6 +274,7 @@ GameObject:
   - component: {fileID: 95107096}
   - component: {fileID: 95107101}
   - component: {fileID: 95107100}
+  - component: {fileID: 95107102}
   m_Layer: 10
   m_Name: Dummy
   m_TagString: Untagged
@@ -389,7 +390,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7580221401657466777, guid: b10b8ca42054b564996233deb249895d, type: 3}
+  m_Sprite: {fileID: 708729287, guid: 7146a46d531ec8d448b4583021eac338, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -409,7 +410,7 @@ Transform:
   m_GameObject: {fileID: 95107095}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.32999998, y: -1.308, z: 0}
+  m_LocalPosition: {x: 0.32999998, y: -1.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -442,6 +443,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 9999999
   <CurrHealth>k__BackingField: 0
+--- !u!95 &95107102
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95107095}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e2a99819f5ad6e041a4ac95721a8d912, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &99062467 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4970961986340744780, guid: 7c079a95166c7874981947bd48055840, type: 3}
@@ -976,7 +999,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af23decf07c2a69468765adbee12c7b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneLevelName: BossShip
+  sceneLevelName: BossRock
+  ifAllowSubstituteLevel: 1
 --- !u!61 &173092683
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1355,7 +1379,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.048999786, y: -0.552}
+  m_AnchoredPosition: {x: 0.048999786, y: -0.4119999}
   m_SizeDelta: {x: -12.599998, y: -14.044601}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &258501612
@@ -2601,8 +2625,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 3350961990651615983, guid: 53e45ec620478a74396f683e6856beef, type: 2}
-  m_audioClip: {fileID: 8300000, guid: bcf49357aeac6a44789e081a6bdabcea, type: 3}
-  m_Resource: {fileID: 8300000, guid: bcf49357aeac6a44789e081a6bdabcea, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 27c78ee658e7fc84e959bdc5adff006c, type: 3}
+  m_Resource: {fileID: 8300000, guid: 27c78ee658e7fc84e959bdc5adff006c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -4197,7 +4221,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4664171567763864649, guid: 12fdc59f085e4e64cbe44cbe30ca78ad, type: 3}
       propertyPath: <NextSceneName>k__BackingField
-      value: BossShip
+      value: BossRock
       objectReference: {fileID: 0}
     - target: {fileID: 4816860307847915269, guid: 12fdc59f085e4e64cbe44cbe30ca78ad, type: 3}
       propertyPath: m_Name

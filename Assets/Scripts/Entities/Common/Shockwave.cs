@@ -62,6 +62,6 @@ public class Shockwave : MonoBehaviour
         
         gameObject.SetActive(false);
         
-        _objectPool.Release(gameObject);
+        _objectPool?.Release(gameObject);
     }
 }

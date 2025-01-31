@@ -67,7 +67,7 @@ public class GameInitiator : MonoBehaviour
         print("Init objs");
         player.Init(inputManager, gameUIManager);
         playerGO.transform.position = levelManager.PlayerStart.position;
-        cameraManager.Init(player, levelManager.CameraConfier, levelManager.SkyColor);
+        cameraManager.Init(player, levelManager);
         gameUIManager.Init(isMainMenuLoaded, levelManager.CurrSceneName, levelManager.NextSceneName);
         inputManager.Init(player.PlayerMovement);
         

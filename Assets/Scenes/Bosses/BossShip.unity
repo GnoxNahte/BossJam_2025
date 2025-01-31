@@ -3746,8 +3746,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 3350961990651615983, guid: 53e45ec620478a74396f683e6856beef, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 3047934f68a2a3643a80fdbd9b028d73, type: 3}
-  m_Resource: {fileID: 8300000, guid: 3047934f68a2a3643a80fdbd9b028d73, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c407372056f58124d867eba5992cd343, type: 3}
+  m_Resource: {fileID: 8300000, guid: c407372056f58124d867eba5992cd343, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -7239,7 +7239,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4664171567763864649, guid: 12fdc59f085e4e64cbe44cbe30ca78ad, type: 3}
       propertyPath: <NextSceneName>k__BackingField
-      value: BossRock
+      value: BossEye
       objectReference: {fileID: 0}
     - target: {fileID: 4816860307847915269, guid: 12fdc59f085e4e64cbe44cbe30ca78ad, type: 3}
       propertyPath: m_Name

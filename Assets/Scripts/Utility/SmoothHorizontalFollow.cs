@@ -39,5 +39,11 @@ public class SmoothHorizontalFollow : MonoBehaviour
         );
     }
 
+    private void OnDrawGizmosSelected()
+    {
+        float size = horizontalClamp.y - horizontalClamp.x;
+        Gizmos.DrawWireCube(Vector3.right * horizontalClamp.y * 0.5f - Vector3.left * horizontalClamp.x* 0.5f, new Vector2(size, 100));
+    }
+
     #endregion
 }

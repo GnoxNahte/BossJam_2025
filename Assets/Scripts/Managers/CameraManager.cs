@@ -11,12 +11,16 @@ public class CameraManager : MonoBehaviour
     #endregion
     
     #region Public Methods
-    public void Init(Player player, Collider2D cameraConfiner, Color skyColor)
+    public void Init(Player player, LevelManager levelManager)
     {
         gameCamera.Follow = player.transform;
-        gameCamera.GetComponent<CinemachineConfiner2D>().BoundingShape2D = cameraConfiner;
+
+        if (levelManager.IfStaticCamera)
+            gameCamera.Follow = levelManager.StaticCameraTransform;
+        else
+            gameCamera.GetComponent<CinemachineConfiner2D>().BoundingShape2D = levelManager.CameraConfier;
         if (Camera.main)
-            Camera.main.backgroundColor = skyColor;
+            Camera.main.backgroundColor = levelManager.SkyColor;
     }
     #endregion
     
