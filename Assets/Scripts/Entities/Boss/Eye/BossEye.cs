@@ -22,6 +22,9 @@ public class BossEye : BossBase
     [SerializeField] private AnimationCurve daggerSpeedCurve;
     [SerializeField] private float daggerAttackDuration;
     [SerializeField] private float daggerAttackCooldown;
+    [SerializeField] private float targetDist;
+    [SerializeField] private float followMoveTime;
+    [SerializeField] private float maxSpeed;
     
     [Header("Lightning")]
     [SerializeField] private float lightingPrepareDuration;
@@ -39,6 +42,7 @@ public class BossEye : BossBase
 
     private float _currDaggerAngle;
     private float _lastDaggerShotTime;
+    private Vector2 _moveVelocity;
     
     // Cache references
     private Rigidbody2D _rb;
@@ -59,6 +63,7 @@ public class BossEye : BossBase
 
     public void OnShootingDaggersDone()
     {
+        return;
         ChangeState(nextState);
     }
     #endregion
@@ -90,6 +95,27 @@ public class BossEye : BossBase
                     _lastDaggerShotTime = Time.time;
                     daggerCircle.ShootDagger(Player.transform);  
                 } 
+                break;
+            }
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        switch (currState)
+        {
+            case State.DaggerPrepare:
+            case State.DaggerAttack:
+            {
+                Vector2 playerPos = Player.transform.position;
+                Vector2 direction = _rb.position - playerPos;
+                Vector2 targetPos = playerPos + direction.normalized * targetDist;
+                // Debug.DrawLine(transform.position, targetPos, Color.red, 0.5f);
+                // Debug.DrawLine(transform.position, direction, Color.green, 0.5f);
+                Debug.DrawRay(targetPos, Vector2.right, Color.red, 0.5f);
+                Debug.DrawRay(targetPos, Vector2.up, Color.red, 0.5f);
+                targetPos = Vector2.SmoothDamp(_rb.position, targetPos, ref _moveVelocity, followMoveTime, maxSpeed);
+                _rb.MovePosition(targetPos);
                 break;
             }
         }

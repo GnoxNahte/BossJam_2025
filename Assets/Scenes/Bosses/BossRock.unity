@@ -8925,7 +8925,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -12296,7 +12296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b586e53c57c8ca84e9cac04e8e2d5669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 2500
+  maxHealth: 1500
   <CurrHealth>k__BackingField: 0
 --- !u!114 &1090083736977615945
 MonoBehaviour:
@@ -12866,8 +12866,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.47, y: 0.42}
-    oldSize: {x: 5, y: 2.5}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.32, y: 1.32}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -12882,13 +12882,13 @@ PolygonCollider2D:
       - {x: 1.5699999, y: 0.11}
       - {x: 1.4599999, y: 0.22999999}
       - {x: 1.11, y: 0.26999998}
-      - {x: 0.65999997, y: 0.28}
-      - {x: 0.48, y: 0.53}
-      - {x: 0.31, y: 0.58}
-      - {x: -0.19999999, y: 0.58}
-      - {x: -0.35, y: 0.56}
-      - {x: -0.47, y: 0.53}
-      - {x: -0.7, y: 0.29999998}
+      - {x: 0.79999995, y: 0.32999998}
+      - {x: 0.51, y: 0.5}
+      - {x: 0.32999998, y: 0.58}
+      - {x: 0.03, y: 0.64}
+      - {x: -0.31, y: 0.57}
+      - {x: -0.56, y: 0.45}
+      - {x: -0.82, y: 0.32}
       - {x: -1.42, y: 0.19}
       - {x: -1.54, y: 0.06}
       - {x: -1.54, y: -0.19999999}
@@ -13013,7 +13013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <KnockbackSpeed>k__BackingField: {x: 0, y: 0}
-  restrictState: 6
+  restrictState: 2
   currState: 0
   nextState: 0
   prepareMoveTime: 0.1

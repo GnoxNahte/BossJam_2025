@@ -191,6 +191,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
+            // print("Contact point: " + other.contacts.Length + " | " + other.contacts[0].normal);
+            if (other.contacts.Length > 1)
+            print("Contact point: " + other.contacts.Length + " | " + other.contacts[1].normal);
         EntityBase entity = other.gameObject.GetComponent<EntityBase>();
         if (entity != null)
         {
@@ -508,7 +511,7 @@ public class PlayerMovement : MonoBehaviour
             velocity.y *= 0.5f; // Down knockback is too strong, partly because of increased gravity when going down
         
         Debug.DrawRay(transform.position, velocity, Color.green, 1f);
-        // print("Knockback final vel: " + velocity);
+        print("Knockback final vel: " + velocity);
         
         Vector2 totalMoveAmt = velocity * Time.fixedDeltaTime;
         

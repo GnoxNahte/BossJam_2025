@@ -41,11 +41,11 @@ public class TransitionToGame : MonoBehaviour
             if (keyboard != null)
             {
                 if (keyboard.digit1Key.isPressed)
-                    sceneLevelName = "BossShip";
-                else if (keyboard.digit2Key.isPressed)
                     sceneLevelName = "BossRock";
+                else if (keyboard.digit2Key.isPressed)
+                    sceneLevelName = "BossShip";
                 else if (keyboard.digit3Key.isPressed)
-                    sceneLevelName = "BossFinal";
+                    sceneLevelName = "BossEye";
                 print("Sub scene loaded: " + sceneLevelName + " | " + keyboard.digit2Key.wasPressedThisFrame + " | " + keyboard.digit2Key.isPressed);
             }
             else

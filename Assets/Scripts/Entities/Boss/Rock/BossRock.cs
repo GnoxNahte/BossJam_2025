@@ -201,7 +201,7 @@ public class BossRock : BossBase
         }
         
         Player player = other.gameObject.GetComponent<Player>();
-        if (currState == State.GroundSlamAttack && player && player.transform.position.y < transform.position.y)
+        if (currState == State.GroundSlamAttack && _isGroundSlamFlying && player && player.transform.position.y < transform.position.y)
         {
             player.TakeDamage(groundSlamDamage, other.contacts[0].point);
         }

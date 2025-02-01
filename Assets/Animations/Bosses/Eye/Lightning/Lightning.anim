@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BossRock_Stun
+  m_Name: Lightning
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,23 +21,29 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -1942584077, guid: ad7f99ec4afa88345a46267d1645f902, type: 3}
+      value: {fileID: -494429251, guid: 93d553b89d7aed84c9a31118d32c380e, type: 3}
     - time: 0.083333336
-      value: {fileID: -1868604895, guid: ad7f99ec4afa88345a46267d1645f902, type: 3}
+      value: {fileID: 815593727, guid: 93d553b89d7aed84c9a31118d32c380e, type: 3}
     - time: 0.16666667
-      value: {fileID: 1142004601, guid: ad7f99ec4afa88345a46267d1645f902, type: 3}
+      value: {fileID: 839233114, guid: 93d553b89d7aed84c9a31118d32c380e, type: 3}
     - time: 0.25
-      value: {fileID: -1378393989, guid: ad7f99ec4afa88345a46267d1645f902, type: 3}
+      value: {fileID: 815593727, guid: 93d553b89d7aed84c9a31118d32c380e, type: 3}
     - time: 0.33333334
-      value: {fileID: 1225924657, guid: ad7f99ec4afa88345a46267d1645f902, type: 3}
-    - time: 0.41666666
-      value: {fileID: -328553783, guid: ad7f99ec4afa88345a46267d1645f902, type: 3}
+      value: {fileID: -1222447217, guid: 93d553b89d7aed84c9a31118d32c380e, type: 3}
+    - time: 0.5
+      value: {fileID: 1479747514, guid: 93d553b89d7aed84c9a31118d32c380e, type: 3}
+    - time: 0.5833333
+      value: {fileID: 827332883, guid: 93d553b89d7aed84c9a31118d32c380e, type: 3}
+    - time: 0.6666667
+      value: {fileID: 321738229, guid: 93d553b89d7aed84c9a31118d32c380e, type: 3}
+    - time: 0.75
+      value: {fileID: 1017710025, guid: 93d553b89d7aed84c9a31118d32c380e, type: 3}
     attribute: m_Sprite
-    path: Sprite
+    path: 
     classID: 212
     script: {fileID: 0}
     flags: 2
-  m_SampleRate: 24
+  m_SampleRate: 12
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -45,7 +51,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 850496168
+      path: 0
       attribute: 0
       script: {fileID: 0}
       typeID: 212
@@ -54,18 +60,21 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -1942584077, guid: ad7f99ec4afa88345a46267d1645f902, type: 3}
-    - {fileID: -1868604895, guid: ad7f99ec4afa88345a46267d1645f902, type: 3}
-    - {fileID: 1142004601, guid: ad7f99ec4afa88345a46267d1645f902, type: 3}
-    - {fileID: -1378393989, guid: ad7f99ec4afa88345a46267d1645f902, type: 3}
-    - {fileID: 1225924657, guid: ad7f99ec4afa88345a46267d1645f902, type: 3}
-    - {fileID: -328553783, guid: ad7f99ec4afa88345a46267d1645f902, type: 3}
+    - {fileID: -494429251, guid: 93d553b89d7aed84c9a31118d32c380e, type: 3}
+    - {fileID: 815593727, guid: 93d553b89d7aed84c9a31118d32c380e, type: 3}
+    - {fileID: 839233114, guid: 93d553b89d7aed84c9a31118d32c380e, type: 3}
+    - {fileID: 815593727, guid: 93d553b89d7aed84c9a31118d32c380e, type: 3}
+    - {fileID: -1222447217, guid: 93d553b89d7aed84c9a31118d32c380e, type: 3}
+    - {fileID: 1479747514, guid: 93d553b89d7aed84c9a31118d32c380e, type: 3}
+    - {fileID: 827332883, guid: 93d553b89d7aed84c9a31118d32c380e, type: 3}
+    - {fileID: 321738229, guid: 93d553b89d7aed84c9a31118d32c380e, type: 3}
+    - {fileID: 1017710025, guid: 93d553b89d7aed84c9a31118d32c380e, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.4583333
+    m_StopTime: 0.8333333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

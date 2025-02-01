@@ -88,6 +88,21 @@ public class DaggerCircle : MonoBehaviour
         if (currDaggers.Count == 0)
             _bossEye.OnShootingDaggersDone();
     }
+    
+    public void OnDaggerHit(Dagger dagger, bool ifShot)
+    {
+        if (!ifShot)
+        {
+            int index = currDaggers.FindIndex(d => d.Dagger == dagger);
+            currDaggers.RemoveAt(index);
+        }
+        
+        _daggerPool.Release(dagger.gameObject);
+        dagger.transform.SetParent(transform);
+        dagger.transform.localPosition = Vector3.zero;
+
+        UpdateDaggerAngles();
+    }
     #endregion
     
     #region Unity Methods
@@ -142,9 +157,14 @@ public class DaggerCircle : MonoBehaviour
     {
         GameObject newDagger = _daggerPool.Get(transform.position);
         Dagger dagger = newDagger.GetComponent<Dagger>();
-        dagger.SetFollowTarget(_player.transform, _daggerPool);
+        dagger.SetFollowTarget(_player.transform, this);
         currDaggers.Add(new DaggerInfo(dagger));
-        
+
+        UpdateDaggerAngles();
+    }
+
+    private void UpdateDaggerAngles()
+    {
         // Calculate target angle
         for (int i = 0; i < currDaggers.Count; i++)
         {

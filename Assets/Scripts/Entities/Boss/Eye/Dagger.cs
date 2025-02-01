@@ -7,30 +7,36 @@ public class Dagger : MonoBehaviour
 {
     [field: SerializeField] public Vector2 PlayerKnockbackSpeed { get; private set; }
     [field: SerializeField] public int Damage { get; private set; }
+
+    [SerializeField] private float speed;
     
     [SerializeField] private Shockwave shockwave;
 
     private Animator _animator;
     private Rigidbody2D _rb;
-    private ObjectPool _objectPool;
+    private DaggerCircle _daggerCircle;
 
     private Transform _followTarget;
     
     private WaitForSeconds _shockwaveWait;
 
+    private bool _isShot;
+
     public void ShootToTarget(Vector2 target)
     {
         _followTarget = null;
         
-        _rb.linearVelocity = target - (Vector2)transform.position;
+        _rb.linearVelocity = (target - (Vector2)transform.position) * speed;
         
         transform.parent = null;
+
+        _isShot = true;
     }
 
-    public void SetFollowTarget(Transform target, ObjectPool pool)
+    public void SetFollowTarget(Transform target, DaggerCircle daggerCircle)
     {
         _followTarget = target;
-        _objectPool = pool;
+        _daggerCircle = daggerCircle;
     }
     
     private void Awake()
@@ -39,6 +45,11 @@ public class Dagger : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
         
         _shockwaveWait = new WaitForSeconds(shockwave.ShockwaveTime);
+    }
+
+    private void OnEnable()
+    {
+        _isShot = false;
     }
 
     private void Update()
@@ -51,14 +62,13 @@ public class Dagger : MonoBehaviour
     {
         shockwave.gameObject.SetActive(true);
         _rb.linearVelocity = Vector2.zero;
+        _followTarget = null;
         StartCoroutine(WaitShockwave());
     }
 
     private IEnumerator WaitShockwave()
     {
         yield return _shockwaveWait;
-        
-        transform.parent = _objectPool?.transform;
-        _objectPool.Release(gameObject);
+        _daggerCircle.OnDaggerHit(this, _isShot);
     }
 }
