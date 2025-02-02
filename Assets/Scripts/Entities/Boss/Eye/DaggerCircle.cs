@@ -96,12 +96,15 @@ public class DaggerCircle : MonoBehaviour
             int index = currDaggers.FindIndex(d => d.Dagger == dagger);
             currDaggers.RemoveAt(index);
         }
-        
-        _daggerPool.Release(dagger.gameObject);
         dagger.transform.SetParent(transform);
         dagger.transform.localPosition = Vector3.zero;
 
         UpdateDaggerAngles();
+    }
+
+    public void ReleaseDagger(Dagger dagger)
+    {
+        _daggerPool.Release(dagger.gameObject);
     }
     #endregion
     

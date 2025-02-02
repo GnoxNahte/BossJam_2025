@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 4341203763653532724}
   - component: {fileID: 6598679173308748600}
   - component: {fileID: 707179476371288199}
+  - component: {fileID: 1155519309277971607}
   m_Layer: 11
   m_Name: Dagger
   m_TagString: Untagged
@@ -161,7 +162,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2051384522, guid: 93d553b89d7aed84c9a31118d32c380e, type: 3}
+  m_Sprite: {fileID: 2330331244762298310, guid: b588bfc6f8c02244187f0dfec2e09813, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -251,6 +252,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!95 &1155519309277971607
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2572070551912622783}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3e60040da541b6b46887da1270baf06c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &6148978059419425845
 PrefabInstance:
   m_ObjectHideFlags: 0

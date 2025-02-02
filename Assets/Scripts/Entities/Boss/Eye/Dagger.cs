@@ -25,10 +25,12 @@ public class Dagger : MonoBehaviour
     public void ShootToTarget(Vector2 target)
     {
         _followTarget = null;
-        
-        _rb.linearVelocity = (target - (Vector2)transform.position) * speed;
+
+        Vector2 dir = target - (Vector2)transform.position;
+        _rb.linearVelocity = dir * speed;
         
         transform.parent = null;
+        transform.right = dir;
 
         _isShot = true;
     }
@@ -63,12 +65,13 @@ public class Dagger : MonoBehaviour
         shockwave.gameObject.SetActive(true);
         _rb.linearVelocity = Vector2.zero;
         _followTarget = null;
+        _daggerCircle.OnDaggerHit(this, _isShot);
         StartCoroutine(WaitShockwave());
     }
 
     private IEnumerator WaitShockwave()
     {
         yield return _shockwaveWait;
-        _daggerCircle.OnDaggerHit(this, _isShot);
+        _daggerCircle.ReleaseDagger(this);
     }
 }

@@ -1,61 +1,19 @@
 fileFormatVersion: 2
-guid: ad7f99ec4afa88345a46267d1645f902
+guid: 52af37b3386619d46b326c57e03a3622
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2301509301191104758
-    second: BOSS_1_STUNNED_STARS_-Sheet_0
+      213: -7679175910051910273
+    second: Clou_desert_3_0
   - first:
-      213: -3304298614452198490
-    second: BOSS_1_STUNNED_STARS_-Sheet_1
+      213: -58098357100778380
+    second: Clou_desert_3_1
   - first:
-      213: -1381271079579226432
-    second: BOSS_1_STUNNED_STARS_-Sheet_2
+      213: -4973609574226558003
+    second: Clou_desert_3_2
   - first:
-      213: 3179946183813206708
-    second: BOSS_1_STUNNED_STARS_-Sheet_3
-  - first:
-      213: -1681070275249571588
-    second: BOSS_1_STUNNED_STARS_-Sheet_4
-  - first:
-      213: 7729293473406837865
-    second: BOSS_1_STUNNED_STARS_-Sheet_5
-  - first:
-      213: 5996189196261047609
-    second: BOSS_1_STUNNED_STARS_-Sheet_6
-  - first:
-      213: 6721037420550895560
-    second: BOSS_1_STUNNED_STARS_-Sheet_7
-  - first:
-      213: 6351643200074092256
-    second: BOSS_1_STUNNED_STARS_-Sheet_8
-  - first:
-      213: 1410909731837680262
-    second: BOSS_1_STUNNED_STARS_-Sheet_9
-  - first:
-      213: 3180227543179170222
-    second: BOSS_1_STUNNED_STARS_-Sheet_10
-  - first:
-      213: -483063239563168968
-    second: BOSS_1_STUNNED_STARS_-Sheet_11
-  - first:
-      213: 1755873798968330946
-    second: BOSS_1_STUNNED_STARS_-Sheet_12
-  - first:
-      213: -7045719849657324946
-    second: BOSS_1_STUNNED_STARS_-Sheet_13
-  - first:
-      213: 2587462477043223708
-    second: BOSS_1_STUNNED_STARS_-Sheet_14
-  - first:
-      213: 1643590446038441035
-    second: BOSS_1_STUNNED_STARS_-Sheet_15
-  - first:
-      213: -1874516362429864466
-    second: BOSS_1_STUNNED_STARS_-Sheet_16
-  - first:
-      213: -6951340062503341100
-    second: BOSS_1_STUNNED_STARS_-Sheet_17
+      213: -5542078434576662413
+    second: Clou_desert_3_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,9 +55,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -164,133 +122,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BOSS_1_STUNNED_STARS_-Sheet_0
+      name: Clou_desert_3_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 332
-        height: 132
+        x: 113
+        y: 3
+        width: 394
+        height: 176
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: fb9597f38b2dc414eadc0da9eda0f0a3
-      internalID: -1942584077
+      spriteID: f7d6e9122361e6590800000000000000
+      internalID: -7679175910051910273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BOSS_1_STUNNED_STARS_-Sheet_1
+      name: Clou_desert_3_1
       rect:
         serializedVersion: 2
-        x: 332
-        y: 0
-        width: 332
-        height: 132
+        x: 251
+        y: 153
+        width: 44
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1f4f48cf24e062549a407cab336c3b6d
-      internalID: -1868604895
+      spriteID: 47c69fe1ad7913ff0800000000000000
+      internalID: -58098357100778380
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BOSS_1_STUNNED_STARS_-Sheet_2
+      name: Clou_desert_3_2
       rect:
         serializedVersion: 2
-        x: 664
-        y: 0
-        width: 332
-        height: 132
+        x: 485
+        y: 121
+        width: 28
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 945ea1840163dd14d83305c3588875dd
-      internalID: 1142004601
+      spriteID: dc38ebc81703afab0800000000000000
+      internalID: -4973609574226558003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BOSS_1_STUNNED_STARS_-Sheet_3
+      name: Clou_desert_3_3
       rect:
         serializedVersion: 2
-        x: 996
-        y: 0
-        width: 332
-        height: 132
+        x: 81
+        y: 71
+        width: 38
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: abf33bc11fe8a374c9ba25ce484e5653
-      internalID: -1378393989
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BOSS_1_STUNNED_STARS_-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 1328
-        y: 0
-        width: 332
-        height: 132
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e8f0da6b7d5d6a4c95ab150377ba4aa
-      internalID: 1225924657
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BOSS_1_STUNNED_STARS_-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 1660
-        y: 0
-        width: 332
-        height: 132
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5675a669216912449bc45d9625f807c
-      internalID: -328553783
+      spriteID: 37084b5e6059613b0800000000000000
+      internalID: -5542078434576662413
       vertices: []
       indices: 
       edges: []
@@ -299,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 91782b42a6fc60e4592dd827cb672143
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -309,12 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BOSS_1_STUNNED_STARS_-Sheet_0: -1942584077
-      BOSS_1_STUNNED_STARS_-Sheet_1: -1868604895
-      BOSS_1_STUNNED_STARS_-Sheet_2: 1142004601
-      BOSS_1_STUNNED_STARS_-Sheet_3: -1378393989
-      BOSS_1_STUNNED_STARS_-Sheet_4: 1225924657
-      BOSS_1_STUNNED_STARS_-Sheet_5: -328553783
+      Clou_desert_3_0: -7679175910051910273
+      Clou_desert_3_1: -58098357100778380
+      Clou_desert_3_2: -4973609574226558003
+      Clou_desert_3_3: -5542078434576662413
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

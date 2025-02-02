@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Bosses/BossRock.unity
     guid: 5a596270ff511b8449f07f63922b342e
+  - enabled: 1
+    path: Assets/Scenes/Bosses/BossEye.unity
+    guid: ea3a273e4edb2e84f8a5a3ceeba3b0b0
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
