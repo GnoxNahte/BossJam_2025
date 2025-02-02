@@ -21,10 +21,12 @@ public class BossShip : BossBase
     [SerializeField] [ReadOnly] private State nextState = State.Preparing;
     [Header("Preparing")]
     [SerializeField] private float prepareTime = 1.5f;
+    [SerializeField] private float prepareTime_Hard = 1.5f;
     [SerializeField] private GameObject attackWarningPrefab;
     [Header("Attacking - Bombing")] 
     [SerializeField] private Transform bombingSpawnPos;
     [SerializeField] private float bombingMoveSpeed;
+    [SerializeField] private float moveSpeed_Hard;
     [SerializeField] private float bombingCooldown;
     [SerializeField] private Vector2 bombingReleaseVelocity;
 
@@ -74,6 +76,12 @@ public class BossShip : BossBase
         
         _leftBorder = leftBorder;
         _rightBorder = rightBorder;
+        
+        if (GameInitiator.IsGameCleared && GameInitiator.IsHardMode)
+        {
+            prepareTime = prepareTime_Hard;
+            bombingMoveSpeed = moveSpeed_Hard;
+        }
         
         _isInitDone = true;
     }

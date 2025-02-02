@@ -2,6 +2,7 @@ using System;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using VInspector;
 
 public class GameInitiator : MonoBehaviour
 {
@@ -19,12 +20,30 @@ public class GameInitiator : MonoBehaviour
     
     [Header("Game Objects")]
     public GameObject Player;
-    
-    // public static bool is
+
+    [ShowInInspector]
+    public static bool IsHardMode;
+    [ShowInInspector]
+    public static bool IsGameCleared;
+    public static bool IsGameCleared_Hard;
     
     #endregion
+
+    public static void OnGameCleared(bool onHard)
+    {
+        GameInitiator.IsGameCleared = true;
+        PlayerPrefs.SetInt("IsGameCleared", 1);
+        PlayerPrefs.SetInt("IsGameCleared_Hard", onHard ? 1 : 0);
+    }
     
     #region Unity Methods
+
+    private void Awake()
+    {
+        IsGameCleared = PlayerPrefs.GetInt("IsGameCleared", 0) == 1;
+        IsGameCleared_Hard = PlayerPrefs.GetInt("IsGameCleared_Hard", 0) == 1;
+    }
+
     private async void Start()
     {
         await LoadGame();

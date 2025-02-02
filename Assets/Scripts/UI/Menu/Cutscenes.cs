@@ -81,24 +81,24 @@ public class Cutscenes : MonoBehaviour
 
     public void OnContinuePressed()
     {
-        print("1");
+        // print("1");
         if (!isFadeDone)
             return;
         
-        print("2");
+        // print("2");
         // Next cutscene
         if (isDoneTyping)
         {
-        print("3");
+        // print("3");
             ++currCutsceneIndex;
             if (currCutsceneIndex >= cutsceneText.Length)
             {
-        print("4");
+        // print("4");
                 _transitionToGame.TriggerTransition();
             }
             else
             {
-        print("5");
+        // print("5");
                 _animator.SetTrigger(OnTransition);
                 StartCutscene();
             }
@@ -106,13 +106,13 @@ public class Cutscenes : MonoBehaviour
         // Skip curr dialogue
         else
         {
-            print("6");
+            // print("6");
             uiText.text = cutsceneText[currCutsceneIndex];
             isDoneTyping = true;
             
             if (_currCoroutine != null)
             {
-            print("7");
+            // print("7");
                 StopCoroutine(_currCoroutine);
                 _currCoroutine = null;
             }
@@ -135,7 +135,7 @@ public class Cutscenes : MonoBehaviour
         while (currLen < text.Length)
         {
             uiText.text = text.Substring(0, ++currLen);
-            print("Update text: " + uiText.text);
+            // print("Update text: " + uiText.text);
             yield return _typingWait;
         }
         

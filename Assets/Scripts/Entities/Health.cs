@@ -10,6 +10,12 @@ public class Health : MonoBehaviour
     
     public Action OnDeath;
 
+    public void SetMaxHealth(int health)
+    {
+        maxHealth = health;
+        CurrHealth = health;
+    }
+
     private void Start()
     {
         CurrHealth = maxHealth;

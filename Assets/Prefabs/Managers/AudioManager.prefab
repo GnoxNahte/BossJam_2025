@@ -91,7 +91,7 @@ MonoBehaviour:
     - Key: 4
       Value:
         Clip: {fileID: 8300000, guid: 9644d9ec2c63f7a49b29f30c781935d3, type: 3}
-        Volume: 1.5
+        Volume: 1
         StartCount: 5
         PitchRange: {x: 0.8, y: 1.2}
         Parent: {fileID: 0}
@@ -110,10 +110,10 @@ MonoBehaviour:
       isKeyNull: 0
     - Key: 6
       Value:
-        Clip: {fileID: 8300000, guid: ded096644acec49439b9f61873dc87af, type: 3}
+        Clip: {fileID: 8300000, guid: b794d332490e5324d841b3e49c7e4d44, type: 3}
         Volume: 1
         StartCount: 50
-        PitchRange: {x: 0.8, y: 1.2}
+        PitchRange: {x: 0.8, y: 1.25}
         Parent: {fileID: 0}
       index: 6
       isKeyRepeated: 0

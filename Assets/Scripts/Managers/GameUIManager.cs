@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,6 +19,7 @@ public class GameUIManager : MonoBehaviour
     [SerializeField] private CanvasGroup blackScreen;
 
     [SerializeField] private CanvasGroup gameCompleteScreen;
+    [SerializeField] private TextMeshProUGUI completeGameText;
 
     private Coroutine _currAnim;
     private bool _isFinalLevel;
@@ -60,7 +62,10 @@ public class GameUIManager : MonoBehaviour
     {
         print("Defated");
         if (_isFinalLevel)
+        {
+            GameInitiator.OnGameCleared(GameInitiator.IsHardMode);
             _currAnim = StartCoroutine(GameCompleteTransition());
+        }
         else
             _currAnim = StartCoroutine(WaitWinTransition());
     }
@@ -111,6 +116,10 @@ public class GameUIManager : MonoBehaviour
     {
         print("wait Defated");
         yield return new WaitForSeconds(5);
+        if (GameInitiator.IsHardMode)
+        {
+            completeGameText.text = "Congrats on clearing hard mode! Thanks for playing the game again! GG!";
+        }
         print("wait Defated 2");
         yield return FadeBlackScreen(true);
         

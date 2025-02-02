@@ -9340,6 +9340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <KnockbackSpeed>k__BackingField: {x: 1, y: 1}
+  hardHealth: 2000
   restrictState: 6
   currState: 0
   nextState: 0
@@ -9353,13 +9354,16 @@ MonoBehaviour:
   daggerAttackCooldown: 0.1
   targetDist: 3
   followMoveTime: 1
+  followMoveTime_Hard: 0.4
   maxSpeed: 5
+  maxSpeed_Hard: 6
   bounds:
     m_Center: {x: -0.16, y: 4.04, z: 0}
     m_Extent: {x: 5.38, y: 3.23, z: 1}
   shieldAttackDuration: 12
   shieldTargetDist: 2
   attackFollowMoveTime: 1.5
+  attackFollowMoveTime_Hard: 1
   stunnedDuration: 5
   stunnedMoveDownSpeed: 1
   daggerCircle: {fileID: 31238655}

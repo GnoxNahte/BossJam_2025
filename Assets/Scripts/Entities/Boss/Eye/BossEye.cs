@@ -26,7 +26,9 @@ public class BossEye : BossBase
     [SerializeField] private float daggerAttackCooldown;
     [SerializeField] private float targetDist;
     [SerializeField] private float followMoveTime;
+    [SerializeField] private float followMoveTime_Hard;
     [SerializeField] private float maxSpeed;
+    [SerializeField] private float maxSpeed_Hard;
     // Bounds(-0.159999996,4.03999996,0,6.09000015,4.05000019,1)
     [SerializeField] private Bounds bounds;
     
@@ -34,6 +36,7 @@ public class BossEye : BossBase
     [SerializeField] private float shieldAttackDuration;
     [SerializeField] private float shieldTargetDist;
     [SerializeField] private float attackFollowMoveTime;
+    [SerializeField] private float attackFollowMoveTime_Hard;
     [SerializeField] private float stunnedDuration;
     [SerializeField] private float stunnedMoveDownSpeed;
     
@@ -67,6 +70,13 @@ public class BossEye : BossBase
     {
         base.Init(player, healthUI);
         daggerCircle.Init(player, this);
+
+        if (GameInitiator.IsGameCleared && GameInitiator.IsHardMode)
+        {
+            followMoveTime = followMoveTime_Hard;
+            maxSpeed = maxSpeed_Hard;
+            attackFollowMoveTime = attackFollowMoveTime_Hard;
+        }
     }
 
     public void OnSpawnDaggersDone()

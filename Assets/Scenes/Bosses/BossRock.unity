@@ -13116,23 +13116,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <KnockbackSpeed>k__BackingField: {x: 15, y: 3}
-  restrictState: 2
+  hardHealth: 3000
+  restrictState: 6
   currState: 0
   nextState: 0
   prepareMoveTime: 0.1
   prepareMoveMaxSpeed: 10
+  prepareMoveMaxSpeed_Hard: 20
   heightClamp: {x: 0, y: 4}
+  animatorSpeed_Hard: 1.5
   bombingPrepareDuration: 1
   bombingDuration: 7
   bombingCooldown: 0.1
   bombingStreams: 2
+  bombingStreams_Hard: 2
   bombFireSpeed: 15
   rotateSpeed: 75
+  rotateSpeed_Hard: 100
   groundSlamDamage: 20
   groundSlamPrepareDuration:
   - 2.5
   - 1.5
   - 0.8
+  groundSlamPrepareDuration_Hard:
+  - 1
+  - 0.5
+  - 0.3
   groundSlamPrepareSpeedCurve:
     serializedVersion: 2
     m_Curve:
@@ -13172,7 +13181,12 @@ MonoBehaviour:
   - 1
   - 2.5
   - 4
+  stunDuration_Hard:
+  - 1
+  - 1.5
+  - 2
   comboChance: 0.72
+  comboChance_Hard: 1
   bossHeight: 0.67
   bombPool: {fileID: 1090083736977615945}
   horizontalFollow: {fileID: 76202544}

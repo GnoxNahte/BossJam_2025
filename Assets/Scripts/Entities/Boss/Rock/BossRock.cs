@@ -23,7 +23,9 @@ public class BossRock : BossBase
     [Header("General")]
     [SerializeField] private float prepareMoveTime = 0.5f;
     [SerializeField] private float prepareMoveMaxSpeed;
+    [SerializeField] private float prepareMoveMaxSpeed_Hard;
     [SerializeField] private Vector2 heightClamp;
+    [SerializeField] private float animatorSpeed_Hard;
 
     [Header("Bombing")] 
     [SerializeField] private float bombingPrepareDuration;
@@ -32,18 +34,23 @@ public class BossRock : BossBase
     [SerializeField] private float bombingCooldown;
     [Range(1, 50)]
     [SerializeField] private int bombingStreams;
+    [SerializeField] private int bombingStreams_Hard;
     [SerializeField] private float bombFireSpeed;
     [SerializeField] private float rotateSpeed;
+    [SerializeField] private float rotateSpeed_Hard;
 
     [Header("Ground Slam")]
     [SerializeField] private int groundSlamDamage;
     [SerializeField] private float[] groundSlamPrepareDuration;
+    [SerializeField] private float[] groundSlamPrepareDuration_Hard;
     [SerializeField] private AnimationCurve groundSlamPrepareSpeedCurve;
     [SerializeField] private float groundSlamAttackFollowMaxSpeed;
     [SerializeField] private float groundSlamFlySpeed;
     [SerializeField] private float[] stunDuration;
+    [SerializeField] private float[] stunDuration_Hard;
     [Range(0f, 1f)]
     [SerializeField] private float comboChance = 0.5f;
+    [SerializeField] private float comboChance_Hard = 0.5f;
     [SerializeField] private float bossHeight;
     
     [Header("References")]
@@ -92,6 +99,26 @@ public class BossRock : BossBase
         ChangeState(State.BombingPrepare);
         horizontalFollow.transform.parent = null;
         horizontalFollow.SetTarget(player.transform);
+        
+        if (GameInitiator.IsGameCleared && GameInitiator.IsHardMode)
+        {
+            bombingStreams = bombingStreams_Hard;
+            groundSlamPrepareDuration = groundSlamPrepareDuration_Hard;
+            comboChance = comboChance_Hard;
+            prepareMoveMaxSpeed = prepareMoveMaxSpeed_Hard;
+            _animator.speed = animatorSpeed_Hard;
+            stunDuration = stunDuration_Hard;
+            rotateSpeed = rotateSpeed_Hard;
+        }
+        
+// #if UNITY_EDITOR
+//         _animator.speed = animatorSpeed_Hard;
+//             bombingStreams = bombingStreams_Hard;
+//             groundSlamPrepareDuration = groundSlamPrepareDuration_Hard;
+//             comboChance = comboChance_Hard;
+//             prepareMoveMaxSpeed = prepareMoveMaxSpeed_Hard;
+//             stunDuration = stunDuration_Hard;
+// #endif
     }
 
     // called in anim events

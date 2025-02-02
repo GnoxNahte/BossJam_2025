@@ -2598,15 +2598,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 828958593122677700, guid: bfa8d80b41068cc48af8687e5cca2af2, type: 3}
       propertyPath: maxHealth
-      value: 600
+      value: 750
       objectReference: {fileID: 0}
     - target: {fileID: 2773577353723259341, guid: bfa8d80b41068cc48af8687e5cca2af2, type: 3}
       propertyPath: m_Name
       value: Boss_Ship
       objectReference: {fileID: 0}
     - target: {fileID: 5855261382567464579, guid: bfa8d80b41068cc48af8687e5cca2af2, type: 3}
+      propertyPath: hardHealth
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5855261382567464579, guid: bfa8d80b41068cc48af8687e5cca2af2, type: 3}
       propertyPath: prepareTime
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5855261382567464579, guid: bfa8d80b41068cc48af8687e5cca2af2, type: 3}
+      propertyPath: moveSpeed_Hard
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5855261382567464579, guid: bfa8d80b41068cc48af8687e5cca2af2, type: 3}
+      propertyPath: bombingMoveSpeed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5855261382567464579, guid: bfa8d80b41068cc48af8687e5cca2af2, type: 3}
+      propertyPath: prepareTime_Hard
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 7616785199762229685, guid: bfa8d80b41068cc48af8687e5cca2af2, type: 3}
       propertyPath: m_LocalPosition.x
