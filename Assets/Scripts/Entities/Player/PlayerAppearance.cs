@@ -25,6 +25,8 @@ public class PlayerAppearance : MonoBehaviour
     private static readonly int AnimId_OnHit = Animator.StringToHash("OnHit");
     private static readonly int AnimId_IsBossDefeated = Animator.StringToHash("IsBossDefeated");
     private static readonly int AnimId_OnHitAttack = Animator.StringToHash("OnHitAttack");
+    private static readonly int AnimId_Speed = Animator.StringToHash("Speed");
+    private static readonly int AnimId_IsDashing = Animator.StringToHash("IsDashing");
     #endregion
     
     #region Public Methods
@@ -46,6 +48,11 @@ public class PlayerAppearance : MonoBehaviour
     public void OnHitAttack()
     {
         _animator.SetTrigger(AnimId_OnHitAttack);
+    }
+
+    public void OnDefeatBoss()
+    {
+        _animator.SetBool(AnimId_IsBossDefeated, true);
     }
     #endregion
     
@@ -74,7 +81,7 @@ public class PlayerAppearance : MonoBehaviour
         // sr.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
         bool ifFacingLeft = _playerMovement.FacingDirection.x < 0;
-        Vector3 newScale = new Vector3(ifFacingLeft ? 1f : -1f, 1f, 1f);
+        // Vector3 newScale = new Vector3(ifFacingLeft ? 1f : -1f, 1f, 1f);
         sr.flipX = ifFacingLeft;
         // attackParent.localScale = newScale;
         // attackParent.localPosition = new Vector3(
@@ -82,13 +89,17 @@ public class PlayerAppearance : MonoBehaviour
         //     attackParent.localPosition.y,
         //     0f);
         
+        
         _animator.SetBool(AnimId_InAir, _playerMovement.IsInAir);
         _animator.SetBool(AnimId_IsSpinning, _playerMovement.IsSpinning);
         _animator.SetBool(AnimId_IsDead, _playerMovement.IsDead);
         _animator.SetBool(AnimId_IsFacingUp, _playerMovement.FacingDirection.y > 0);
+        _animator.SetBool(AnimId_IsDashing, _playerMovement.IsDashing);
         
         _animator.SetFloat(AnimId_DirectionX, _playerMovement.Velocity.x);
         _animator.SetFloat(AnimId_DirectionY, _playerMovement.Velocity.y);
+        
+        _animator.SetFloat(AnimId_Speed, Mathf.Abs(_playerMovement.Velocity.x));
     }
 
     #endregion
@@ -104,9 +115,4 @@ public class PlayerAppearance : MonoBehaviour
         _animator.SetTrigger(AnimId_OnHit);
     }
     #endregion
-
-    public void OnDefeatBoss()
-    {
-        _animator.SetBool(AnimId_IsBossDefeated, true);
-    }
 }

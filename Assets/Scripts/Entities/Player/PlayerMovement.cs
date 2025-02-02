@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public bool IsDead => isDead;
     public bool IsGemGrab => isGemGrab;
     public bool IsDisabledMovement => isDead || isGemGrab;
+    public bool IsDashing => dashTimeLeft > 0f;
     
     // Takes in damage and position
     public Action<int, Vector2> OnHit;
@@ -191,9 +192,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-            // print("Contact point: " + other.contacts.Length + " | " + other.contacts[0].normal);
-            if (other.contacts.Length > 1)
+        // print("Contact point: " + other.contacts.Length + " | " + other.contacts[0].normal);
+        if (other.contacts.Length > 1)
             print("Contact point: " + other.contacts.Length + " | " + other.contacts[1].normal);
+        
         EntityBase entity = other.gameObject.GetComponent<EntityBase>();
         if (entity != null)
         {
