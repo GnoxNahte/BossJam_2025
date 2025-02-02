@@ -196,6 +196,8 @@ public class BossRock : BossBase
                 _rb.MovePosition(pos);
                 shockwave.gameObject.SetActive(true);
                 groundSlamParticles.Play();
+                
+                AudioManager.PlaySFX(AudioManager.SFX.RockSmash);
                 return;
             }
         }

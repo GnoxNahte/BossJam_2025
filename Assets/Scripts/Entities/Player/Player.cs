@@ -52,6 +52,14 @@ public class Player : EntityBase
 
         _hasDefeatedBoss = true;
     }
+
+    public override void TakeDamage(int damage, Vector2 position)
+    {
+        base.TakeDamage(damage, position);
+        
+        AudioManager.PlaySFX(AudioManager.SFX.PlayerTakeDamage);
+    }
+
     #endregion
     
     #region Unity Methods

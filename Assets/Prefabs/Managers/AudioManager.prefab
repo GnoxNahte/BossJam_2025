@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7480191860111738623
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8462537185634801010}
+  - component: {fileID: 8089524534982159933}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8462537185634801010
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7480191860111738623}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8089524534982159933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7480191860111738623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d38a457d68d9cb4dacd1c9a8de7cb5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxAudioMixerGroup: {fileID: -8438588365891971911, guid: 53e45ec620478a74396f683e6856beef, type: 2}
+  musicAudioMixerGroup: {fileID: 3350961990651615983, guid: 53e45ec620478a74396f683e6856beef, type: 2}
+  sfxData:
+    serializedKvps:
+    - Key: 0
+      Value:
+        Clip: {fileID: 8300000, guid: f0c40cf8ebbca604db73dafde9f3113c, type: 3}
+        Volume: 1
+        StartCount: 10
+        PitchRange: {x: 0.8, y: 1.2}
+        Parent: {fileID: 0}
+      index: 0
+      isKeyRepeated: 0
+      isKeyNull: 0
+    - Key: 1
+      Value:
+        Clip: {fileID: 8300000, guid: e130b118997893842a96506454607177, type: 3}
+        Volume: 1
+        StartCount: 20
+        PitchRange: {x: 0.9, y: 1.5}
+        Parent: {fileID: 0}
+      index: 1
+      isKeyRepeated: 0
+      isKeyNull: 0
+    - Key: 2
+      Value:
+        Clip: {fileID: 8300000, guid: d5939305ab339f047aee80b8b385c03b, type: 3}
+        Volume: 1
+        StartCount: 10
+        PitchRange: {x: 0.8, y: 1.5}
+        Parent: {fileID: 0}
+      index: 2
+      isKeyRepeated: 0
+      isKeyNull: 0
+    - Key: 3
+      Value:
+        Clip: {fileID: 8300000, guid: 2e7d98eac7bd6be46899458a16ee6444, type: 3}
+        Volume: 1
+        StartCount: 20
+        PitchRange: {x: 0.7, y: 1.25}
+        Parent: {fileID: 0}
+      index: 3
+      isKeyRepeated: 0
+      isKeyNull: 0
+    - Key: 4
+      Value:
+        Clip: {fileID: 8300000, guid: 9644d9ec2c63f7a49b29f30c781935d3, type: 3}
+        Volume: 1.5
+        StartCount: 5
+        PitchRange: {x: 0.8, y: 1.2}
+        Parent: {fileID: 0}
+      index: 4
+      isKeyRepeated: 0
+      isKeyNull: 0
+    - Key: 5
+      Value:
+        Clip: {fileID: 8300000, guid: e806a026333893042acb834476c6bdd4, type: 3}
+        Volume: 1
+        StartCount: 10
+        PitchRange: {x: 1, y: 1}
+        Parent: {fileID: 0}
+      index: 5
+      isKeyRepeated: 0
+      isKeyNull: 0
+    dividerPos: 0.33
+  audioSources:
+    serializedKvps: []
+    dividerPos: 0.33
+  fadeDuration: 0
+  bgmVolume: 0

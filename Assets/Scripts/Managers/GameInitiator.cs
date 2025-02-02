@@ -12,6 +12,7 @@ public class GameInitiator : MonoBehaviour
     public GameObject InputManagerPrefab;
     public GameObject CameraManagerPrefab;
     public GameObject DamageManagerPrefab;
+    public GameObject AudioManagerPrefab;
     [Header("UI")] 
     public Transform Canvas;
     public GameObject GameUIManagerPrefab;
@@ -54,6 +55,9 @@ public class GameInitiator : MonoBehaviour
         GameObject damageTextManageGO = Instantiate(DamageManagerPrefab, managerParent.transform);
         GameObject gameUIManagerGO = Instantiate(GameUIManagerPrefab, Canvas.transform);
         GameObject playerGO = Instantiate(Player);
+        
+        if (AudioManager.Instance == null)
+            Instantiate(AudioManagerPrefab, managerParent.transform);
         
         // === Get relevant components ===
         InputManager inputManager = inputManagerGO.GetComponent<InputManager>();

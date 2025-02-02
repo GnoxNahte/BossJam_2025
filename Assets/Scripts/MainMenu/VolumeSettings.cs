@@ -57,6 +57,9 @@ public class VolumeSettings : MonoBehaviour
         float sfxVolume = PlayerPrefs.GetFloat(SfxVolumeKey, defaultValue);
         OnSFXVolumeChanged(sfxVolume);
         sfxVolumeSlider.value = sfxVolume;
+
+        Canvas canvas = GetComponentInParent<Canvas>();
+        canvas.worldCamera = Camera.main;
     }
 
     #endregion

@@ -46,7 +46,10 @@ public class AttackWarningFlashing : MonoBehaviour
         if (color.a <= range.x)
             _isIncreasingOpacity = true;
         else if (color.a >= range.y)
+        {
             _isIncreasingOpacity = false;
+            AudioManager.PlaySFX(AudioManager.SFX.Warning);
+        }
     }
 
     #endregion

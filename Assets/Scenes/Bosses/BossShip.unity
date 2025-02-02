@@ -2600,6 +2600,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss_Ship
       objectReference: {fileID: 0}
+    - target: {fileID: 5855261382567464579, guid: bfa8d80b41068cc48af8687e5cca2af2, type: 3}
+      propertyPath: prepareTime
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7616785199762229685, guid: bfa8d80b41068cc48af8687e5cca2af2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
