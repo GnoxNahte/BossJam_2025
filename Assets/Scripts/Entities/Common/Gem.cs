@@ -34,7 +34,8 @@ public class Gem : MonoBehaviour
         while (animTime < flyDuration)
         {
             animTime += Time.deltaTime;
-            transform.position = Vector2.Lerp(startPos, _gemTarget.position, animTime / flyDuration);
+            // transform.position = Vector2.Lerp(startPos, _gemTarget.position, animTime / flyDuration);
+            transform.position = Vector3.Slerp(startPos, _gemTarget.position, animTime / flyDuration);
             yield return null;
         }
         print("DONE");

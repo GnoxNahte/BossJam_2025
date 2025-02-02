@@ -512,7 +512,7 @@ public class PlayerMovement : MonoBehaviour
         if (velocity.y < 0f)
             velocity.y *= 0.5f; // Down knockback is too strong, partly because of increased gravity when going down
         
-        Debug.DrawRay(transform.position, velocity, Color.green, 1f);
+        // Debug.DrawRay(transform.position, velocity, Color.green, 1f);
         print("Knockback final vel: " + velocity);
         
         Vector2 totalMoveAmt = velocity * Time.fixedDeltaTime;
@@ -550,6 +550,7 @@ public class PlayerMovement : MonoBehaviour
         velocity = Vector2.zero;
         dashTimeLeft = -1f;
         isSpinning = false;
+        _rb.bodyType = RigidbodyType2D.Kinematic;
     }
     
     private void ResetPlayer()

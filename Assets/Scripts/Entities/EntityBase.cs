@@ -10,7 +10,7 @@ public class EntityBase : MonoBehaviour
 
     private bool _isPlayer;
 
-    public void TakeDamage(int damage, Vector2 position)
+    public virtual void TakeDamage(int damage, Vector2 position)
     {
         Health.TakeDamage(damage);
         DamageTextManager.OnDamage(damage, position, _isPlayer);

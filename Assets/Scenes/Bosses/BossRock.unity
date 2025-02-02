@@ -12866,8 +12866,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.32, y: 1.32}
+    pivot: {x: 0.47, y: 0.42}
+    oldSize: {x: 5, y: 2.5}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -13012,7 +13012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a541a20d816f0a14aa927f507dd65bab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <KnockbackSpeed>k__BackingField: {x: 0, y: 0}
+  <KnockbackSpeed>k__BackingField: {x: 15, y: 3}
   restrictState: 2
   currState: 0
   nextState: 0

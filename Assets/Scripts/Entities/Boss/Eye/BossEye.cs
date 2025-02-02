@@ -112,8 +112,8 @@ public class BossEye : BossBase
                 Vector2 targetPos = playerPos + direction.normalized * targetDist;
                 // Debug.DrawLine(transform.position, targetPos, Color.red, 0.5f);
                 // Debug.DrawLine(transform.position, direction, Color.green, 0.5f);
-                Debug.DrawRay(targetPos, Vector2.right, Color.red, 0.5f);
-                Debug.DrawRay(targetPos, Vector2.up, Color.red, 0.5f);
+                // Debug.DrawRay(targetPos, Vector2.right, Color.red, 0.5f);
+                // Debug.DrawRay(targetPos, Vector2.up, Color.red, 0.5f);
                 targetPos = Vector2.SmoothDamp(_rb.position, targetPos, ref _moveVelocity, followMoveTime, maxSpeed);
                 _rb.MovePosition(targetPos);
                 break;
