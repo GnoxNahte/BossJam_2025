@@ -16,6 +16,7 @@ public class AudioManager : MonoBehaviour
         PlayerAttack_Spin,
         RockSmash,
         Warning,
+        Laser,
     }
     [Serializable]
     public class SfxData

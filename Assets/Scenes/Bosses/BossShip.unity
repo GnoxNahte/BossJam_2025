@@ -2596,6 +2596,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 828958593122677700, guid: bfa8d80b41068cc48af8687e5cca2af2, type: 3}
+      propertyPath: maxHealth
+      value: 600
+      objectReference: {fileID: 0}
     - target: {fileID: 2773577353723259341, guid: bfa8d80b41068cc48af8687e5cca2af2, type: 3}
       propertyPath: m_Name
       value: Boss_Ship

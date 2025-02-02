@@ -33,8 +33,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] protected PlatformCollisionTracker leftWallChecker;
     [SerializeField] protected PlatformCollisionTracker rightWallChecker;
     
-    
-
     [SerializeField] private ObjectPool shockwavePool;
     
     // Read only, for debugging
@@ -71,8 +69,6 @@ public class PlayerMovement : MonoBehaviour
     private bool isGemGrab;
     [SerializeField] [ReadOnly]
     private bool isInvincibleDamage;
-    [SerializeField] [ReadOnly]
-    private int currCombo;
     
     #endregion
     
@@ -406,7 +402,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 // landSFX.Play();
             }
-
+            
             lastJumpTime = float.MinValue;
             lastGroundedTime = Time.realtimeSinceStartup;
         }

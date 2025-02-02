@@ -1047,7 +1047,6 @@ MonoBehaviour:
   groundChecker: {fileID: 2446640281547453604}
   leftWallChecker: {fileID: 6394226183721352939}
   rightWallChecker: {fileID: 3523840535987174334}
-  landSFX: {fileID: 0}
   shockwavePool: {fileID: 5386160578194922931}
   velocity: {x: 0, y: 0}
   lastJumpPressed: 0
@@ -1061,6 +1060,7 @@ MonoBehaviour:
   isDead: 0
   isGemGrab: 0
   isInvincibleDamage: 0
+  currCombo: 0
 --- !u!114 &9210179023277053121
 MonoBehaviour:
   m_ObjectHideFlags: 0

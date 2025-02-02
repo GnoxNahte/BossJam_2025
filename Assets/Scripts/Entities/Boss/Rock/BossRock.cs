@@ -311,6 +311,8 @@ public class BossRock : BossBase
         Vector2 initialVelocity = direction * bombFireSpeed;
         bomb.GetComponent<Bomb>().Init(initialVelocity, bombPool);
         _currShootStreamIndex = (_currShootStreamIndex + 1) % bombingStreams;
+        
+        AudioManager.PlaySFX(AudioManager.SFX.Laser);
 
         // // Generate random initial bomb velocity
         // bool ifFireOnRight = Random.value < 0.5f;

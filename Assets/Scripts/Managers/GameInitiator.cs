@@ -20,6 +20,8 @@ public class GameInitiator : MonoBehaviour
     [Header("Game Objects")]
     public GameObject Player;
     
+    // public static bool is
+    
     #endregion
     
     #region Unity Methods
