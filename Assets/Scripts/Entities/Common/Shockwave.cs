@@ -34,6 +34,15 @@ public class Shockwave : MonoBehaviour
         _shockwaveCoroutine = StartCoroutine(ShockwaveCoroutine());
     }
 
+    private void OnDisable()
+    {
+        if (_shockwaveCoroutine != null)
+        {
+            StopCoroutine(_shockwaveCoroutine);
+            _shockwaveCoroutine = null;
+        }
+    }
+
     private void Awake()
     {
         _sr = GetComponent<SpriteRenderer>();

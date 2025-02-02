@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Dagger : MonoBehaviour
 {
+    public Rigidbody2D Rb => _rb;
     [field: SerializeField] public Vector2 PlayerKnockbackSpeed { get; private set; }
     [field: SerializeField] public int Damage { get; private set; }
 

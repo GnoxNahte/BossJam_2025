@@ -80,12 +80,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c237e82cfef1ef1459b44a0b8ee351ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <SkyColor>k__BackingField: {r: 0.96862745, g: 0.9490196, b: 0.4745098, a: 1}
+  <CurrSceneName>k__BackingField: 
+  <NextSceneName>k__BackingField: 
+  <IfStaticCamera>k__BackingField: 0
+  <StaticCameraFollow>k__BackingField: {fileID: 0}
   <CameraConfier>k__BackingField: {fileID: 8312955594321051468}
   <LeftBorder>k__BackingField: {fileID: 931964163581463702}
   <RightBorder>k__BackingField: {fileID: 8013449557796995188}
   <PlayerStart>k__BackingField: {fileID: 1824090913945590423}
-  <SkyColor>k__BackingField: {r: 0.96862745, g: 0.9490196, b: 0.4745098, a: 1}
   <LevelCenter>k__BackingField: {fileID: 2222690482562799305}
+  <CameraPosY>k__BackingField: 0.22
 --- !u!1 &7914572446798795167
 GameObject:
   m_ObjectHideFlags: 0

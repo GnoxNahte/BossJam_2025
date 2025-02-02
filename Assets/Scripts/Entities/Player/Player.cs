@@ -22,6 +22,8 @@ public class Player : EntityBase
     private PlayerMovement _playerMovement;
     private PlayerAppearance _playerAppearance;
     private GameUIManager _gameUIManager;
+
+    private bool _hasDefeatedBoss = false;
     
     #endregion
     
@@ -47,6 +49,8 @@ public class Player : EntityBase
         _playerAppearance.OnDefeatBoss();
         _playerMovement.OnGemGrab();
         _gameUIManager.OnBossDefeated();
+
+        _hasDefeatedBoss = true;
     }
     #endregion
     
@@ -76,7 +80,7 @@ public class Player : EntityBase
 
     protected override void OnDead()
     {
-        if (_playerMovement.IsDead)
+        if (_playerMovement.IsDead || _hasDefeatedBoss)
             return;
         
         base.OnDead();

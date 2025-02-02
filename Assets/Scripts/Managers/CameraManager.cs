@@ -21,6 +21,8 @@ public class CameraManager : MonoBehaviour
             gameCamera.GetComponent<CinemachineConfiner2D>().BoundingShape2D = levelManager.CameraConfier;
         if (Camera.main)
             Camera.main.backgroundColor = levelManager.SkyColor;
+
+        gameCamera.GetComponent<CinemachinePositionComposer>().Composition.ScreenPosition.y = levelManager.CameraPosY;
     }
     #endregion
     

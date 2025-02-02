@@ -94,7 +94,8 @@ public class DaggerCircle : MonoBehaviour
         if (!ifShot)
         {
             int index = currDaggers.FindIndex(d => d.Dagger == dagger);
-            currDaggers.RemoveAt(index);
+            if (index >= 0)
+                currDaggers.RemoveAt(index);
         }
         dagger.transform.SetParent(transform);
         dagger.transform.localPosition = Vector3.zero;
@@ -105,6 +106,18 @@ public class DaggerCircle : MonoBehaviour
     public void ReleaseDagger(Dagger dagger)
     {
         _daggerPool.Release(dagger.gameObject);
+    }
+
+    public void OnBossDead()
+    {
+        foreach (var dagger in currDaggers)
+        {
+            dagger.Dagger.Rb.bodyType = RigidbodyType2D.Dynamic;
+        }
+        
+        currDaggers.Clear();
+        if (_spawnCoroutine != null)
+            StopCoroutine(_spawnCoroutine);
     }
     #endregion
     

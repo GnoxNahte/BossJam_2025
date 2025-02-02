@@ -1,0 +1,655 @@
+fileFormatVersion: 2
+guid: 17c5b10f72f47de4e9d6a773f7d0071b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4547610387432041980
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_0
+  - first:
+      213: 6189082179938905784
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_1
+  - first:
+      213: 5195926227898585632
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_2
+  - first:
+      213: -3168221043168092960
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_3
+  - first:
+      213: -5514790906649730471
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_4
+  - first:
+      213: 2263533663674219206
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_5
+  - first:
+      213: 2768525640642854086
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_6
+  - first:
+      213: -4051390366754734809
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_7
+  - first:
+      213: -2310488804230518469
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_8
+  - first:
+      213: 1716460405425385763
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_9
+  - first:
+      213: 2149728703299061420
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_10
+  - first:
+      213: 8043836315174022800
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_11
+  - first:
+      213: -8144351849438228440
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_12
+  - first:
+      213: -8528541983825717740
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_13
+  - first:
+      213: 1656627514573822992
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_14
+  - first:
+      213: 3934093610246765889
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_15
+  - first:
+      213: -5009358621464879668
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_16
+  - first:
+      213: 2578403151395612691
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_17
+  - first:
+      213: -7115641275879600764
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_18
+  - first:
+      213: 41645468621059026
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_19
+  - first:
+      213: -9103157293716264112
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_20
+  - first:
+      213: 6781145042099874746
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_21
+  - first:
+      213: 320374351901826460
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_22
+  - first:
+      213: -3484371935471569005
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_23
+  - first:
+      213: -7981166198510813550
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_24
+  - first:
+      213: -5138226504205042926
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_25
+  - first:
+      213: -5562126138077414628
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_26
+  - first:
+      213: -4017616225273364494
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_27
+  - first:
+      213: 1918569599699014227
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_28
+  - first:
+      213: 7813441432651794986
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_29
+  - first:
+      213: 6052660691233061694
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_30
+  - first:
+      213: 2553804872783946165
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_31
+  - first:
+      213: -7387875004181554565
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_32
+  - first:
+      213: -8777240243730494570
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_33
+  - first:
+      213: -913056494731369654
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_34
+  - first:
+      213: 7352874466942460383
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_35
+  - first:
+      213: 6356184867832455465
+    second: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 338
+        width: 159
+        height: 169
+      alignment: 9
+      pivot: {x: 0.5220125, y: 0.4852071}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4029c386274a3e0c0800000000000000
+      internalID: -4547610387432041980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 338
+        width: 159
+        height: 169
+      alignment: 9
+      pivot: {x: 0.5220125, y: 0.4852071}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8be65f4937904e550800000000000000
+      internalID: 6189082179938905784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 338
+        width: 159
+        height: 169
+      alignment: 9
+      pivot: {x: 0.5220125, y: 0.4852071}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 022d7050063ab1840800000000000000
+      internalID: 5195926227898585632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 338
+        width: 159
+        height: 169
+      alignment: 9
+      pivot: {x: 0.5220125, y: 0.4852071}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ec5c084fb73804d0800000000000000
+      internalID: -3168221043168092960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 338
+        width: 159
+        height: 169
+      alignment: 9
+      pivot: {x: 0.5220125, y: 0.4852071}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 952a69693e68773b0800000000000000
+      internalID: -5514790906649730471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 169
+        width: 159
+        height: 169
+      alignment: 9
+      pivot: {x: 0.5220125, y: 0.4852071}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cab078dfdfa96f10800000000000000
+      internalID: 2263533663674219206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 169
+        width: 159
+        height: 169
+      alignment: 9
+      pivot: {x: 0.5220125, y: 0.4852071}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ccf312e667cb6620800000000000000
+      internalID: 2768525640642854086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 169
+        width: 159
+        height: 169
+      alignment: 9
+      pivot: {x: 0.5220125, y: 0.4852071}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72df4273de196c7c0800000000000000
+      internalID: -4051390366754734809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 169
+        width: 159
+        height: 169
+      alignment: 9
+      pivot: {x: 0.5220125, y: 0.4852071}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b39a25e8cae7fefd0800000000000000
+      internalID: -2310488804230518469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 169
+        width: 159
+        height: 169
+      alignment: 9
+      pivot: {x: 0.5220125, y: 0.4852071}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 321376005a712d710800000000000000
+      internalID: 1716460405425385763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 159
+        height: 169
+      alignment: 9
+      pivot: {x: 0.5220125, y: 0.4852071}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca60a9badde55dd10800000000000000
+      internalID: 2149728703299061420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 0
+        width: 159
+        height: 169
+      alignment: 9
+      pivot: {x: 0.5220125, y: 0.4852071}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09ea555b28271af60800000000000000
+      internalID: 8043836315174022800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 0
+        width: 159
+        height: 169
+      alignment: 9
+      pivot: {x: 0.5220125, y: 0.4852071}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8205070c42379fe80800000000000000
+      internalID: -8144351849438228440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 0
+        width: 159
+        height: 169
+      alignment: 9
+      pivot: {x: 0.5220125, y: 0.4852071}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 416101a704884a980800000000000000
+      internalID: -8528541983825717740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 0
+        width: 159
+        height: 169
+      alignment: 9
+      pivot: {x: 0.5220125, y: 0.4852071}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01c9f4382f58df610800000000000000
+      internalID: 1656627514573822992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 0
+        width: 159
+        height: 169
+      alignment: 9
+      pivot: {x: 0.5220125, y: 0.4852071}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14d74e77b45b89630800000000000000
+      internalID: 3934093610246765889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 0
+        width: 159
+        height: 169
+      alignment: 9
+      pivot: {x: 0.5220125, y: 0.4852071}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccd9b0fdfde2b7ab0800000000000000
+      internalID: -5009358621464879668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 0
+        width: 159
+        height: 169
+      alignment: 9
+      pivot: {x: 0.5220125, y: 0.4852071}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 318eea6510458c320800000000000000
+      internalID: 2578403151395612691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ee57d1e000a0d594f8103d7a1bbccbd2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_0: -4547610387432041980
+      BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_1: 6189082179938905784
+      BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_10: 2149728703299061420
+      BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_11: 8043836315174022800
+      BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_12: -8144351849438228440
+      BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_13: -8528541983825717740
+      BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_14: 1656627514573822992
+      BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_15: 3934093610246765889
+      BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_16: -5009358621464879668
+      BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_17: 2578403151395612691
+      BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_2: 5195926227898585632
+      BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_3: -3168221043168092960
+      BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_4: -5514790906649730471
+      BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_5: 2263533663674219206
+      BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_6: 2768525640642854086
+      BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_7: -4051390366754734809
+      BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_8: -2310488804230518469
+      BOSS_3_SHIELD_ACTIVATED_AND_STUNNED_STARS-Sheet_9: 1716460405425385763
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -19,4 +19,6 @@ public class LevelManager : MonoBehaviour
     [field: SerializeField] public GameObject RightBorder { get; private set; }
     [field: SerializeField] public Transform PlayerStart { get; private set; }
     [field: SerializeField] public Transform LevelCenter { get; private set; }
+    [field: SerializeField] public float CameraPosY { get; private set; }
+    [field: SerializeField] public bool IsFinalLevel { get; private set; }
 }

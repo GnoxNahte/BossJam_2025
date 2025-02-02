@@ -21,15 +21,18 @@ public class InputManager : MonoBehaviour
     private InputAction _dash;
     private InputAction _attack;
     private InputAction _pause;
+    private InputAction _continue;
     
     private PlayerMovement _playerMovement;
+    private Cutscenes _cutscenes;
     #endregion
 
     #region Public Methods
 
-    public void Init(PlayerMovement playerMovement)
+    public void Init(PlayerMovement playerMovement, Cutscenes cutscenes)
     {
         _playerMovement = playerMovement;
+        _cutscenes = cutscenes;
     }
 
     #endregion
@@ -45,6 +48,7 @@ public class InputManager : MonoBehaviour
         _dash = _playerControls.Player.Dash;
         _attack = _playerControls.Player.Attack;
         _pause = _playerControls.Player.Pause;
+        _continue = _playerControls.Player.Continue;
     }
 
     private void OnEnable()
@@ -55,6 +59,7 @@ public class InputManager : MonoBehaviour
         _dash.Enable();
         _attack.Enable();
         _pause.Enable();
+        _continue.Enable();
     }
 
     private void OnDisable()
@@ -65,6 +70,7 @@ public class InputManager : MonoBehaviour
         _dash.Disable();
         _attack.Disable();
         _pause.Disable();
+        _continue.Disable();
     }
 
     private void Update()
@@ -79,6 +85,13 @@ public class InputManager : MonoBehaviour
             _playerMovement.Dash();
         if (_charge.WasPressedThisFrame())
             _playerMovement.Spin();
+        
+        // Others
+        if (_continue.WasPressedThisFrame())
+        {
+            print("Continue pressed");
+            _cutscenes?.OnContinuePressed();
+        }
     }
     #endregion
 }

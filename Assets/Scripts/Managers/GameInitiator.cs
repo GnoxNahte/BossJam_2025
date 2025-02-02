@@ -62,14 +62,15 @@ public class GameInitiator : MonoBehaviour
         Player player = playerGO.GetComponent<Player>();
         
         LevelManager levelManager = FindFirstObjectByType<LevelManager>();
+        Cutscenes cutscenes = FindFirstObjectByType<Cutscenes>(FindObjectsInactive.Include);
         
         // === Init Objects ===
         print("Init objs");
         player.Init(inputManager, gameUIManager);
         playerGO.transform.position = levelManager.PlayerStart.position;
         cameraManager.Init(player, levelManager);
-        gameUIManager.Init(isMainMenuLoaded, levelManager.CurrSceneName, levelManager.NextSceneName);
-        inputManager.Init(player.PlayerMovement);
+        gameUIManager.Init(isMainMenuLoaded, levelManager);
+        inputManager.Init(player.PlayerMovement, cutscenes);
         
         // === Init other objects ===
         print("Init other objs");
